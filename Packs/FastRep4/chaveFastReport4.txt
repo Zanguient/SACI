@@ -1,0 +1,4 @@
+diretorio de intalacao: C:\Arquivos de programas\Borland\Delphi7\Packs\FastRep4
+
+
+chave: 2B2640222A380D1E1618231D042C0511173B174B250817240A08

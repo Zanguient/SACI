@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/acbr/!svn/ver/2324/trunk/Pacotes/Lazarus
+END
+ACBr_PAF.pas
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/acbr/!svn/ver/1160/trunk/Pacotes/Lazarus/ACBr_PAF.pas
+END
+ACBr_NFe.pas
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/acbr/!svn/ver/1160/trunk/Pacotes/Lazarus/ACBr_NFe.pas
+END
+ACBrNFeDanfeRL.lpk
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1306/trunk/Pacotes/Lazarus/ACBrNFeDanfeRL.lpk
+END
+ACBr_PAF.lpk
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/acbr/!svn/ver/1306/trunk/Pacotes/Lazarus/ACBr_PAF.lpk
+END
+ACBr_NFe.lpk
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/acbr/!svn/ver/1160/trunk/Pacotes/Lazarus/ACBr_NFe.lpk
+END
+ACBr_Sintegra.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1203/trunk/Pacotes/Lazarus/ACBr_Sintegra.pas
+END
+ACBr_Sintegra.lpk
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1306/trunk/Pacotes/Lazarus/ACBr_Sintegra.lpk
+END
+ACBr_BoletoFC_Fortes.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/acbr/!svn/ver/1160/trunk/Pacotes/Lazarus/ACBr_BoletoFC_Fortes.pas
+END
+ACBrSerial.pas
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/acbr/!svn/ver/2315/trunk/Pacotes/Lazarus/ACBrSerial.pas
+END
+ACBrComum.pas
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/acbr/!svn/ver/1456/trunk/Pacotes/Lazarus/ACBrComum.pas
+END
+ACBr_TEFD.pas
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/acbr/!svn/ver/2260/trunk/Pacotes/Lazarus/ACBr_TEFD.pas
+END
+ACBr_BoletoFC_Fortes.lpk
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/acbr/!svn/ver/1761/trunk/Pacotes/Lazarus/ACBr_BoletoFC_Fortes.lpk
+END
+ACBrSerial.lpk
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/acbr/!svn/ver/2315/trunk/Pacotes/Lazarus/ACBrSerial.lpk
+END
+ACBrComum.lpk
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/acbr/!svn/ver/1456/trunk/Pacotes/Lazarus/ACBrComum.lpk
+END
+ACBr_Boleto.pas
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/acbr/!svn/ver/1997/trunk/Pacotes/Lazarus/ACBr_Boleto.pas
+END
+ACBr_TEFD.lpk
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/acbr/!svn/ver/2260/trunk/Pacotes/Lazarus/ACBr_TEFD.lpk
+END
+ACBr_Boleto.lpk
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/acbr/!svn/ver/1997/trunk/Pacotes/Lazarus/ACBr_Boleto.lpk
+END
+ACBrTCP.pas
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/acbr/!svn/ver/2189/trunk/Pacotes/Lazarus/ACBrTCP.pas
+END
+PCN.pas
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/acbr/!svn/ver/1612/trunk/Pacotes/Lazarus/PCN.pas
+END
+ACBrTCP.lpk
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/acbr/!svn/ver/2189/trunk/Pacotes/Lazarus/ACBrTCP.lpk
+END
+ACBr_SPED.pas
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/acbr/!svn/ver/2324/trunk/Pacotes/Lazarus/ACBr_SPED.pas
+END
+synapse.pas
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/acbr/!svn/ver/1160/trunk/Pacotes/Lazarus/synapse.pas
+END
+PCN.lpk
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/acbr/!svn/ver/1612/trunk/Pacotes/Lazarus/PCN.lpk
+END
+ACBr_SPED.lpk
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/acbr/!svn/ver/2324/trunk/Pacotes/Lazarus/ACBr_SPED.lpk
+END
+synapse.lpk
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/acbr/!svn/ver/1160/trunk/Pacotes/Lazarus/synapse.lpk
+END
+ACBr_BoletoFC_LazReport.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/acbr/!svn/ver/1761/trunk/Pacotes/Lazarus/ACBr_BoletoFC_LazReport.pas
+END
+ACBrDiversos.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1603/trunk/Pacotes/Lazarus/ACBrDiversos.pas
+END
+ACBr_BoletoFC_LazReport.lpk
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/acbr/!svn/ver/1761/trunk/Pacotes/Lazarus/ACBr_BoletoFC_LazReport.lpk
+END
+ACBrDiversos.lpk
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1603/trunk/Pacotes/Lazarus/ACBrDiversos.lpk
+END

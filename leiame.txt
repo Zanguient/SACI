@@ -1,0 +1,2 @@
+1 - Executer: E:\FontesD7\SACI\Resources\GeraRES.bat
+2 - Entrar no Delphi da VM Delphi 7 e importar a library

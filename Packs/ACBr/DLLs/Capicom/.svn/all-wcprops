@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/acbr/!svn/ver/2168/trunk/DLLs/Capicom
+END
+msxml5.dll
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/acbr/!svn/ver/1160/trunk/DLLs/Capicom/msxml5.dll
+END
+instala.bat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/acbr/!svn/ver/2168/trunk/DLLs/Capicom/instala.bat
+END
+msxml5r.dll
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/acbr/!svn/ver/1160/trunk/DLLs/Capicom/msxml5r.dll
+END
+capicom.dll
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/acbr/!svn/ver/1160/trunk/DLLs/Capicom/capicom.dll
+END

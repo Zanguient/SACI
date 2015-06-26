@@ -1,0 +1,74 @@
+ALTERAÇÃO NO SISTEMA 1.0 - LAYOUT<OK>1.1 - CRIAR A MARCA DO SISTEMA.<OK>1.2 - ALTERAR O SISTEMA PARCIALMENTE PARA SER DO TIPO MDI.    1.3 - REVISAR TODA A PARTE DE LAYOUT DO SISTEMA (Cores de edits desabilitados, nomes de títulos de tela, etc).<OK>1.4 - ADICIONAR ICONES NOS MENUS QUE ESTÃO FALTANDO.    1.5 - OBSERVAR SE O SISTEMA FUNCIONA COM A RESOLUÇÃO 800X600 PRINCIPALMENTE NAS TELAS MAIORES E O MENU.    1.6 - EM ALGUMAS TELAS COLORIR ALGUNS PAINEIS QUE PRECISEM SER DESTACADOS. 2.0 - ORGANIZAÇÃO INTERNA<OK>2.1 - EXCLUIR DOS FONTES O MENU ANTIGO DO SISTEMA E ALTERAR AS PROCEDURES E COLOCAR A CHAMADA DIRETO NA ACTION DE TODOS MENUS.<OK>2.2 - EXCLUIR QUALQUER REFERENCIA A OUTRO SISTEMA: Caixa, Gerenciador. (SERÁ UM SISTEMA - GERENCIADOR).<OK>2.3 - PREPARAR O BANCO PARA NOVAS IMPLANTAÇÕES.    2.4 - REESTRUTURAR AS PASTAS DOS FONTES, COM ATENÇÃO A PASTA ATUALIZABASE. 3.0 - ARQUIVOS AUXILIARES<OK>3.1 - DownloadSACI: ALTERAR O NOME PARA: AtualizaSistema.exe<OK>    3.1.1 - CRIAR CAMPOS CRIPTOGRAFADOS DE CONFIGURACAO NA TABELA CONFIGURACAO E EXCLUIR O ARQUIVO: DownloadSACI.ini<OK>    3.1.2 - ALTERAR O LAYOUT DO SISTEMA.    3.2 - AtualizaSACI: ALTERAR O NOME PARA: AtualizaBase.exe<OK>    3.2.1 - CRIAR O CONTROLE DE BASE DE DADOS.<OK>    3.2.2 - SEMPRE EXECUTAR ESSE SISTEMA NA INICIALIZAÇÃO DO SACI SEMPRE QUE TIVER ALGUM CAMPO NOVO.<OK>    3.2.3 - ALTERAR O LAYOUT DO SISTEMA.    3.3 - TransSACI   : ALTERAR O NOME PARA: Comunicacao.exe        3.3.1 - REVISAR TODO O SISTEMA.        3.3.2 - CRIAR MECANISMO DE TAL FORMA QUE SEMPRE QUE TENHA UM CAMPO NOVO NAS TABELAS DE COMUNICAÇÃO FICAR SIMPLES PARA SER ADICIONADO NA ROTINA.        3.2.3 - CRIAR A OPÇÃO PARA USAR O FTP NA COMUNICAÇÃO DOS DADOS.        3.3.4 - ALTERAR O LAYOUT DO SISTEMA.<OK>    3.3.5 - ADICIONAR DENTRO DO EXECUTÁVEL PRINCIPAL.    3.4 - SACIFuncoes : ALTERAR O NOME PARA: Funcoes.dll        3.4.1 - CRIAR AS CHAMADAS DINÂMICAS DENTRO DA UNIT Funcoes.pas<OK>3.5 - PKeyGen     : ALTERAR O NOME PARA: Chave.dll        3.5.1 - CRIPTOGRAFAR A DATA DE EXPIRAÇÃO.    3.6 - LIBNFE      : PREPARAR PARA DEPOIS ADICIONAR NO SISTEMA PRINCIPAL. 4.0 - CUSTOMIZAÇÕES    4.1  - DESENVOLVER A NOTA FISCAL ELETRÔNICA.    4.2  - REVISAR TODA A PARTE DE RELATÓRIOS.    4.3  - REALIZAR AUDITORIA POR MÓDULO.    4.4  - CRIAR INSTALADOR DO SISTEMA.    4.5  - CRIAR MAIS DE UMA FORMA DE PAGAMENTO NO PEDIDO DE VENDA.    4.6  - AJUSTAR O ARQUIVO DE AJUDA DO SISTEMA E CHAMÁ-LO DE DENTRO DO SISTEMA PRINCIPAL.    4.7  - PARAMETRIZAR O SISTEMA PARA SER SISTEMA DE ÓTICA. (BANCO DE DADOS, PARÂMETROS DEFAULT, ETC).<OK>4.8  - AJUSTAR A TELA SOBRE.    4.9  - CRIAR AS CHAMADAS DINÂMICAS DAS DLL's DARUMA E BEMATECH.    4.10 - REVISAR O PACOTE SOFTECH (COMENTÁRIOS, IMPFISCALB, ETC).    4.11 - REVISAR O PACOTE ZEREPORT (COMENTÁRIOS, NOME DE TELA, ETC).    4.12 - PREPARAR O SISTEMA PARA MAS TARDE CRIAR A EXPORTAÇÃO DO ARQUIVO PARA O SPED.
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//													    //	
+//													    //	
+//	REALIZAR  O RECEBIMENTO DE MERCADORIA DA LOJA 2 E DEIXAR FISICO IGUAL AO FISCAL                     //
+//													    //	
+//													    //	
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    
+    4.13 - Criar a pasta de insumos nas imagens do sistema.
+<OK>4.14 - Botão enter na pesquisa de produto está fechando a tela, permitir fechar somente quando estiver o botao confirmar.
+<OK>4.15 - Existe subgrupos de produtos com '----' excluí-los.
+    4.16 - Criar novos grupos e subgrupos de produtos.
+    4.17 - Entender o processo de pré-recebimento.
+<OK>4.18 - MDI na tela de produtos por fornecedor do menu estoque.
+    4.18 - MDI em todas as telas do menu acessórios.
+    4.19 - MDI nas tela lista de usuario do menu gerencia.
+<OK>4.20 - Não Permitir cadastrar cliente no CPD.
+    4.21 - Alterar o nome de CPD para escritório ???
+<OK>4.22 - Na compra o local de entrega deve ser sempre o CPD
+    4.23 - LJ3 é movimento sem nota fiscal, o que devo fazer ?
+<OK>4.24 - na compra ajustar a posição dos controles. O que é hoyat??
+    4.25 - criar a tela de PitStop com as informações de movimentações do dia:
+	4.25.01 - Compras que devem chegar.
+	4.25.02 - Compras realizadas.
+	4.25.03 - Vendas finalizadas.
+	4.25.04 - Titulos recebidos no finceiro (por forma/tipo de pagamento).
+	4.25.05 - Titulos recebidos no caixa (por forma/tipo de pagamento).
+	4.25.06 - Títulos a receber.
+	4.25.07 - Títulos pagos no financeiro (por forma/tipo de pagamento).
+	4.25.08 - Títulos pagos no caixa (por forma/tipo de pagamento).
+	4.25.09 - Títulos a pagor.
+	4.25.10 - Ultimos produtos vendidos.
+	4.25.11 - Produtos mais vendidos.
+	4.25.12 - Títulos de clientes vencendo.
+	4.25.13 - Usuários logado.
+	4.25.14 - Ultimos produtos cadastrados.
+	4.25.15 - Pedidos com nota fiscal pendente.
+    4.26 - MDI nas telas do Faturar pendentes do menu compra.
+    4.27 - verificar a movimentação fiscal na transferencia quando clica no botão nota. (ERRO)
+<OK>4.28 - fazer uma pergunta no recebimento quando for confirmar.
+<OK>4.29 - Na venda quando nao tem vendedor e clica no salvar do item ele desabilita o botão.
+    4.30 - Repositorio: 
+	http://buildsistemas.unfuddle.com
+	http://buildsistemas.unfuddle.com/svn/buildsistemas_siac/
+	login: buildsistemas
+	senha: @gfm1901
+    4.31 - Criar ajuda do sistema.
+    4.32 - Criar rotina para transferencia de funcionarios entre lojas.
+<OK>4.33 - permitir emitir nota fiscal para pessoa fisica.
+<OK>4.34 - na tela pedido de venda, no botão detalhe tem indicação/corretor, de onde vem esse campo ???
+<OK>4.35 - Tirar os botões de navegação da tela de renogociação de títulos.
+<OK>4.36 - No recebimento de mercadoria tem que fazer movimentação fiscal.
+<OK>4.37 - Criar mecanismo para quando o usuario estiver dando entrada na mercadoria poder escolher a transferencia para que nao precise digitar os produtos caso ele esteja na mesma base (cpd para loja)
+<OK>4.38 - No recebimento de mercadoria colocar um botão la p gerar o estoque fiscal.
+<OK>4.39 - Na cotação de venda ativar o enter igual ao botao salvar cabeçalho.
+<OK>4.40 - Na impressão da cotação de venda tipo gráfico está dando o seguinte erro: 'Error reading report.PrinterSettings.ExtendedDuplex: Property ExtendedDuplex does not exist.'
+<OK>4.41 - na tela de fornecedor criar um botão para chamar a tela produto por fornecedor
+    4.42 - locais para gerar nota fiscal eletronica: Venda, compra, nota fiscal, transferencia.
+<OK>4.43 - Procurar a frase: 'Pessoa Física!!! Emita um Cupom e depois uma Nota de Simples Remessa.' e não fazer essa critica quando for empresa 11.
+    4.44 - Fazer a quebra de linha do bloco de notas e deixá-lo MDI.
+    4.45 - vê a possibilidade de envez de chamar o zreport, chamar o bloco de notas em todos os relatórios.
+<OK>4.46 - MDI na tela de credito de clientes.
+    4.47 - Onde eu uso a tabela de desconto no menu venda??
+    4.48 - O que devo fazer com a reserva de produto ??
+    4.49 - Observar a numração da catraca e alterar para o start.
+<OK>4.50 - Criar nas configurações opção para o estoque fiscal ser igual ao fisico. (estoque ideal)
+<OK>4.51 - VENDA OBSERVA A RESERVA, POIS ESTÁ COM PROBLEMA E TA DANDO ESTOQUE ACIMA.
+    4.52 - Destacar de azul claro os pedidos pagos no recebimento de cliente na aba dados do pedido. atenção caso seja somente a vista.
+    4.53 - Habilitar o botao cadastro na aba dados do pedido no recebimento de cliente. 

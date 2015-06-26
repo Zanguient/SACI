@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/acbr/!svn/ver/1777/trunk/Projetos/ACBr32_DLL/JACBr/ACBr32_JNI/ACBr32_JNI
+END
+JACBrECF.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/acbr/!svn/ver/1777/trunk/Projetos/ACBr32_DLL/JACBr/ACBr32_JNI/ACBr32_JNI/JACBrECF.cpp
+END
+JNIHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/acbr/!svn/ver/1675/trunk/Projetos/ACBr32_DLL/JACBr/ACBr32_JNI/ACBr32_JNI/JNIHelper.cpp
+END
+JACBrECF.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/acbr/!svn/ver/1675/trunk/Projetos/ACBr32_DLL/JACBr/ACBr32_JNI/ACBr32_JNI/JACBrECF.h
+END
+JNIHelper.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/acbr/!svn/ver/1675/trunk/Projetos/ACBr32_DLL/JACBr/ACBr32_JNI/ACBr32_JNI/JNIHelper.h
+END
+ACBr32_JNI.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/acbr/!svn/ver/1777/trunk/Projetos/ACBr32_DLL/JACBr/ACBr32_JNI/ACBr32_JNI/ACBr32_JNI.vcproj
+END

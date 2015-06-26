@@ -1,0 +1,10 @@
+USE [SACI]
+GO
+-- o comando abaixo serve para gravar as transações que ainda não
+-- foram comitadas no arquivo de dados
+CHECKPOINT
+GO
+BACKUP LOG [SACI] WITH TRUNCATE_ONLY
+GO
+DBCC SHRINKFILE ('SACI_NOV0_DATA', 1) --Nome lógico do arquivo
+GO

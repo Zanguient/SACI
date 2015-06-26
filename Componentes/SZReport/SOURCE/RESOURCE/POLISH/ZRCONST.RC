@@ -1,0 +1,111 @@
+/****************************************************************************
+
+   Translated to Polish by Bolek Umnicki (e-mail: strato@polandmail.com)
+
+*****************************************************************************/
+
+#include "ZRConst.pas"
+
+#ifdef win32
+LANGUAGE LANG_POLISH,1
+#endif
+
+STRINGTABLE
+
+{
+  SzrTitle       , "Title"
+  SzrPageHeader  , "Page Header"
+  SzrDetail      , "Detail"
+  SzrPageFooter  , "Page Footer"
+  SzrSummary     , "Summary"
+  SzrGroupHeader , "Group Header"
+  SzrGroupFooter , "Group Footer"
+  SzrSubDetail   , "Sub Detail"
+  SzrColumnHeader, "Column Header"
+  SzrColumnFooter, "Column Footer"
+  SzrChild       , "Child"
+
+  SzrTitleBandName       , "TitleBand"
+  SzrPageHeaderBandName  , "PageHeaderBand"
+  SzrDetailBandName      , "DetailBand"
+  SzrPageFooterBandName  , "PageFooterBand"
+  SzrSummaryBandName     , "SummaryBand"
+  SzrGroupHeaderBandName , "GroupHeaderBand"
+  SzrGroupFooterBandName , "GroupFooterBand"
+  SzrSubDetailBandName   , "SubDetailBand"
+  SzrColumnHeaderBandName, "ColumnHeaderBand"
+  SzrColumnFooterBandName, "ColumnFooterBand"
+  SzrChildBandName       , "ChildBand"
+
+  SzrParentReport        , "Ten komponent mo¿e byæ tylko na raporcie"
+  SzrParentBand          , "Ten komponent mo¿e byæ tylko na panelu danych"
+  SzrZRPrinterNotReady   , "Nie mo¿na rozpocz¹æ nowego raportu"
+  SzrZRPrinterNotFinished, "Nie zakoñczono generacji raportu"
+  SzrIllegalNewPage      , "Nieprawid³owe wywo³anie BeginPage"
+  SzrIllegalPageRange    , "Niepoprawny zakres stron"
+  SzrNoCircular          , "Cykliczne odwo³ania s¹ niedozwolone"
+  SzrErrorInExpr         , "B³¹d w wyra¿eniu"
+  SzrNone                , "nie"
+  SzrCompleted           , " Wykonano"
+
+  SzrProcessing         , "Przetwarzanie..."
+  SzrPrinting           , "Drukowanie..."
+  SzrPage               , "Strona"
+  SzrOf                 , "z"
+  SzrFileNotExist       , "Brak pliku"
+  SzrFirstPageHint      , "Pierwsza strona"
+  SzrPrevPageHint       , "Poprzednia strona"
+  SzrNextPageHint       , "Nastêpna strona"
+  SzrLastPageHint       , "Ostatnia strona"
+  SzrSaveReportHint     , "Zapisanie raport"
+  SzrLoadReportHint     , "Wczytanie raport"
+  SzrPrintReportHint    , "Drukowanie raportu"
+  SzrPrintReport        , "Wydruk"
+
+  SzrPrinterSetup       , "Ustawienia raportu"
+  SzrDestination        , "Drukowanie do"
+  SzrDestinationFile    , "pliku"
+  SzrDestinationLPT     , "na drukarkê"
+  SzrBrowse             , "Przegl¹danie"
+  SzrFileFilter         , "Pliki tekstowe (*.txt)|*.txt|Wszytkie pliki (*.*)|*.*"
+  SzrPages              , "Strony"
+  SzrPagesAll           , "wszystkie"
+  SzrPagesRange         , "zakres"
+  SzrPagesRangeFrom     , "od:"
+  SzrPagesRangeTo       , "do:"
+  SzrCopies             , "Kopii"
+  
+  SzrOK    , "OK"
+  SzrCancel, "Anuluj"
+  SzrExit  , "Wyjœcie"
+
+  SzrTime       , "hh:mm:ss"
+  SzrDate       , "dd/mm/yyyy"
+  SzrDateTime   , "dd/mm/yyyy hh:mm:ss"
+  SzrPageNum    , "Str."
+  SzrReportTitle, "Ng³ówek"
+  SzrDetailCount, "Iloœæ szczegó³ów"
+  SzrDetailNo   , "Szczegó³ nr"
+
+  SzrQSD                , "QuSoft AS"
+  SzrIfDesc             , "Returns <X> or <Y> depending on the boolean expression <Exp>"
+  SzrStrDesc            , "Convert a numeric <X> to a string"
+  SzrTimeDesc           , "Return current time as a string"
+  SzrDateDesc           , "Return current date as a string"
+  SzrSumDesc            , "Sums the numeric <X>"
+  SzrCopyDesc           , "Returns a substring of string X"
+  SzrCountDesc          , "Increments for each iteration"
+  SzrMaxDesc            , "Returns the highest <X>"
+  SzrMinDesc            , "Returns the lowest <X>"
+  SzrAverageDesc        , "Returns the average of numeric <X>"
+  SzrBoolDesc           , "boolean value"
+  SzrIntDesc            , "Returns the integer part of <X>"
+  SzrFracDesc           , "Returns the fractional part of <X>"
+  SzrSqrtDesc           , "Returns square root of <X>"
+  SzrTypeofDesc         , "Returns the data type of <Exp>"
+  SzrUpperDesc          , "Converts a string to upper case letters"
+  SzrLowerDesc          , "Converts a string to lower case letters"
+  SzrPrettyDesc         , "Makes the first character upper case and the rest lower case"
+  SzrFormatFloatDesc    , "Formats numeric <N> using the mask in <F>"
+  
+ }

@@ -1,0 +1,59 @@
+unit MxSimboloMoeda;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
+  StdCtrls, Buttons, ExtCtrls;
+
+type
+  TfMxSimboloMoeda = class(TForm)
+    Panel1: TPanel;
+    Panel2: TPanel;
+    BitBtn2: TBitBtn;
+    BitBtn1: TBitBtn;
+    Edit1: TEdit;
+    Label1: TLabel;
+    procedure BitBtn2Click(Sender: TObject);
+    procedure BitBtn1Click(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormShow(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  fMxSimboloMoeda: TfMxSimboloMoeda;
+
+implementation
+
+uses UPrinc2, UDM;
+
+{$R *.DFM}
+
+procedure TfMxSimboloMoeda.BitBtn2Click(Sender: TObject);
+begin
+  Close;
+end;
+
+procedure TfMxSimboloMoeda.BitBtn1Click(Sender: TObject);
+begin
+  SIAC.ImpFiscalB1.ProgamaSimboloMoeda(Edit1.Text);
+  if SIAC.ImpFiscalB1.IRetorno = 1 then
+    Close;
+end;
+
+procedure TfMxSimboloMoeda.FormClose(Sender: TObject;
+  var Action: TCloseAction);
+begin
+  action:=cafree;
+end;
+
+procedure TfMxSimboloMoeda.FormShow(Sender: TObject);
+begin
+  DM.Usuario1.AlteraCorComponentes(self);
+end;
+
+end.

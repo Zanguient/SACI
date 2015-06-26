@@ -1,0 +1,14 @@
+Procedimentos para instalar os relatorios e o PAFImport
+
+1 - Instalar: E:\FontesD7\SACI\ActiveX\Packs\dotNetFx40_Full_setup.exe
+2 - Instalar: E:\FontesD7\SACI\ActiveX\Packs\Firebird_NETProvider-3.0.2.0.msi
+3 - Criar um arquivo txt de nome siac.txt na pasta do sistema, logo em seguida renomear para siac.udl (o sistema cria sozinho caso nao exista, mas precisa fazer a configuração)
+4 - Em seguida executar o Siac.udl e fazer a conexão com o banco de dados
+5 - Copiar a pasta E:\FontesD7\SACI\ActiveX para a pasta do sistema no cliente
+6 - executa o bat que esta na pasta (depois de copiado para dentro do sistema do cliente)
+    E:\FontesD7\SACI\ActiveX\Registrar.bat
+7 - Extrair o arquivo E:\FontesD7\SACI\ActiveX\Packs\SUL_build_2012.05.04.rar na pasta executar o arquivo installer.exe
+    depois na tela que aparece clicar em install to GAC
+
+OBS: esses procedimentos devem ser feitos no cliente e de dentro da pasta activex de dentro do sistema do cliente
+OBS: A pasta ActiveX deve ser apagada (do cliente)

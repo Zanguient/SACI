@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/acbr/!svn/ver/1790/trunk/DLLs/OpenSSL
+END
+ssleay32.dll
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/acbr/!svn/ver/1732/trunk/DLLs/OpenSSL/ssleay32.dll
+END
+openssl.exe
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/acbr/!svn/ver/1790/trunk/DLLs/OpenSSL/openssl.exe
+END
+libeay32.dll
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/acbr/!svn/ver/1732/trunk/DLLs/OpenSSL/libeay32.dll
+END

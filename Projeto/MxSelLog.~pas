@@ -1,0 +1,435 @@
+unit MxSelLog;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, DBCtrls, StdCtrls, Buttons, Mask, ExtCtrls, DB, Configuracao,
+  Operacao_do_Sistema, Submodulo, Modulo, DBTables, SQuery, Usuario,
+  CentroCusto, SiacReport_TLB;
+
+type
+  TfMxSelLog = class(TForm)
+    Panel1: TPanel;
+    Label1: TLabel;
+    Label2: TLabel;
+    mskDataINI: TMaskEdit;
+    mskDataFIM: TMaskEdit;
+    Panel2: TPanel;
+    Panel3: TPanel;
+    BitBtn1: TBitBtn;
+    BitBtn2: TBitBtn;
+    ckbCodigoUSU: TCheckBox;
+    ckbCodigoMDL: TCheckBox;
+    ckbCodigoSML: TCheckBox;
+    ckbCodigoOPS: TCheckBox;
+    dblCodigoOPS: TDBLookupComboBox;
+    dblCodigoSML: TDBLookupComboBox;
+    mdlCodigoMDL: TDBLookupComboBox;
+    dblCodigoUSU: TDBLookupComboBox;
+    Usuario1: TUsuario;
+    Modulo1: TModulo;
+    Submodulo1: TSubmodulo;
+    Operacao_do_Sistema1: TOperacao_do_Sistema;
+    DSUsuario1: TDataSource;
+    DSModulo1: TDataSource;
+    DSSubmodulo1: TDataSource;
+    DSOperacao_do_Sistema1: TDataSource;
+    CentroCusto1: TCentroCusto;
+    DSCentroCusto1: TDataSource;
+    dblCodigoCNC: TDBLookupComboBox;
+    CheckBox5: TCheckBox;
+    ckbCodigoEntrada: TCheckBox;
+    edtCodigoEntrada: TEdit;
+    ckbSintetico: TCheckBox;
+    ckbNaoExibirEntraSai: TCheckBox;
+    ckbObservacao: TCheckBox;
+    edtObservacao: TEdit;
+    ckbNaoAgruparUSU: TCheckBox;
+    rdgDataEstacao: TRadioButton;
+    rdgDataServidor: TRadioButton;
+    Bevel1: TBevel;
+    cbxRelatorioGrafico: TCheckBox;
+    procedure ckbCodigoUSUClick(Sender: TObject);
+    procedure ckbCodigoMDLClick(Sender: TObject);
+    procedure ckbCodigoSMLClick(Sender: TObject);
+    procedure ckbCodigoOPSClick(Sender: TObject);
+    procedure BitBtn2Click(Sender: TObject);
+    procedure BitBtn1Click(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure CheckBox5Click(Sender: TObject);
+    procedure ckbCodigoEntradaClick(Sender: TObject);
+    procedure ckbObservacaoClick(Sender: TObject);
+    procedure dblCodigoSMLClick(Sender: TObject);
+    procedure mdlCodigoMDLClick(Sender: TObject);
+    procedure FormKeyPress(Sender: TObject; var Key: Char);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  fMxSelLog: TfMxSelLog;
+
+implementation
+uses
+  UDM, Funcoes, Urpt_Log;
+
+{$R *.dfm}
+
+procedure TfMxSelLog.ckbCodigoUSUClick(Sender: TObject);
+begin
+  if ckbCodigoUSU.Checked then
+  Begin
+    Usuario1.Open;
+    dblCodigoUSU.Color:=clWindow;
+    dblCodigoUSU.Enabled:=True;
+    dblCodigoUSU.KeyValue:=Usuario1.CodigoUSU;
+    dblCodigoUSU.SetFocus;
+  end
+  else
+  Begin
+    Usuario1.Close;
+    dblCodigoUSU.Color:=AlteraCorComponentes;
+    dblCodigoUSU.KeyValue:=-1;
+    dblCodigoUSU.Enabled:=False;
+  end;
+end;
+
+procedure TfMxSelLog.ckbCodigoMDLClick(Sender: TObject);
+begin
+  if ckbCodigoMDL.Checked then
+  Begin
+    Modulo1.Close;
+    Modulo1.Open;
+    ckbCodigoSML.Enabled := True;
+    mdlCodigoMDL.Color:=clWindow;
+    mdlCodigoMDL.Enabled:=True;
+    mdlCodigoMDL.KeyValue:=Modulo1.CodigoMDL;
+    mdlCodigoMDL.SetFocus;
+  end
+  else
+  Begin
+    Modulo1.Close;
+    ckbCodigoSML.Checked := False;
+    ckbCodigoSML.Enabled := False;
+    mdlCodigoMDL.Color:=AlteraCorComponentes;
+    mdlCodigoMDL.KeyValue:=-1;
+    mdlCodigoMDL.Enabled:=False;
+  end;
+end;
+
+procedure TfMxSelLog.ckbCodigoSMLClick(Sender: TObject);
+begin
+  if ckbCodigoSML.Checked then
+  Begin
+    SubModulo1.Close;  
+    SubModulo1.Open;
+    ckbCodigoOPS.Enabled := True;
+    dblCodigoSML.Color:=clWindow;
+    dblCodigoSML.Enabled:=True;
+    dblCodigoSML.KeyValue:=SubModulo1.CodigoSML;
+    dblCodigoSML.SetFocus;
+  end
+  else
+  Begin
+    SubModulo1.Close;
+    ckbCodigoOPS.Checked := False;
+    ckbCodigoOPS.Enabled := False;
+    dblCodigoSML.Color:=AlteraCorComponentes;
+    dblCodigoSML.KeyValue:=-1;
+    dblCodigoSML.Enabled:=False;
+  end;
+end;
+
+procedure TfMxSelLog.ckbCodigoOPSClick(Sender: TObject);
+begin
+  if ckbCodigoOPS.Checked then
+  Begin
+    Operacao_do_Sistema1.Close;  
+    Operacao_do_Sistema1.Open;
+    dblCodigoOPS.Color:=clWindow;
+    dblCodigoOPS.Enabled:=True;
+    dblCodigoOPS.KeyValue:=Operacao_do_Sistema1.CodigoOPS;
+    dblCodigoOPS.SetFocus;
+  end
+  else
+  Begin
+    Operacao_do_Sistema1.Close;
+    dblCodigoOPS.Color:=AlteraCorComponentes;
+    dblCodigoOPS.KeyValue:=-1;
+    dblCodigoOPS.Enabled:=False;
+  end;
+end;
+
+procedure TfMxSelLog.BitBtn2Click(Sender: TObject);
+begin
+  Close;
+end;
+
+procedure TfMxSelLog.BitBtn1Click(Sender: TObject);
+var
+  mensagem, DataINI, DataFIM, CdUSU, CdMDL, CdSML, CdOPS, CdCNC, CdENT, sNaoEntraSai,
+  sObs, sOrdem, sFiltros :string;
+  SQL :string;
+  stiReport: CoSiacReport_;
+begin
+  DataINI:='';
+  DataFIM:='';
+  CdUSU:='';
+  CdMDL:='';
+  CdSML:='';
+  CdOPS:='';
+  CdCNC := '';
+  CdENT := '';
+  sObs  := '';
+  sNaoEntraSai := '';
+  sOrdem:='';
+  sFiltros := '';
+  if not VerificaData(mskDataINI.Text) then
+    mensagem:=mensagem+'Data inicial digitada incorretamente!'+#13;
+  if not VerificaData(mskDataFIM.Text) then
+    mensagem:=mensagem+'Data final digitada incorretamente!'+#13;
+
+  if VerificaDataBranco(mskDataINI.Text)then
+  Begin
+    if rdgDataEstacao.Checked then
+      DataINI := ' AND (T1.LOG_DATA_HORA>='''+MesDia(mskDataINI.Text)+''') '
+    else if rdgDataServidor.Checked then
+      DataINI := ' AND (T1.LOG_DT_WINDOWS>='''+MesDia(mskDataINI.Text)+''') ';
+  end;
+  if VerificaDataBranco(mskDataFIM.Text)then
+  Begin
+    if rdgDataEstacao.Checked then
+      DataFIM := ' AND (T1.LOG_DATA_HORA<'''+MesDia(StrToDate(mskDataFIM.Text)+1)+''') '
+    else if rdgDataServidor.Checked then
+      DataFIM := ' AND (T1.LOG_DT_WINDOWS<'''+MesDia(StrToDate(mskDataFIM.Text)+1)+''') ';
+  end;
+
+  if ckbCodigoUSU.Checked then
+    if dblCodigoUSU.Text = '' then
+      mensagem := mensagem+'Usuário inválido!'+#13
+    else
+    Begin
+      CdUSU:=' AND (T1.USU_CODIGO='+IntToStr(dblCodigoUSU.KeyValue)+') ';
+      sFiltros := sFiltros + '(USU:'+dblCodigoUSU.Text+')';
+    end;
+
+  if ckbCodigoMDL.Checked then
+    if mdlCodigoMDL.Text = '' then
+      mensagem := mensagem+'Módulo inválido!'+#13
+    else
+    Begin
+      CdMDL:=' AND (T2.MDL_CODIGO='+IntToStr(mdlCodigoMDL.KeyValue)+') ';
+      sFiltros := sFiltros + '(MDL:'+mdlCodigoMDL.Text+')';
+    end;
+
+  if ckbCodigoSML.Checked then
+    if dblCodigoSML.Text = '' then
+      mensagem := mensagem+'SubMódulo inválido!'+#13
+    else
+    Begin
+      CdSML:=' AND (T2.SML_CODIGO='+IntToStr(dblCodigoSML.KeyValue)+') ';
+      sFiltros := sFiltros + '(SML:'+dblCodigoSML.Text+')';
+    end;
+
+  if ckbCodigoOPS.Checked then
+    if dblCodigoOPS.Text = '' then
+      mensagem := mensagem+'Operação do Sistema inválida!'+#13
+    else
+    Begin
+      CdOPS:=' AND (T2.OPS_CODIGO='+IntToStr(dblCodigoOPS.KeyValue)+') ';
+      sFiltros := sFiltros + '(OPS:'+dblCodigoOPS.Text+')';
+    end;
+
+  if CheckBox5.Checked then
+    if dblCodigoCNC.Text = '' then
+      mensagem := mensagem+'Centro de Custo inválido!'+#13
+    else
+    Begin
+      CdCNC:=' AND (T1.CNC_CODIGO='+IntToStr(dblCodigoCNC.KeyValue)+') ';
+      sFiltros := sFiltros + '(CNC:'+IntToStr(dblCodigoCNC.KeyValue)+')';
+    end;
+
+  if ckbObservacao.Checked then
+  Begin
+    sObs := ' AND LOG_TIPO_ENT LIKE ''%'+edtObservacao.Text+'%'' ';
+    sFiltros := sFiltros + '(Obs:'+edtObservacao.Text+')';
+  end;
+
+  if ckbCodigoEntrada.Checked then
+    if not VerificaInteiroBranco(edtCodigoEntrada.Text) then
+      Raise exception.Create('Código de entrada inválido!')
+    else
+    Begin
+      CdENT := ' AND LOG_CODIGO_ENT='+edtCodigoEntrada.Text;
+      sFiltros := sFiltros + '(ENT:'+edtCodigoEntrada.Text+')';
+    end;
+
+  if ckbNaoExibirEntraSai.Checked then
+  Begin
+    sNaoEntraSai := ' AND T1.OPS_CODIGO<>1 AND T1.OPS_CODIGO<>2 ';
+    sFiltros := sFiltros + '(N. Entra/Sai)';
+  end;
+
+  if mensagem<>'' then
+    raise exception.Create(mensagem);
+
+  if tag = 0 then
+  Begin
+    if cbxRelatorioGrafico.Checked then //if RelatorioGrafico then
+    begin
+      SQL := 'SELECT DISTINCT T1.*, T2.OPS_OPERACAO, T3.MDL_DESCRICAO,'+
+          ' T4.SML_DESCRICAO, T5.USU_NOME '+
+          ' FROM Log T1, Operacao_do_Sistema T2, Modulo T3, Submodulo T4, USUARIO T5 '+
+          ' WHERE T1.LOG_CODIGO <> -1 '+
+          CdCNC+DataINI+DataFIM+CdUSU+CdMDL+CdSML+CdOPS+CdENT+sNaoEntraSai+sObs+
+          ' AND (T1.OPS_CODIGO = T2.OPS_CODIGO) '+
+          ' AND (T2.SML_CODIGO = T4.SML_CODIGO) '+
+          ' AND (T4.MDL_CODIGO = T3.MDL_CODIGO) '+
+          ' AND (T1.USU_CODIGO = T5.USU_CODIGO) '+
+          ' ORDER BY T1.CNC_CODIGO,T1.USU_CODIGO, T1.LOG_CODIGO';
+
+      stiReport.Create.ReportAuditoria(false,
+                                          SQL,
+                                          EmpresaDesenvolvedora,
+                                          'Relatório de auditoria do sistema',
+                                          DM.CentroCusto1.RazaoSocial,
+                                          '',//DM.Configuracao1.LojaNome
+                                          'Relatório de auditoria',
+                                          DM.Usuario1.NomeUSU,
+                                          '',//Filtros
+                                          rptArquivoLogo);
+    end
+    else
+    begin
+      Application.CreateForm(Trpt_Log, rpt_Log);
+      with rpt_Log do
+      Begin
+        Tag := 0;
+        if ckbNaoAgruparUSU.Checked then
+        Begin
+          zrbGrupoUSU.Expression := '';
+          zrbGrupoUSU.Height := 0;
+          sOrdem := ' T1.LOG_CODIGO';
+        end
+        else
+          sOrdem := ' T1.CNC_CODIGO,T1.USU_CODIGO, T1.LOG_CODIGO';
+
+        zrlDataINI.Caption := mskDataINI.Text;
+        zrlDataFIM.Caption := mskDataFIM.Text;
+        zrlFiltros.Caption := sFiltros;
+        if ckbSintetico.Checked then
+          zrbDetalhe.Height := 1;
+        log1.SQL.Text := 'SELECT DISTINCT T1.*, T2.OPS_OPERACAO, T3.MDL_DESCRICAO,'+
+          ' T4.SML_DESCRICAO '+
+          ' FROM Log T1, Operacao_do_Sistema T2, Modulo T3, Submodulo T4 '+
+          ' WHERE T1.LOG_CODIGO <> -1 '+
+          CdCNC+DataINI+DataFIM+CdUSU+CdMDL+CdSML+CdOPS+CdENT+sNaoEntraSai+sObs+
+          ' AND (T1.OPS_CODIGO = T2.OPS_CODIGO) '+
+          ' AND (T2.SML_CODIGO = T4.SML_CODIGO) '+
+          ' AND (T4.MDL_CODIGO = T3.MDL_CODIGO) '+
+          ' ORDER BY '+sOrdem;
+        log1.Open;
+        if Log1.IsEmpty then
+          Raise Exception.Create('Consulta Vazia!');
+        report.Preview;
+        rpt_Log.Close;
+      end;
+    end;
+  end;
+end;
+
+procedure TfMxSelLog.FormShow(Sender: TObject);
+begin
+  DM.Usuario1.AlteraCorComponentes(self);
+  mskDataINI.SetFocus;
+  ckbNaoExibirEntraSai.Checked := True;
+end;
+
+procedure TfMxSelLog.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  Usuario1.Close;
+  Modulo1.Close;
+  Submodulo1.Close;
+  Operacao_do_Sistema1.Close;
+  CentroCusto1.Close;
+  Action := caFree;
+end;
+
+procedure TfMxSelLog.CheckBox5Click(Sender: TObject);
+begin
+  if CheckBox5.Checked then
+  Begin
+    CentroCusto1.Open;
+    dblCodigoCNC.Color:=clWindow;
+    dblCodigoCNC.Enabled:=True;
+    dblCodigoCNC.KeyValue:=DM.Configuracao1.CodigoCNC;
+    dblCodigoCNC.SetFocus;
+  end
+  else
+  Begin
+    CentroCusto1.Close;
+    dblCodigoCNC.Color:=AlteraCorComponentes;
+    dblCodigoCNC.KeyValue:=-1;
+    dblCodigoCNC.Enabled:=False;
+  end;
+end;
+
+procedure TfMxSelLog.ckbCodigoEntradaClick(Sender: TObject);
+begin
+  if ckbCodigoEntrada.Checked then
+  Begin
+    edtCodigoEntrada.Color:=clWindow;
+    edtCodigoEntrada.Enabled:=True;
+    edtCodigoEntrada.SetFocus;
+  end
+  else
+  Begin
+    edtCodigoEntrada.Color:=AlteraCorComponentes;
+    edtCodigoEntrada.Clear;
+    edtCodigoEntrada.Enabled:=False;
+  end;
+end;
+
+procedure TfMxSelLog.ckbObservacaoClick(Sender: TObject);
+begin
+  if ckbObservacao.Checked then
+  Begin
+    edtObservacao.Color:=clWindow;
+    edtObservacao.Enabled:=True;
+    edtObservacao.SetFocus;
+  end
+  else
+  Begin
+    edtObservacao.Color:=AlteraCorComponentes;
+    edtObservacao.Clear;
+    edtObservacao.Enabled:=False;
+  end;
+end;
+
+procedure TfMxSelLog.dblCodigoSMLClick(Sender: TObject);
+begin
+  if ckbCodigoOPS.Checked then
+    ckbCodigoOPSClick(sender);
+end;
+
+procedure TfMxSelLog.mdlCodigoMDLClick(Sender: TObject);
+begin
+  if ckbCodigoSML.Checked then
+    ckbCodigoSMLClick(sender);
+  if ckbCodigoOPS.Checked then
+    ckbCodigoOPSClick(sender);
+end;
+
+procedure TfMxSelLog.FormKeyPress(Sender: TObject; var Key: Char);
+begin
+  if key = #27 then
+    Close
+  else if key = #13 then
+    BitBtn1Click(sender);
+end;
+
+end.

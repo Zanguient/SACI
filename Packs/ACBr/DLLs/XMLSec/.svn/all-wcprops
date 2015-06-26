@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svnroot/acbr/!svn/ver/1160/trunk/DLLs/XMLSec
+END
+libxml2.dll
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/acbr/!svn/ver/1160/trunk/DLLs/XMLSec/libxml2.dll
+END
+libxslt.dll
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/acbr/!svn/ver/1160/trunk/DLLs/XMLSec/libxslt.dll
+END
+zlib1.dll
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/acbr/!svn/ver/1160/trunk/DLLs/XMLSec/zlib1.dll
+END
+libxmlsec.dll
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/acbr/!svn/ver/1160/trunk/DLLs/XMLSec/libxmlsec.dll
+END
+libxmlsec-openssl.dll
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/DLLs/XMLSec/libxmlsec-openssl.dll
+END

@@ -1,0 +1,184 @@
+unit u_Resources;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ComCtrls, StdCtrls, Buttons, ActnList, XPStyleActnCtrls, ExtCtrls,
+  IniFiles;
+
+procedure Extrai_AtualizaSistema;
+procedure Extrai_PAtualizaSACI;
+procedure Extrai_LibWebBrowser;
+procedure Extrai_SiacReport;
+procedure Extrai_Backup;
+
+implementation
+
+procedure Extrai_AtualizaSistema;
+var
+  sFile: string;
+  Res: TResourceStream;
+
+  function Existe_Arquivo(var sFile: string): Boolean;
+  begin
+    sFile  := ExtractFilePath(Application.ExeName)+'AtualizaSistema.exe';
+    Result := FileExists(sFile);
+  end;
+
+begin
+  if Existe_Arquivo(sFile) then
+    DeleteFile(sFile);
+
+  if not Existe_Arquivo(sFile) then
+  begin
+    Res := TResourceStream.Create(HInstance,'UPLOAD','EXEFILE');
+    try
+      Res.SaveToFile(sFile);
+    finally
+      Res.Free;
+    end;
+  end;
+  if not Existe_Arquivo(sFile) then
+  begin
+    Application.MessageBox('Não foi possível extrair AtualizaSistema.exe'+#13+
+                           'Tente reiniciar o computador e execute o programa novamente.',
+                           'Erro AtualizaSistema.exe',MB_OK+MB_ICONERROR);
+    Halt;
+  end;
+end;
+
+procedure Extrai_PAtualizaSACI;
+var
+  sFile: string;
+  Res: TResourceStream;
+
+  function Existe_Arquivo(var sFile: string): Boolean;
+  begin
+    sFile  := ExtractFilePath(Application.ExeName)+'PAtualizaSACI.exe';
+    Result := FileExists(sFile);
+  end;
+
+begin
+  if Existe_Arquivo(sFile) then
+    DeleteFile(sFile);
+
+  if not Existe_Arquivo(sFile) then
+  begin
+    Res := TResourceStream.Create(HInstance,'PATUAL','EXEFILE');
+    try
+      Res.SaveToFile(sFile);
+    finally
+      Res.Free;
+    end;
+  end;
+
+  if not Existe_Arquivo(sFile) then
+  begin
+    Application.MessageBox('Não foi possível extrair PAtualizaSACI.exe'+#13+
+                           'Tente reiniciar o computador e execute o programa novamente.',
+                           'Erro PAtualizaSACI.exe',MB_OK+MB_ICONERROR);
+    Halt;
+  end;
+end;
+
+procedure Extrai_LibWebBrowser;
+var
+  sFile: string;
+  Res: TResourceStream;
+
+  function Existe_Arquivo(var sFile: string): Boolean;
+  begin
+    sFile  := ExtractFilePath(Application.ExeName)+'LibWebBrowser.dll';
+    Result := FileExists(sFile);
+  end;
+
+begin
+  if Existe_Arquivo(sFile) then
+    DeleteFile(sFile);
+
+  if not Existe_Arquivo(sFile) then
+  begin
+    Res := TResourceStream.Create(HInstance,'LIBWEB','EXEFILE');
+    try
+      Res.SaveToFile(sFile);
+    finally
+      Res.Free;
+    end;
+  end;
+  if not Existe_Arquivo(sFile) then
+  begin
+    Application.MessageBox('Não foi possível extrair LibWebBrowser.dll'+#13+
+                           'Tente reiniciar o computador e execute o programa novamente.',
+                           'Erro LibNFe.dll',MB_OK+MB_ICONERROR);
+    Halt;
+  end;
+end;
+
+procedure Extrai_SiacReport;
+var
+  sFile: string;
+  Res: TResourceStream;
+
+  function Existe_Arquivo(var sFile: string): Boolean;
+  begin
+    sFile  := ExtractFilePath(Application.ExeName)+'SiacReport.dll';
+    Result := FileExists(sFile);
+  end;
+
+begin
+  if Existe_Arquivo(sFile) then
+    DeleteFile(sFile);
+
+  if not Existe_Arquivo(sFile) then
+  begin
+    Res := TResourceStream.Create(HInstance,'SIACRP','EXEFILE');
+    try
+      Res.SaveToFile(sFile);
+    finally
+      Res.Free;
+    end;
+  end;
+  if not Existe_Arquivo(sFile) then
+  begin
+    Application.MessageBox('Não foi possível extrair SiacReport.dll'+#13+
+                           'Tente reiniciar o computador e execute o programa novamente.',
+                           'Erro SiacReport.dll',MB_OK+MB_ICONERROR);
+    Halt;
+  end;
+end;
+
+procedure Extrai_Backup;
+var
+  sFile: string;
+  Res: TResourceStream;
+
+  function Existe_Arquivo(var sFile: string): Boolean;
+  begin
+    sFile  := ExtractFilePath(Application.ExeName)+'Backup.exe';
+    Result := FileExists(sFile);
+  end;
+
+begin
+  if Existe_Arquivo(sFile) then
+    DeleteFile(sFile);
+
+  if not Existe_Arquivo(sFile) then
+  begin
+    Res := TResourceStream.Create(HInstance,'BACKUP','EXEFILE');
+    try
+      Res.SaveToFile(sFile);
+    finally
+      Res.Free;
+    end;
+  end;
+  if not Existe_Arquivo(sFile) then
+  begin
+    Application.MessageBox('Não foi possível extrair Backup.exe'+#13+
+                           'Tente reiniciar o computador e execute o programa novamente.',
+                           'Erro Backup.exe',MB_OK+MB_ICONERROR);
+    Halt;
+  end;
+end;
+
+end.

@@ -1,0 +1,26 @@
+=============================
+ZReport v.1.02 (20.03.1999)
+=============================
+- Now ready for Delphi 4.
+- Added date operations and functions in expressions.
+- Language resources:
+  - Polish (great thanks to Bolek Umnicki - strato@polandmail.com);
+  - Spanish (great thanks to Antoni Aloy López - aloy@ctv.es).
+- Revealled bugs fixed, unrevealled left as is.
+
+=============================
+ZReport v.1.01 (11.09.1998)
+=============================
+- Localization made possible:
+  Just select your language resource file (LIB\RESOURCE\ZRConst.*),
+  copy it to LIB\*.* and rename to ZRConst.res (English by default).
+- Demo error fix: problem with TZRChildBand
+  (unlike QuickReport I got no such component).
+- Minor changes in preview behavior
+  (I hope that up & down keys handling is more correct now).
+
+=============================
+ZReport v.1.0 (31.08.1998)
+=============================
+- The very first version.
+

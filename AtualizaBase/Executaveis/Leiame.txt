@@ -1,0 +1,5 @@
+TransSACI.exe ----------- Loja
+PFase2 ------------------ CPD (na pasta das lojas)
+PFase3 ------------------ CPD (na pasta do servidor)
+
+O confEnviaCPD.ini é para ser utilizado com o PGeraPre.exe

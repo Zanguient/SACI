@@ -1,0 +1,1379 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom
+END
+JwaBugCodes.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaBugCodes.pas
+END
+JwaAuthz.pas
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaAuthz.pas
+END
+JwaWinEFS.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWinEFS.pas
+END
+JwaDSQuery.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaDSQuery.pas
+END
+JwaLmServer.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaLmServer.pas
+END
+JwaRpcNtErr.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaRpcNtErr.pas
+END
+JwaShlGuid.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaShlGuid.pas
+END
+JwaLmRemUtl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaLmRemUtl.pas
+END
+JwaNtDsbCli.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaNtDsbCli.pas
+END
+JwaNb30.pas
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaNb30.pas
+END
+JwaAdtGen.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaAdtGen.pas
+END
+JwaDhcpSSdk.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaDhcpSSdk.pas
+END
+JwaWPCrsMsg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWPCrsMsg.pas
+END
+JwaImapiError.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaImapiError.pas
+END
+JwaAdsTLB.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaAdsTLB.pas
+END
+JwaIpExport.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaIpExport.pas
+END
+JwaWPTypes.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWPTypes.pas
+END
+JwaIssPer16.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaIssPer16.pas
+END
+JwaPowrProf.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaPowrProf.pas
+END
+JwaObjSel.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaObjSel.pas
+END
+JwaCardErr.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaCardErr.pas
+END
+JwaRpcASync.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaRpcASync.pas
+END
+JwaWowNT32.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWowNT32.pas
+END
+JwaAdsnms.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaAdsnms.pas
+END
+JwaWSnetbs.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWSnetbs.pas
+END
+JwaIpRtrMib.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaIpRtrMib.pas
+END
+JwaWinWlx.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWinWlx.pas
+END
+JwaWsrm.pas
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWsrm.pas
+END
+JwaPatchWiz.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaPatchWiz.pas
+END
+JwaNspApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaNspApi.pas
+END
+JwaLmRepl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaLmRepl.pas
+END
+JwaDhcpsApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaDhcpsApi.pas
+END
+JwaIAdmExt.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaIAdmExt.pas
+END
+JwaDde.pas
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaDde.pas
+END
+JwaImapi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaImapi.pas
+END
+ACBrCAPICOM_TLB.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/ACBrCAPICOM_TLB.pas
+END
+JwaRpcSsl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaRpcSsl.pas
+END
+JwaBitsMsg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaBitsMsg.pas
+END
+JwaAccCtrl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaAccCtrl.pas
+END
+JwaFaxMmc.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaFaxMmc.pas
+END
+JwaWS2tcpip.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWS2tcpip.pas
+END
+JwaDSGetDc.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaDSGetDc.pas
+END
+JwaSnmp.pas
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaSnmp.pas
+END
+JwaWinDLLNames.pas
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWinDLLNames.pas
+END
+JwaMsiQuery.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaMsiQuery.pas
+END
+JwaSchemaDef.pas
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaSchemaDef.pas
+END
+JwaWinGDI.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWinGDI.pas
+END
+JwaPdhMsg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaPdhMsg.pas
+END
+JwaLpmApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaLpmApi.pas
+END
+JwaLmWkSta.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaLmWkSta.pas
+END
+JwaZMOUSE.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaZMOUSE.pas
+END
+JwaRpc.pas
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaRpc.pas
+END
+JwaLmJoin.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaLmJoin.pas
+END
+JwaDlgs.pas
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaDlgs.pas
+END
+JwaBtHDef.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaBtHDef.pas
+END
+JwaWinsock2.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWinsock2.pas
+END
+JwaRpcDce.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaRpcDce.pas
+END
+JwaAdssts.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaAdssts.pas
+END
+JwaWinDNS.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWinDNS.pas
+END
+JwaDSClient.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaDSClient.pas
+END
+JwaBits1_5.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaBits1_5.pas
+END
+JwaRegStr.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaRegStr.pas
+END
+JwaWinNetWk.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWinNetWk.pas
+END
+JwaMprError.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaMprError.pas
+END
+JwaAdsHlp.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaAdsHlp.pas
+END
+JwaSubAuth.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaSubAuth.pas
+END
+JwaPsApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaPsApi.pas
+END
+JwaHtmlHelp.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaHtmlHelp.pas
+END
+JwaQosPol.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaQosPol.pas
+END
+JwaWS2atm.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWS2atm.pas
+END
+JwaSspi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaSspi.pas
+END
+JwaMSTcpIP.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaMSTcpIP.pas
+END
+WinDefines.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/WinDefines.inc
+END
+JwaWShisotp.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWShisotp.pas
+END
+JwaWbemCli.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWbemCli.pas
+END
+JwaLmErrLog.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaLmErrLog.pas
+END
+JwaLmSvc.pas
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaLmSvc.pas
+END
+JwaSceSvc.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaSceSvc.pas
+END
+JwaWS2spi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWS2spi.pas
+END
+JwaMsi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaMsi.pas
+END
+JwaPatchApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaPatchApi.pas
+END
+JwaWinReg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWinReg.pas
+END
+JwaWinFax.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWinFax.pas
+END
+JwaLmConfig.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaLmConfig.pas
+END
+JwaWinLDAP.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWinLDAP.pas
+END
+JwaLmAudit.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaLmAudit.pas
+END
+win32api.res
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/win32api.res
+END
+JwaBits.pas
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaBits.pas
+END
+JwaMsTask.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaMsTask.pas
+END
+JwaLM.pas
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaLM.pas
+END
+JwaAdsProp.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaAdsProp.pas
+END
+ACBrMSXML2_TLB.pas
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/ACBrMSXML2_TLB.pas
+END
+JwaDbt.pas
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaDbt.pas
+END
+JwaHhError.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaHhError.pas
+END
+ModuleLoader.pas
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/ModuleLoader.pas
+END
+readme.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/readme.html
+END
+JwaCpl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaCpl.pas
+END
+JwaSpOrder.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaSpOrder.pas
+END
+JwaUxTheme.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaUxTheme.pas
+END
+JwaAuthif.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaAuthif.pas
+END
+JwaIisCnfg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaIisCnfg.pas
+END
+JwaProfInfo.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaProfInfo.pas
+END
+JwaPbt.pas
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaPbt.pas
+END
+JwaNative.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaNative.pas
+END
+JwaMSWSock.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaMSWSock.pas
+END
+JwaDSRole.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaDSRole.pas
+END
+JwaWinBase.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWinBase.pas
+END
+JwaCryptUIApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaCryptUIApi.pas
+END
+JwaWindows.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWindows.pas
+END
+JwaBatClass.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaBatClass.pas
+END
+JwaWinCpl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWinCpl.pas
+END
+JwaWinResrc.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWinResrc.pas
+END
+JwaWinUser.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWinUser.pas
+END
+JwaAclUI.pas
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaAclUI.pas
+END
+JwaWinNT.pas
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWinNT.pas
+END
+JwaWinType.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWinType.pas
+END
+JwaErrorRep.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaErrorRep.pas
+END
+JwaPrSht.pas
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaPrSht.pas
+END
+JwaNtDsApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaNtDsApi.pas
+END
+JwaCmnQuery.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaCmnQuery.pas
+END
+JwaQosName.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaQosName.pas
+END
+JwaColorDlg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaColorDlg.pas
+END
+JwaIsGuids.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaIsGuids.pas
+END
+JwaMciAvi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaMciAvi.pas
+END
+JwaSens.pas
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaSens.pas
+END
+JwaWs2Bth.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWs2Bth.pas
+END
+JwaIme.pas
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaIme.pas
+END
+JwaSensEvts.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaSensEvts.pas
+END
+JwaWinNLS.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWinNLS.pas
+END
+JwaAdsDb.pas
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaAdsDb.pas
+END
+JwaHtmlGuid.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaHtmlGuid.pas
+END
+JwaLmUseFlg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaLmUseFlg.pas
+END
+JwaWinSafer.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWinSafer.pas
+END
+JwaWPApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWPApi.pas
+END
+JwaBitscfg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaBitscfg.pas
+END
+JwaNtLDAP.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaNtLDAP.pas
+END
+JwaIcmpApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaIcmpApi.pas
+END
+JwaWPPstMsg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWPPstMsg.pas
+END
+JwaSrRestorePtApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaSrRestorePtApi.pas
+END
+JwaSchedule.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaSchedule.pas
+END
+JwaLmAt.pas
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaLmAt.pas
+END
+JwaIpTypes.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaIpTypes.pas
+END
+JwaLmApiBuf.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaLmApiBuf.pas
+END
+JwaFaxExt.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaFaxExt.pas
+END
+JwaWPSpiHlp.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWPSpiHlp.pas
+END
+JwaIoEvent.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaIoEvent.pas
+END
+JwaWinPerf.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWinPerf.pas
+END
+JwaPdh.pas
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaPdh.pas
+END
+JwaSfc.pas
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaSfc.pas
+END
+JwaWtsApi32.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWtsApi32.pas
+END
+JwaAtalkWsh.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaAtalkWsh.pas
+END
+JwaWinCrypt.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWinCrypt.pas
+END
+JwaSisBkUp.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaSisBkUp.pas
+END
+JwaNetSh.pas
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaNetSh.pas
+END
+JwaNtStatus.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaNtStatus.pas
+END
+JwaWmiStr.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWmiStr.pas
+END
+JwaLmStats.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaLmStats.pas
+END
+JwaUserEnv.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaUserEnv.pas
+END
+JwaWPWizMsg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWPWizMsg.pas
+END
+JwaLmCons.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaLmCons.pas
+END
+JwaDskQuota.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaDskQuota.pas
+END
+JwaNtDdPar.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaNtDdPar.pas
+END
+JwaLoadPerf.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaLoadPerf.pas
+END
+jedi.inc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/jedi.inc
+END
+JwaProtocol.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaProtocol.pas
+END
+JwaSensAPI.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaSensAPI.pas
+END
+JwaSvcGuid.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaSvcGuid.pas
+END
+JwaLmDFS.pas
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaLmDFS.pas
+END
+JwaQosSp.pas
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaQosSp.pas
+END
+JwaNtSecApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaNtSecApi.pas
+END
+JwaNtQuery.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaNtQuery.pas
+END
+JwaWPFtpMsg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWPFtpMsg.pas
+END
+JwaWinError.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWinError.pas
+END
+JwaBLBErr.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaBLBErr.pas
+END
+JwaWinSvc.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWinSvc.pas
+END
+JwaIAccess.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaIAccess.pas
+END
+JwaGPEdit.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaGPEdit.pas
+END
+JwaDSAdmin.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaDSAdmin.pas
+END
+JwaAdsErr.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaAdsErr.pas
+END
+jediapilib.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/jediapilib.inc
+END
+JwaNtDsBMsg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaNtDsBMsg.pas
+END
+JwaLmErr.pas
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaLmErr.pas
+END
+JwaBluetoothAPIs.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaBluetoothAPIs.pas
+END
+JwaExcpt.pas
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaExcpt.pas
+END
+JwaAF_Irda.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaAF_Irda.pas
+END
+JwaWowNT16.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWowNT16.pas
+END
+JwaWS2dnet.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWS2dnet.pas
+END
+JwaWinBer.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWinBer.pas
+END
+JwaAclApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaAclApi.pas
+END
+JwaMsiDefs.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaMsiDefs.pas
+END
+JwaLmShare.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaLmShare.pas
+END
+JwaSecExt.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaSecExt.pas
+END
+JwaWinCred.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWinCred.pas
+END
+JwaLmSName.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaLmSName.pas
+END
+JwaFaxRoute.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaFaxRoute.pas
+END
+JwaTlHelp32.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaTlHelp32.pas
+END
+JwaWinCon.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWinCon.pas
+END
+JwaRpcNsi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaRpcNsi.pas
+END
+JwaCdErr.pas
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaCdErr.pas
+END
+JwaCplext.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaCplext.pas
+END
+JwaLmAlert.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaLmAlert.pas
+END
+JwaIpInfoId.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaIpInfoId.pas
+END
+JwaDsSec.pas
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaDsSec.pas
+END
+JwaTmSchema.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaTmSchema.pas
+END
+JwaActiveDS.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaActiveDS.pas
+END
+JwaQos.pas
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaQos.pas
+END
+JwaWinternl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWinternl.pas
+END
+JwaBthSdpDef.pas
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaBthSdpDef.pas
+END
+JwaActiveX.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaActiveX.pas
+END
+JwaIpHlpApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaIpHlpApi.pas
+END
+JwaSecurity.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaSecurity.pas
+END
+JwaIpIfCons.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaIpIfCons.pas
+END
+JwaWSipx.pas
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWSipx.pas
+END
+JwaWinVer.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWinVer.pas
+END
+JwaWSNwLink.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWSNwLink.pas
+END
+JwaFaxDev.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaFaxDev.pas
+END
+JwaWinSock.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWinSock.pas
+END
+JwaTraffic.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaTraffic.pas
+END
+JwaLmMsg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaLmMsg.pas
+END
+JwaWSvns.pas
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWSvns.pas
+END
+JwaWinAble.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWinAble.pas
+END
+JwaDhcpCSdk.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaDhcpCSdk.pas
+END
+JwaLmUse.pas
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaLmUse.pas
+END
+JwaImageHlp.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaImageHlp.pas
+END
+JwaSddl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaSddl.pas
+END
+JwaReason.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaReason.pas
+END
+JwaWPApiMsg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWPApiMsg.pas
+END
+JwaWinIoctl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaWinIoctl.pas
+END
+JwaLmAccess.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/acbr/!svn/ver/1160/trunk/Fontes/ACBrCapicom/JwaLmAccess.pas
+END

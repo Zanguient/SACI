@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/acbr/!svn/ver/1676/trunk/Projetos/ACBr32_DLL/ACBr.Net/ACBr.Net
+END
+TipoAliquota.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/acbr/!svn/ver/1281/trunk/Projetos/ACBr32_DLL/ACBr.Net/ACBr.Net/TipoAliquota.cs
+END
+ACBrECFComprovanteNaoFiscal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/acbr/!svn/ver/1281/trunk/Projetos/ACBr32_DLL/ACBr.Net/ACBr.Net/ACBrECFComprovanteNaoFiscal.cs
+END
+ACBrECFAliquota.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/acbr/!svn/ver/1281/trunk/Projetos/ACBr32_DLL/ACBr.Net/ACBr.Net/ACBrECFAliquota.cs
+END
+ACBrECF.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/acbr/!svn/ver/1676/trunk/Projetos/ACBr32_DLL/ACBr.Net/ACBr.Net/ACBrECF.cs
+END
+ACBrException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/acbr/!svn/ver/1281/trunk/Projetos/ACBr32_DLL/ACBr.Net/ACBr.Net/ACBrException.cs
+END
+ACBrBal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/acbr/!svn/ver/1338/trunk/Projetos/ACBr32_DLL/ACBr.Net/ACBr.Net/ACBrBal.cs
+END
+MSSCCPRJ.SCC
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/acbr/!svn/ver/1676/trunk/Projetos/ACBr32_DLL/ACBr.Net/ACBr.Net/MSSCCPRJ.SCC
+END
+ACBrDevice.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/acbr/!svn/ver/1676/trunk/Projetos/ACBr32_DLL/ACBr.Net/ACBr.Net/ACBrDevice.cs
+END
+ACBr.Net.csproj.vspscc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/acbr/!svn/ver/1676/trunk/Projetos/ACBr32_DLL/ACBr.Net/ACBr.Net/ACBr.Net.csproj.vspscc
+END
+ACBr.Net.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/acbr/!svn/ver/1676/trunk/Projetos/ACBr32_DLL/ACBr.Net/ACBr.Net/ACBr.Net.csproj
+END
+ACBrLCB.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/acbr/!svn/ver/1676/trunk/Projetos/ACBr32_DLL/ACBr.Net/ACBr.Net/ACBrLCB.cs
+END
+log.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/acbr/!svn/ver/1281/trunk/Projetos/ACBr32_DLL/ACBr.Net/ACBr.Net/log.txt
+END
+EstadoECF.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/acbr/!svn/ver/1281/trunk/Projetos/ACBr32_DLL/ACBr.Net/ACBr.Net/EstadoECF.cs
+END
+ModeloECF.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/acbr/!svn/ver/1281/trunk/Projetos/ACBr32_DLL/ACBr.Net/ACBr.Net/ModeloECF.cs
+END
+ModeloBal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/acbr/!svn/ver/1333/trunk/Projetos/ACBr32_DLL/ACBr.Net/ACBr.Net/ModeloBal.cs
+END
+ACBrDll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/acbr/!svn/ver/1676/trunk/Projetos/ACBr32_DLL/ACBr.Net/ACBr.Net/ACBrDll.cs
+END
+ACBrECFException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/acbr/!svn/ver/1281/trunk/Projetos/ACBr32_DLL/ACBr.Net/ACBr.Net/ACBrECFException.cs
+END
+ACBr.Net.csproj.user
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/acbr/!svn/ver/1281/trunk/Projetos/ACBr32_DLL/ACBr.Net/ACBr.Net/ACBr.Net.csproj.user
+END
+ACBrECFFormaPagamento.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/acbr/!svn/ver/1281/trunk/Projetos/ACBr32_DLL/ACBr.Net/ACBr.Net/ACBrECFFormaPagamento.cs
+END
