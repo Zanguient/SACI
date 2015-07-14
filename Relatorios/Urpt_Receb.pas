@@ -75,14 +75,22 @@ type
     Recebimento1NumDoc: TStringField;
     Recebimento1Produto: TStringField;
     Recebimento1Referencia: TStringField;
+    SZRBand1: TSZRBand;
+    SZRLabel2: TSZRLabel;
+    SZRLabel3: TSZRLabel;
+    lblTotal: TSZRLabel;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure ZRBand1BeforePrint(Sender: TObject; var DoPrint: Boolean);
     procedure ZRBand4BeforePrint(Sender: TObject; var DoPrint: Boolean);
     procedure Recebimento1CalcFields(DataSet: TDataSet);
     procedure ZRLabel3BeforePrint(Sender: TObject; var DoPrint: Boolean);
     procedure ZRBand3BeforePrint(Sender: TObject; var DoPrint: Boolean);
+    procedure FormCreate(Sender: TObject);
+    procedure SZRBand1BeforePrint(Sender: TObject; var DoPrint: Boolean);
+    procedure reportAfterPrint(Sender: TObject; Printed: Boolean);
   private
     { Private declarations }
+    iTotal: double;
   public
     { Public declarations }
   end;
@@ -113,6 +121,7 @@ procedure Trpt_Recebimento.ZRBand4BeforePrint(Sender: TObject;
   var DoPrint: Boolean);
 begin
   SZRLabel1.Caption:=format('%.2f',[Recebimento1.FieldByName('IRC_QUANTIDADE').asfloat]);
+  iTotal := iTotal + Recebimento1.FieldByName('IRC_QUANTIDADE').asfloat;
 end;
 
 procedure Trpt_Recebimento.Recebimento1CalcFields(DataSet: TDataSet);
@@ -147,6 +156,23 @@ procedure Trpt_Recebimento.ZRBand3BeforePrint(Sender: TObject;
   var DoPrint: Boolean);
 begin
   ZRLabel4.Caption := EmpresaDesenvolvedora;
+end;
+
+procedure Trpt_Recebimento.FormCreate(Sender: TObject);
+begin
+  iTotal := 0;
+end;
+
+procedure Trpt_Recebimento.SZRBand1BeforePrint(Sender: TObject;
+  var DoPrint: Boolean);
+begin
+  lblTotal.Caption := format('%.2f',[iTotal]);
+end;
+
+procedure Trpt_Recebimento.reportAfterPrint(Sender: TObject;
+  Printed: Boolean);
+begin
+  iTotal := 0;
 end;
 
 end.

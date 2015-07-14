@@ -1137,8 +1137,8 @@ procedure TfMxRecebim.SB_ImprimirClick(Sender: TObject);
 begin
   if Entidade.IsEmpty then
     raise Exception.create('Selecione o Recebimento!');
-  if Entidade.Situacao <> 1 then
-    Raise exception.Create('Somente na situação 1!');
+//  if Entidade.Situacao <> 1 then
+//    Raise exception.Create('Somente na situação 1!');
 
   Application.CreateForm(Trpt_Recebimento, rpt_Recebimento);
   rpt_Recebimento.Produto1.Open;
