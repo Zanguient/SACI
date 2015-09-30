@@ -876,12 +876,14 @@ type
     procedure ShowHint(Sender: TObject);
     procedure AdicionarCampos;
     procedure ExecutaSript;
-    function LucianoOtica_AguaDeCheiro_AnaCristina: Boolean;
   public
     { Public declarations }
     DataOk: Boolean;
     Cancelar: Boolean;
   end;
+
+  function LucianoOtica_AguaDeCheiro: Boolean;
+  function LucianoOtica_AguaDeCheiro_AnaCristina: Boolean;
 
 var
   SIAC: TSIAC;
@@ -6669,13 +6671,6 @@ begin
   VE_RelNotasFiscais.Visible             := LucianoOtica_AguaDeCheiro_AnaCristina;
 end;
 
-function TSIAC.LucianoOtica_AguaDeCheiro_AnaCristina: Boolean;
-begin
-  Result := (GetEmpresaComunicacao(DM.QR_Consultas) = 'LO') or
-            (GetEmpresaComunicacao(DM.QR_Consultas) = 'AC') or
-            (GetEmpresaComunicacao(DM.QR_Consultas) = '01');
-end;
-
 procedure TSIAC.AC_SQLExecute(Sender: TObject);
 begin
   if ( DM.Configuracao1.CodigoUSU = 1 ) then //somente ADM
@@ -6830,6 +6825,20 @@ end;
 procedure TSIAC.Action69Execute(Sender: TObject);
 begin
   mn_SubMenu;
+end;
+
+
+function LucianoOtica_AguaDeCheiro: Boolean;
+begin
+  Result := (GetEmpresaComunicacao(DM.QR_Consultas) = 'LO') or
+            (GetEmpresaComunicacao(DM.QR_Consultas) = 'AC');
+end;
+
+function LucianoOtica_AguaDeCheiro_AnaCristina: Boolean;
+begin
+  Result := (GetEmpresaComunicacao(DM.QR_Consultas) = 'LO') or
+            (GetEmpresaComunicacao(DM.QR_Consultas) = 'AC') or
+            (GetEmpresaComunicacao(DM.QR_Consultas) = '01');
 end;
 
 initialization

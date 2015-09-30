@@ -6,7 +6,7 @@ uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, IdBaseComponent, IdComponent, IdTCPConnection, IdTCPClient,
   IdFTP, StdCtrls, UComunicacao, ComCtrls,
-  Buttons, ExtCtrls, DB, DBTables, funcoes, StrUtils, ADODB, Gauges;
+  Buttons, ExtCtrls, DB, DBTables, funcoes, StrUtils, ADODB, Gauges, UPrinc2;
 
 type
   TfrmEnviaComunicacao = class(TForm)
@@ -501,6 +501,11 @@ begin
 
   edtCNC.Text     := IntToStr(DMComunicacao.qCNC.FieldByName('CNC_CODIGO').AsInteger);
   edtCNCNome.Text := DMComunicacao.qCNC.FieldByName('CNC_RZ_SOCIAL').AsString;
+
+  if LucianoOtica_AguaDeCheiro then
+    edtDias.Text := '15'
+  else
+    edtDias.Text := '2';
 end;
 
 procedure TfrmEnviaComunicacao.Log(sMsg: string; bStatusBar: boolean = true);

@@ -1,41 +1,71 @@
 [Closed Files]
-File_0=SourceModule,'C:\FontesD7\SACI\Projeto\UDescontos.pas',0,1,1241,75,1243,1,0
-File_1=SourceModule,'C:\FontesD7\SACI\Relatorios\UHistorCompras.pas',0,1,1,66,5,1,0
-File_2=SourceModule,'C:\FontesD7\SACI\Relatorios\UMaioresFornecedores.pas',0,1,1,37,3,1,0
-File_3=SourceModule,'C:\FontesD7\SACI\Relatorios\USugestaoCmp.pas',0,1,149,73,149,1,0
-File_4=SourceModule,'C:\Arquivos de programas\Borland\Delphi7\Imports\SiacReport_TLB.pas',0,1,1,83,4,0,0
-File_5=SourceModule,'C:\FontesD7\SACI\Projeto\MxSTituloPagar.pas',0,1,961,108,966,1,0
-File_6=SourceModule,'C:\FontesD7\SACI\Relatorios\UCaixa.pas',0,1,33,56,34,1,0
-File_7=SourceModule,'C:\FontesD7\SACI\Relatorios\UAgencia.pas',0,1,1,27,2,1,0
-File_8=SourceModule,'C:\FontesD7\SACI\Componentes\Entidades\Item_de_Estoque_Detalhe.pas',0,1,237,87,241,0,0
-File_9=SourceModule,'C:\FontesD7\SACI\Projeto\MxPreRecebimento.pas',0,1,441,108,444,1,0
+File_0=SourceModule,'C:\FontesD7\SACI\Componentes\Entidades\cliente.pas',0,1,193,70,197,0,0
+File_1=SourceModule,'C:\FontesD7\SACI\Projeto\UDescontos.pas',0,1,1241,75,1243,1,0
+File_2=SourceModule,'C:\FontesD7\SACI\Relatorios\UHistorCompras.pas',0,1,1,66,5,1,0
+File_3=SourceModule,'C:\FontesD7\SACI\Relatorios\UMaioresFornecedores.pas',0,1,1,37,3,1,0
+File_4=SourceModule,'C:\FontesD7\SACI\Relatorios\USugestaoCmp.pas',0,1,149,73,149,1,0
+File_5=SourceModule,'C:\Arquivos de programas\Borland\Delphi7\Imports\SiacReport_TLB.pas',0,1,1,83,4,0,0
+File_6=SourceModule,'C:\FontesD7\SACI\Projeto\MxSTituloPagar.pas',0,1,961,108,966,1,0
+File_7=SourceModule,'C:\FontesD7\SACI\Relatorios\UCaixa.pas',0,1,33,56,34,1,0
+File_8=SourceModule,'C:\FontesD7\SACI\Relatorios\UAgencia.pas',0,1,1,27,2,1,0
+File_9=SourceModule,'C:\FontesD7\SACI\Componentes\Entidades\Item_de_Estoque_Detalhe.pas',0,1,237,87,241,0,0
 
 [Modules]
-Module0=C:\FontesD7\SACI\AtualizaBase\Chave\Chave.dpr
+Module0=C:\FontesD7\SACI\Comunicação\CdEnviaComunicacao.pas
 Module1=C:\FontesD7\SACI\Relatorios\UOp_RelatProd.pas
-Module2=C:\FontesD7\SACI\Projeto\URelDataCompra.pas
-Module3=C:\FontesD7\SACI\Projeto\UPrinc2.pas
-Module4=C:\FontesD7\SACI\Projeto\PSACI.dpr
-Count=5
+Module2=C:\FontesD7\SACI\Comunicação\CdRecebeComunicacao.pas
+Module3=C:\FontesD7\SACI\Projeto\Funcoes.pas
+Module4=C:\FontesD7\SACI\Projeto\UPrinc2.pas
+Module5=C:\FontesD7\SACI\AtualizaBase\Chave\Chave.dpr
+Module6=C:\FontesD7\SACI\Comunicação\UPrincComunicacao.pas
+Module7=C:\FontesD7\SACI\Projeto\u_ListaPedidoPAF.pas
+Module8=C:\FontesD7\SACI\Projeto\URelDataCompra.pas
+Module9=C:\FontesD7\SACI\Projeto\PSACI.dpr
+Count=10
 EditWindowCount=1
 PackageWindowCount=2
+
+[C:\FontesD7\SACI\Comunicação\CdEnviaComunicacao.pas]
+ModuleType=SourceModule
+FormState=1
+FormOnTop=0
+
+[C:\FontesD7\SACI\Relatorios\UOp_RelatProd.pas]
+ModuleType=SourceModule
+FormState=1
+FormOnTop=0
+
+[C:\FontesD7\SACI\Comunicação\CdRecebeComunicacao.pas]
+ModuleType=SourceModule
+FormState=1
+FormOnTop=0
+
+[C:\FontesD7\SACI\Projeto\Funcoes.pas]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[C:\FontesD7\SACI\Projeto\UPrinc2.pas]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
 
 [C:\FontesD7\SACI\AtualizaBase\Chave\Chave.dpr]
 ModuleType=SourceModule
 FormState=0
 FormOnTop=0
 
-[C:\FontesD7\SACI\Relatorios\UOp_RelatProd.pas]
+[C:\FontesD7\SACI\Comunicação\UPrincComunicacao.pas]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[C:\FontesD7\SACI\Projeto\u_ListaPedidoPAF.pas]
 ModuleType=SourceModule
 FormState=0
 FormOnTop=0
 
 [C:\FontesD7\SACI\Projeto\URelDataCompra.pas]
-ModuleType=SourceModule
-FormState=0
-FormOnTop=0
-
-[C:\FontesD7\SACI\Projeto\UPrinc2.pas]
 ModuleType=SourceModule
 FormState=0
 FormOnTop=0
@@ -69,14 +99,27 @@ FormOnTop=0
 FormState=0
 FormOnTop=0
 
+[C:\FontesD7\SACI\Projeto\UDM.pas]
+FormState=0
+FormOnTop=0
+
+[C:\FontesD7\SACI\Comunicação\UDM_Comunicacao.pas]
+FormState=0
+FormOnTop=0
+
 [EditWindow0]
-ViewCount=5
-CurrentView=0
+ViewCount=10
+CurrentView=9
 View0=0
 View1=1
 View2=2
 View3=3
 View4=4
+View5=5
+View6=6
+View7=7
+View8=8
+View9=9
 CodeExplorer=CodeExplorer@EditWindow0
 MessageView=MessageView@EditWindow0
 Create=1
@@ -95,7 +138,7 @@ ClientHeight=620
 LeftPanelSize=0
 LeftPanelClients=CodeExplorer@EditWindow0
 LeftPanelData=00000400010000000C000000436F64654578706C6F726572000000000000000000000000000000000001000000000000000000000000FFFFFFFF
-RightPanelSize=155
+RightPanelSize=235
 RightPanelClients=ProjectManager
 RightPanelData=000004000000000000000000000000000000000000000000000100000000000000001200000050726F6A6563744D616E61676572466F726DFFFFFFFF
 BottomPanelSize=0
@@ -104,36 +147,71 @@ BottomPanelData=00000400010000000B0000004D65737361676556696577000000000000000000
 
 [View0]
 Module=C:\FontesD7\SACI\AtualizaBase\Chave\Chave.dpr
-CursorX=59
+CursorX=22
 CursorY=31
-TopLine=11
+TopLine=17
 LeftCol=1
 
 [View1]
+Module=C:\FontesD7\SACI\Projeto\u_ListaPedidoPAF.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+
+[View2]
+Module=C:\FontesD7\SACI\Comunicação\UPrincComunicacao.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+
+[View3]
 Module=C:\FontesD7\SACI\Projeto\PSACI.dpr
 CursorX=62
 CursorY=716
 TopLine=700
 LeftCol=1
 
-[View2]
+[View4]
 Module=C:\FontesD7\SACI\Projeto\UPrinc2.pas
-CursorX=86
-CursorY=1568
-TopLine=1560
+CursorX=1
+CursorY=6839
+TopLine=6837
 LeftCol=1
 
-[View3]
+[View5]
+Module=C:\FontesD7\SACI\Projeto\Funcoes.pas
+CursorX=32
+CursorY=306
+TopLine=293
+LeftCol=1
+
+[View6]
 Module=C:\FontesD7\SACI\Projeto\URelDataCompra.pas
 CursorX=82
 CursorY=965
 TopLine=947
 LeftCol=1
 
-[View4]
+[View7]
 Module=C:\FontesD7\SACI\Relatorios\UOp_RelatProd.pas
 CursorX=55
 CursorY=9
+TopLine=1
+LeftCol=1
+
+[View8]
+Module=C:\FontesD7\SACI\Comunicação\CdRecebeComunicacao.pas
+CursorX=17
+CursorY=9
+TopLine=1
+LeftCol=1
+
+[View9]
+Module=C:\FontesD7\SACI\Comunicação\CdEnviaComunicacao.pas
+CursorX=10
+CursorY=3
 TopLine=1
 LeftCol=1
 
@@ -214,14 +292,14 @@ Visible=1
 State=0
 Left=0
 Top=12
-Width=155
+Width=235
 Height=608
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=155
+ClientWidth=235
 ClientHeight=608
 TBDockHeight=303
-LRDockWidth=155
+LRDockWidth=235
 Dockable=1
 
 [AlignmentPalette]
@@ -254,7 +332,7 @@ LRDockWidth=190
 Dockable=1
 SplitPos=104
 ArrangeBy=Name
-SelectedItem=
+SelectedItem=Name
 ExpandedItems=
 HiddenCategories=
 
@@ -310,5 +388,5 @@ Dockable=1
 DockHostCount=0
 
 [ActiveProject]
-ActiveProject=5
+ActiveProject=6
 

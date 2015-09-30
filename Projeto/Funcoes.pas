@@ -249,7 +249,7 @@ var
   function ApagarArquivos(PPasta, PNomeArquivo: ShortString; PExcecaoSemCoringas: ShortString=''; PExcecaoSemCoringas2: ShortString=''):Boolean; StdCall; External 'SACIFuncoesDLL.dll';
   function AbreviarNome(Nome: ShortString): ShortString; StdCall; External 'SACIFuncoesDLL.dll';
   function TrataErro(vErro : EDBEngineError):ShortString; StdCall; External 'SACIFuncoesDLL.dll';
-  
+
 implementation
 
 
