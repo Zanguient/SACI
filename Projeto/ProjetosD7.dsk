@@ -12,7 +12,8 @@ File_9=SourceModule,'C:\FontesD7\SACI\Relatorios\UBaixaPag.pas',0,1,1,1,1,0,0
 
 [Modules]
 Module0=C:\FontesD7\SACI\AtualizaBase\Chave\Chave.dpr
-Count=1
+Module1=C:\FontesD7\SACI\Projeto\CdBanco.pas
+Count=2
 EditWindowCount=1
 PackageWindowCount=2
 
@@ -21,7 +22,8 @@ ModuleType=SourceModule
 FormState=0
 FormOnTop=0
 
-[C:\FontesD7\SACI\Projeto\PSACI.dpr]
+[C:\FontesD7\SACI\Projeto\CdBanco.pas]
+ModuleType=SourceModule
 FormState=0
 FormOnTop=0
 
@@ -49,18 +51,19 @@ FormOnTop=0
 FormState=0
 FormOnTop=0
 
+[C:\FontesD7\SACI\Projeto\PSACI.dpr]
+FormState=0
+FormOnTop=0
+
 [C:\FontesD7\SACI\Projeto\UDM.pas]
 FormState=0
 FormOnTop=0
 
-[C:\FontesD7\SACI\Comunicação\UDM_Comunicacao.pas]
-FormState=0
-FormOnTop=0
-
 [EditWindow0]
-ViewCount=1
+ViewCount=2
 CurrentView=0
 View0=0
+View1=1
 CodeExplorer=CodeExplorer@EditWindow0
 MessageView=MessageView@EditWindow0
 Create=1
@@ -88,9 +91,16 @@ BottomPanelData=0000040000000000000000000000000000000000000000000001000000000000
 
 [View0]
 Module=C:\FontesD7\SACI\AtualizaBase\Chave\Chave.dpr
-CursorX=32
-CursorY=20
+CursorX=92
+CursorY=21
 TopLine=9
+LeftCol=1
+
+[View1]
+Module=C:\FontesD7\SACI\Projeto\CdBanco.pas
+CursorX=81
+CursorY=19
+TopLine=1
 LeftCol=1
 
 [PackageWindow0]
@@ -178,22 +188,6 @@ ClientWidth=155
 ClientHeight=520
 TBDockHeight=303
 LRDockWidth=155
-Dockable=1
-
-[Components]
-Left=240
-Top=237
-Width=183
-Height=233
-Create=1
-Visible=0
-State=0
-MaxLeft=-1
-MaxTop=-1
-ClientWidth=175
-ClientHeight=209
-TBDockHeight=233
-LRDockWidth=183
 Dockable=1
 
 [AlignmentPalette]
