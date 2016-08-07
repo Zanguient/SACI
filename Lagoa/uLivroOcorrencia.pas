@@ -9,7 +9,7 @@ uses
   Mask, DB, ADODB;
 
 type
-  TForm1 = class(TForm)
+  TfrmOcorrencia = class(TForm)
     Panel1: TPanel;
     Panel2: TPanel;
     IdSMTP1: TIdSMTP;
@@ -32,8 +32,8 @@ type
     btnSair: TBitBtn;
     cbxEmail: TCheckBox;
     Label5: TLabel;
-    cbxPorteiro: TComboBox;
-    Label6: TLabel;
+    edtPorteiro: TEdit;
+    cbxImportante: TCheckBox;
     procedure btnLimparClick(Sender: TObject);
     procedure btnAnexarClick(Sender: TObject);
     procedure btnSalvarClick(Sender: TObject);
@@ -46,33 +46,34 @@ type
     { Private declarations }
   public
     { Public declarations }
+    sPorteiro: string;
   end;
 
 var
-  Form1: TForm1;
+  frmOcorrencia: TfrmOcorrencia;
 
 implementation
+
 
 {$R *.dfm}
 
 //Provider=SQLOLEDB.1;Password=agfm1901;Persist Security Info=True;User ID=lagoa;Initial Catalog=buildsis_lagoa;Data Source=70.38.11.27;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=FONTESD7-VM;Use Encryption for Data=False;Tag with column collation when possible=False
 
-procedure TForm1.btnLimparClick(Sender: TObject);
+procedure TfrmOcorrencia.btnLimparClick(Sender: TObject);
 begin
   mmAnexos.Clear;
 end;
 
-procedure TForm1.btnAnexarClick(Sender: TObject);
+procedure TfrmOcorrencia.btnAnexarClick(Sender: TObject);
 begin
   if odAnexos.Execute Then
     mmAnexos.Lines.Add(odAnexos.FileName);
 end;
 
-procedure TForm1.EnviaEmail;
+procedure TfrmOcorrencia.EnviaEmail;
 var
   i: integer;
   msgOcorrencia: string;
-
 begin
   IdSMTP1.Port               := 25;
   IdSMTP1.Host               := 'aspmx.l.google.com'; //aspmx.l.google.com ou smtp.gmail.com
@@ -89,7 +90,7 @@ begin
   //O assunto da mensagem
   IdMessage1.Subject :='Livro de ocorrência';
   //conteudo da mensagem
-  msgOcorrencia := 'Porteiro: ' + cbxPorteiro.Text + #13 +
+  msgOcorrencia := 'Porteiro: ' + edtPorteiro.Text + #13 +
                    'Data: ' + medtData.Text + #13 +
                    'Hora: ' + medtHora.Text + #13 + #13 +
                    mmMensagem.Text;
@@ -107,13 +108,13 @@ begin
   end;
 end;
 
-procedure TForm1.btnSalvarClick(Sender: TObject);
+procedure TfrmOcorrencia.btnSalvarClick(Sender: TObject);
 begin
-  if cbxPorteiro.Text = '' then
+  {if cbxPorteiro.Text = '' then
   begin
     cbxPorteiro.SetFocus;
     raise Exception.Create('Informe o nome do porteiro!');
-  end;
+  end;}
 
   if (medtData.Text = '  /  /    ') or not (VerificaData(medtData.Text)) then
   begin
@@ -141,10 +142,16 @@ begin
 
       ConnectionLagoa.Connected := True;
       InsertOcorrencia.Close;
-      InsertOcorrencia.Parameters.ParamByName('PORTEIRO').Value       := cbxPorteiro.Text;
+      InsertOcorrencia.Parameters.ParamByName('PORTEIRO').Value       := edtPorteiro.Text;
       InsertOcorrencia.Parameters.ParamByName('DATA').Value           := now;
       InsertOcorrencia.Parameters.ParamByName('DATAOCORRENCIA').Value := StrToDateTime(medtData.Text + ' ' + medtHora.Text);
       InsertOcorrencia.Parameters.ParamByName('OCORRENCIA').Value     := mmMensagem.Text;
+      if cbxImportante.Checked then
+        InsertOcorrencia.Parameters.ParamByName('IMPORTANTE').Value   := 'S'
+      else
+        InsertOcorrencia.Parameters.ParamByName('IMPORTANTE').Value   := 'N';
+
+
       InsertOcorrencia.ExecSQL;
 
       if cbxEmail.Checked then
@@ -159,29 +166,26 @@ begin
     mmMensagem.Clear;
     mmAnexos.Clear;
     medtHora.Clear;
+    cbxImportante.Checked := false;
     medtHora.SetFocus;
   end;
 end;
 
-procedure TForm1.FormShow(Sender: TObject);
-var
-  ArquivoPorteiro: string;
+procedure TfrmOcorrencia.FormShow(Sender: TObject);
 begin
   mmMensagem.Clear;
   mmAnexos.Clear;
-
-  ArquivoPorteiro := 'C:\Porteiros.txt';
-
-  if FileExists(ArquivoPorteiro) then
-    cbxPorteiro.Items.LoadFromFile(ArquivoPorteiro);
+  medtData.Text := DateToStr(now);
+  edtPorteiro.Text := sPorteiro;
+  medtHora.SetFocus;
 end;
 
-procedure TForm1.btnSairClick(Sender: TObject);
+procedure TfrmOcorrencia.btnSairClick(Sender: TObject);
 begin
   Close;
 end;
 
-function TForm1.VerificaData(Data: String): Boolean;
+function TfrmOcorrencia.VerificaData(Data: String): Boolean;
 begin
   Result:=True;
    Try
@@ -193,10 +197,13 @@ begin
    End;
 end;
 
-procedure TForm1.FormKeyPress(Sender: TObject; var Key: Char);
+procedure TfrmOcorrencia.FormKeyPress(Sender: TObject; var Key: Char);
 begin
   if key = #13 then
    btnSalvarClick(btnSalvar);
+
+  if key =#27 then
+    close;
 end;
 
 end.

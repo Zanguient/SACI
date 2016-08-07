@@ -1,8 +1,8 @@
-object Form1: TForm1
-  Left = 241
-  Top = 102
-  Width = 972
-  Height = 606
+object frmOcorrencia: TfrmOcorrencia
+  Left = 301
+  Top = 161
+  Width = 840
+  Height = 492
   Caption = 'Livro de ocorr'#234'ncia'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -12,6 +12,7 @@ object Form1: TForm1
   Font.Style = []
   KeyPreview = True
   OldCreateOrder = False
+  Position = poScreenCenter
   OnKeyPress = FormKeyPress
   OnShow = FormShow
   PixelsPerInch = 96
@@ -19,13 +20,13 @@ object Form1: TForm1
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 863
-    Height = 579
+    Width = 722
+    Height = 465
     Align = alClient
     TabOrder = 0
     DesignSize = (
-      863
-      579)
+      722
+      465)
     object Label1: TLabel
       Left = 15
       Top = 55
@@ -35,7 +36,7 @@ object Form1: TForm1
     end
     object Label2: TLabel
       Left = 15
-      Top = 477
+      Top = 363
       Width = 35
       Height = 13
       Anchors = [akLeft, akBottom]
@@ -49,14 +50,14 @@ object Form1: TForm1
       Caption = 'Porteiro'
     end
     object edtData: TLabel
-      Left = 215
+      Left = 205
       Top = 15
       Width = 23
       Height = 13
       Caption = 'Data'
     end
     object Label4: TLabel
-      Left = 290
+      Left = 276
       Top = 15
       Width = 23
       Height = 13
@@ -64,7 +65,7 @@ object Form1: TForm1
     end
     object Label5: TLabel
       Left = 55
-      Top = 477
+      Top = 363
       Width = 97
       Height = 13
       Anchors = [akLeft, akBottom]
@@ -76,30 +77,18 @@ object Form1: TForm1
       Font.Style = []
       ParentFont = False
     end
-    object Label6: TLabel
-      Left = 55
-      Top = 15
-      Width = 70
-      Height = 13
-      Caption = 'C:\Porteiros.txt'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clRed
-      Font.Height = -11
-      Font.Name = 'MS Sans Serif'
-      Font.Style = []
-      ParentFont = False
-    end
     object mmMensagem: TMemo
       Left = 15
       Top = 70
-      Width = 833
-      Height = 396
+      Width = 692
+      Height = 282
       Anchors = [akLeft, akTop, akRight, akBottom]
       Lines.Strings = (
         
           'Crie uma nova Application no delphi, adicione e modifique a prop' +
           'riedades dos seguintes componentes: Crie uma nova Application no' +
-          ' delphi, adicione e modifique a '
+          ' delphi, '
+        'adicione e modifique a '
         'propriedades dos seguintes '
         
           'componentes: Crie uma nova Application no delphi, adicione e mod' +
@@ -153,7 +142,8 @@ object Form1: TForm1
         
           'Agora v'#225' at'#233' a paleta Indy Clients e adicione o componente IdSMT' +
           'P, depois v'#225' at'#233' a paleta Indy Misc e adicione o componente IdMe' +
-          'ssage e altere as seguintes '
+          'ssage e '
+        'altere as seguintes '
         'propriedades:'
         'ComponenteNomeValor'
         'IdMessageNameIdMessage'
@@ -166,7 +156,8 @@ object Form1: TForm1
         
           'Bom, todos os componentes necess'#225'rios para que possamos enviar u' +
           'm email j'#225' est'#227'o em nosso formul'#225'rio. Agora vamos come'#231'ar a codi' +
-          'ficar ('#233' a parte que mais gosto de '
+          'ficar '
+        '('#233' a parte que mais gosto de '
         'um sistema, odeio '
         'instanciar componentes).'
         ''
@@ -179,7 +170,8 @@ object Form1: TForm1
         
           'Nesse ponto cada vez que voc'#234' clicar no bot'#227'o Anexar e voc'#234' sele' +
           'cionar um arquivo ele vai gravar o nome e o caminho do arquivo n' +
-          'o Memo mmAnexos.'
+          'o '
+        'Memo mmAnexos.'
         ''
         'Agora d'#234' clique duplo no btnEnviar e adicione mais esse c'#243'digo :'
         ''
@@ -225,14 +217,16 @@ object Form1: TForm1
         
           'Nosso sistema de envio de email j'#225' est'#225' conclu'#237'do agora '#233' s'#243' voc' +
           #234' realizar seus testes, os indy s'#227'o muito uteis principalmente p' +
-          'ara enviar email com anexos, tendo em '
+          'ara enviar '
+        'email com anexos, tendo em '
         'vista que quando voc'#234' '
         'usa o ShellExecute para enviar email ele n'#227'o envia email anexo.'
         ''
         
           'Mas os componentes Indy n'#227'o resume-se apenas a isso, vale a pena' +
           ' voc'#234' dar uma olhada com mais calma e descobrir a potencialidade' +
-          ' dos mesmos.'
+          ' dos '
+        'mesmos.'
         ''
         'Confira abaixo como ficou o c'#243'digo completo do sistema.'
         ''
@@ -361,12 +355,12 @@ object Form1: TForm1
         'OK   '
         '---------------------------')
       ScrollBars = ssVertical
-      TabOrder = 3
+      TabOrder = 4
     end
     object mmAnexos: TMemo
       Left = 15
-      Top = 494
-      Width = 747
+      Top = 380
+      Width = 593
       Height = 59
       TabStop = False
       Anchors = [akLeft, akRight, akBottom]
@@ -411,8 +405,8 @@ object Form1: TForm1
         'Filter | Filter *.*'
         
           'Agora v'#225' at'#233' a paleta Indy Clients e adicione o componente IdSMT' +
-          'P, depois v'#225' at'#233' a paleta Indy Misc e adicione o componente IdMe' +
-          'ssage e altere as '
+          'P, depois v'#225' at'#233' a paleta Indy Misc e adicione o '
+        'componente IdMessage e altere as '
         'seguintes '
         'propriedades:'
         'ComponenteNomeValor'
@@ -425,8 +419,8 @@ object Form1: TForm1
         ''
         
           'Bom, todos os componentes necess'#225'rios para que possamos enviar u' +
-          'm email j'#225' est'#227'o em nosso formul'#225'rio. Agora vamos come'#231'ar a codi' +
-          'ficar ('#233' a parte '
+          'm email j'#225' est'#227'o em nosso formul'#225'rio. Agora vamos '
+        'come'#231'ar a codificar ('#233' a parte '
         'que mais gosto de um '
         'sistema, odeio instanciar componentes).'
         ''
@@ -438,8 +432,8 @@ object Form1: TForm1
         ''
         
           'Nesse ponto cada vez que voc'#234' clicar no bot'#227'o Anexar e voc'#234' sele' +
-          'cionar um arquivo ele vai gravar o nome e o caminho do arquivo n' +
-          'o Memo '
+          'cionar um arquivo ele vai gravar o nome e o '
+        'caminho do arquivo no Memo '
         'mmAnexos.'
         ''
         'Agora d'#234' clique duplo no btnEnviar e adicione mais esse c'#243'digo :'
@@ -485,8 +479,8 @@ object Form1: TForm1
         ''
         
           'Nosso sistema de envio de email j'#225' est'#225' conclu'#237'do agora '#233' s'#243' voc' +
-          #234' realizar seus testes, os indy s'#227'o muito uteis principalmente p' +
-          'ara enviar email com '
+          #234' realizar seus testes, os indy s'#227'o muito uteis '
+        'principalmente para enviar email com '
         'anexos, tendo em vista '
         
           'que quando voc'#234' usa o ShellExecute para enviar email ele n'#227'o env' +
@@ -494,8 +488,8 @@ object Form1: TForm1
         ''
         
           'Mas os componentes Indy n'#227'o resume-se apenas a isso, vale a pena' +
-          ' voc'#234' dar uma olhada com mais calma e descobrir a potencialidade' +
-          ' dos mesmos.'
+          ' voc'#234' dar uma olhada com mais calma e descobrir a '
+        'potencialidade dos mesmos.'
         ''
         'Confira abaixo como ficou o c'#243'digo completo do sistema.'
         ''
@@ -625,16 +619,16 @@ object Form1: TForm1
         '---------------------------')
       ReadOnly = True
       ScrollBars = ssVertical
-      TabOrder = 4
+      TabOrder = 5
     end
     object btnAnexar: TBitBtn
-      Left = 774
-      Top = 494
-      Width = 75
+      Left = 617
+      Top = 380
+      Width = 90
       Height = 25
       Anchors = [akRight, akBottom]
       Caption = '&Anexar'
-      TabOrder = 5
+      TabOrder = 6
       OnClick = btnAnexarClick
       Glyph.Data = {
         76010000424D7601000000000000760000002800000020000000100000000100
@@ -652,13 +646,13 @@ object Form1: TForm1
       NumGlyphs = 2
     end
     object btnLimpar: TBitBtn
-      Left = 774
-      Top = 527
-      Width = 75
+      Left = 617
+      Top = 413
+      Width = 90
       Height = 25
       Anchors = [akRight, akBottom]
       Caption = '&Limpar'
-      TabOrder = 6
+      TabOrder = 7
       OnClick = btnLimparClick
       Glyph.Data = {
         76010000424D7601000000000000760000002800000020000000100000000100
@@ -676,7 +670,7 @@ object Form1: TForm1
       NumGlyphs = 2
     end
     object medtData: TMaskEdit
-      Left = 215
+      Left = 205
       Top = 30
       Width = 66
       Height = 21
@@ -686,7 +680,7 @@ object Form1: TForm1
       Text = '  /  /    '
     end
     object medtHora: TMaskEdit
-      Left = 290
+      Left = 276
       Top = 30
       Width = 59
       Height = 21
@@ -695,35 +689,40 @@ object Form1: TForm1
       TabOrder = 2
       Text = '  :  '
     end
-    object cbxPorteiro: TComboBox
+    object edtPorteiro: TEdit
       Left = 15
       Top = 30
-      Width = 191
+      Width = 186
       Height = 21
-      Style = csDropDownList
-      ItemHeight = 13
+      TabStop = False
+      Color = clMenu
+      Enabled = False
       TabOrder = 0
-      Items.Strings = (
-        'FL'#193'VIO'
-        'GUGU'
-        'JOAQUIM'
-        'RAFAEL')
+    end
+    object cbxImportante: TCheckBox
+      Left = 350
+      Top = 31
+      Width = 76
+      Height = 17
+      Cursor = crHandPoint
+      Caption = '&Importante'
+      TabOrder = 3
     end
   end
   object Panel2: TPanel
-    Left = 863
+    Left = 722
     Top = 0
-    Width = 101
-    Height = 579
+    Width = 110
+    Height = 465
     Align = alRight
     TabOrder = 1
     DesignSize = (
-      101
-      579)
+      110
+      465)
     object btnSalvar: TBitBtn
-      Left = 12
+      Left = 10
       Top = 15
-      Width = 75
+      Width = 90
       Height = 25
       Anchors = [akTop, akRight]
       Caption = '&Salvar'
@@ -745,9 +744,9 @@ object Form1: TForm1
       NumGlyphs = 2
     end
     object btnSair: TBitBtn
-      Left = 12
+      Left = 10
       Top = 50
-      Width = 75
+      Width = 90
       Height = 25
       Anchors = [akTop, akRight]
       Caption = 'Sai&r'
@@ -769,7 +768,7 @@ object Form1: TForm1
       NumGlyphs = 2
     end
     object cbxEmail: TCheckBox
-      Left = 12
+      Left = 10
       Top = 85
       Width = 46
       Height = 17
@@ -785,8 +784,8 @@ object Form1: TForm1
     ReadTimeout = 0
     Port = 25
     AuthenticationType = atNone
-    Left = 700
-    Top = 125
+    Left = 270
+    Top = 220
   end
   object IdMessage1: TIdMessage
     AttachmentEncoding = 'MIME'
@@ -795,12 +794,12 @@ object Form1: TForm1
     Encoding = meMIME
     Recipients = <>
     ReplyTo = <>
-    Left = 730
-    Top = 125
+    Left = 300
+    Top = 220
   end
   object odAnexos: TOpenDialog
-    Left = 760
-    Top = 125
+    Left = 330
+    Top = 220
   end
   object ConnectionLagoa: TADOConnection
     Connected = True
@@ -812,8 +811,8 @@ object Form1: TForm1
       'Tag with column collation when possible=False'
     LoginPrompt = False
     Provider = 'SQLOLEDB.1'
-    Left = 700
-    Top = 95
+    Left = 270
+    Top = 190
   end
   object InsertOcorrencia: TADOQuery
     Connection = ConnectionLagoa
@@ -850,13 +849,18 @@ object Form1: TForm1
         Name = 'OCORRENCIA'
         Size = -1
         Value = Null
+      end
+      item
+        Name = 'IMPORTANTE'
+        Size = -1
+        Value = Null
       end>
     SQL.Strings = (
       'INSERT INTO OCORRENCIA'
-      '(PORTEIRO, DATA, DATAOCORRENCIA, OCORRENCIA)'
+      '(PORTEIRO, DATA, DATAOCORRENCIA, OCORRENCIA, IMPORTANTE)'
       'VALUES'
-      '(:PORTEIRO, :DATA, :DATAOCORRENCIA, :OCORRENCIA)')
-    Left = 730
-    Top = 95
+      '(:PORTEIRO, :DATA, :DATAOCORRENCIA, :OCORRENCIA, :IMPORTANTE)')
+    Left = 300
+    Top = 190
   end
 end
