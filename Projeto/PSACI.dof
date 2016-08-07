@@ -115,7 +115,7 @@ AutoIncBuild=1
 MajorVer=7
 MinorVer=1
 Release=1
-Build=117
+Build=118
 Debug=0
 PreRelease=0
 Special=0
@@ -126,7 +126,7 @@ CodePage=1252
 [Version Info Keys]
 CompanyName=Build Sistemas
 FileDescription=Controle de Frente de Caixa, Estoque, etc.
-FileVersion=7.1.1.117
+FileVersion=7.1.1.118
 InternalName=SIAC
 LegalCopyright=Copyright (C) 1998-2010
 LegalTrademarks=

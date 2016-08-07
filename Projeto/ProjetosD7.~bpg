@@ -10,7 +10,7 @@ DCC = $(ROOT)\bin\dcc32.exe $**
 BRCC = $(ROOT)\bin\brcc32.exe $**
 #------------------------------------------------------------------------------
 PROJECTS = Softech.bpl ProtecSenha.exe PComunicacao.exe DownloadSACI.exe \
-  Chave.dll PSACI.exe Project1.exe
+  Chave.dll PSACI.exe
 #------------------------------------------------------------------------------
 default: $(PROJECTS)
 #------------------------------------------------------------------------------
@@ -31,9 +31,6 @@ Chave.dll: ..\AtualizaBase\Chave\Chave.dpr
   $(DCC)
 
 PSACI.exe: PSACI.dpr
-  $(DCC)
-
-Project1.exe: ..\..\..\Documents and Settings\Android\Desktop\Nova pasta\Project1.dpr
   $(DCC)
 
 

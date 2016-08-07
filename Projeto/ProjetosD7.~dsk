@@ -1,26 +1,56 @@
 [Closed Files]
-File_0=SourceModule,'C:\FontesD7\SACI\Projeto\u_ListaPedidoPAF.pas',0,1,1,53,26,0,0
-File_1=SourceModule,'C:\FontesD7\SACI\Comunicação\CdEnviaComunicacao.pas',0,1,1,10,3,0,0
-File_2=SourceModule,'C:\FontesD7\SACI\Comunicação\UPrincComunicacao.pas',0,1,1,1,1,0,0
-File_3=SourceModule,'C:\FontesD7\SACI\Projeto\UPrinc2.pas',0,1,5897,54,5899,0,0
-File_4=SourceModule,'C:\FontesD7\SACI\Projeto\MxSelTitulos.pas',0,1,832,52,835,0,0
-File_5=SourceModule,'C:\FontesD7\SACI\Relatorios\UReceber.pas',0,1,1,84,11,0,0
-File_6=SourceModule,'C:\FontesD7\SACI\Projeto\MxSTituloPagar.pas',0,1,522,113,533,0,0
-File_7=SourceModule,'C:\FontesD7\SACI\Projeto\MxGraficoTitulosPagos.pas',0,1,1,1,1,0,0
-File_8=SourceModule,'C:\FontesD7\SACI\Relatorios\UPagar.pas',0,1,1,86,17,0,0
-File_9=SourceModule,'C:\FontesD7\SACI\Relatorios\UBaixaPag.pas',0,1,1,1,1,0,0
+File_0=SourceModule,'C:\FontesD7\SACI\Componentes\Entidades\cliente.pas',0,1,51,55,58,0,0
+File_1=SourceModule,'C:\FontesD7\SACI\Projeto\CdBanco.pas',0,1,1,92,5,1,0
+File_2=SourceModule,'C:\FontesD7\SACI\Relatorios\URelacaoDespesas.pas',0,1,1,40,2,1,0
+File_3=SourceModule,'C:\FontesD7\SACI\Projeto\u_ListaPedidoPAF.pas',0,1,1,53,26,0,0
+File_4=SourceModule,'C:\FontesD7\SACI\Comunicação\CdEnviaComunicacao.pas',0,1,1,10,3,0,0
+File_5=SourceModule,'C:\FontesD7\SACI\Comunicação\UPrincComunicacao.pas',0,1,1,1,1,0,0
+File_6=SourceModule,'C:\FontesD7\SACI\Projeto\MxSelTitulos.pas',0,1,832,52,835,0,0
+File_7=SourceModule,'C:\FontesD7\SACI\Relatorios\UReceber.pas',0,1,1,84,11,0,0
+File_8=SourceModule,'C:\FontesD7\SACI\Projeto\MxSTituloPagar.pas',0,1,522,113,533,0,0
+File_9=SourceModule,'C:\FontesD7\SACI\Projeto\MxGraficoTitulosPagos.pas',0,1,1,1,1,0,0
 
 [Modules]
-Module0=C:\FontesD7\SACI\Projeto\CdBanco.pas
-Module1=C:\FontesD7\SACI\AtualizaBase\Chave\Chave.dpr
-Count=2
+Module0=C:\FontesD7\SACI\Lagoa\uLivroOcorrencia.pas
+Module1=C:\FontesD7\SACI\Projeto\UPrinc2.pas
+Module2=C:\FontesD7\SACI\Projeto\MxSobre.pas
+Module3=C:\FontesD7\SACI\Projeto\MxSelConta.pas
+Module4=C:\FontesD7\SACI\Projeto\PSACI.dpr
+Module5=C:\FontesD7\SACI\Projeto\Funcoes.pas
+Module6=C:\FontesD7\SACI\AtualizaBase\Chave\Chave.dpr
+Count=7
 EditWindowCount=1
 PackageWindowCount=2
 
-[C:\FontesD7\SACI\Projeto\CdBanco.pas]
+[C:\FontesD7\SACI\Lagoa\uLivroOcorrencia.pas]
+ModuleType=SourceModule
+FormState=1
+FormOnTop=0
+
+[C:\FontesD7\SACI\Projeto\UPrinc2.pas]
+ModuleType=SourceModule
+FormState=1
+FormOnTop=0
+
+[C:\FontesD7\SACI\Projeto\MxSobre.pas]
 ModuleType=SourceModule
 FormState=1
 FormOnTop=1
+
+[C:\FontesD7\SACI\Projeto\MxSelConta.pas]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[C:\FontesD7\SACI\Projeto\PSACI.dpr]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[C:\FontesD7\SACI\Projeto\Funcoes.pas]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
 
 [C:\FontesD7\SACI\AtualizaBase\Chave\Chave.dpr]
 ModuleType=SourceModule
@@ -51,7 +81,7 @@ FormOnTop=0
 FormState=0
 FormOnTop=0
 
-[C:\FontesD7\SACI\Projeto\PSACI.dpr]
+[C:\FontesD7\SACI\Lagoa\LivroOcorrencia.dpr]
 FormState=0
 FormOnTop=0
 
@@ -60,10 +90,15 @@ FormState=0
 FormOnTop=0
 
 [EditWindow0]
-ViewCount=2
-CurrentView=1
+ViewCount=7
+CurrentView=4
 View0=0
 View1=1
+View2=2
+View3=3
+View4=4
+View5=5
+View6=6
 CodeExplorer=CodeExplorer@EditWindow0
 MessageView=MessageView@EditWindow0
 Create=1
@@ -87,20 +122,55 @@ RightPanelClients=ProjectManager
 RightPanelData=000004000000000000000000000000000000000000000000000100000000000000001200000050726F6A6563744D616E61676572466F726DFFFFFFFF
 BottomPanelSize=0
 BottomPanelClients=MessageView@EditWindow0
-BottomPanelData=00000400010000000B0000004D657373616765566965770000000000000000000000000000000000FFFFFFFF
+BottomPanelData=00000400010000000B0000004D6573736167655669657700000000000000000000000000000000000100000000000000000B0000004D65737361676556696577FFFFFFFF
 
 [View0]
 Module=C:\FontesD7\SACI\AtualizaBase\Chave\Chave.dpr
-CursorX=125
-CursorY=17
-TopLine=9
+CursorX=66
+CursorY=28
+TopLine=3
 LeftCol=1
 
 [View1]
-Module=C:\FontesD7\SACI\Projeto\CdBanco.pas
-CursorX=81
-CursorY=19
+Module=C:\FontesD7\SACI\Projeto\Funcoes.pas
+CursorX=16
+CursorY=306
+TopLine=293
+LeftCol=1
+
+[View2]
+Module=C:\FontesD7\SACI\Projeto\PSACI.dpr
+CursorX=79
+CursorY=798
+TopLine=785
+LeftCol=1
+
+[View3]
+Module=C:\FontesD7\SACI\Projeto\UPrinc2.pas
+CursorX=102
+CursorY=2402
+TopLine=2387
+LeftCol=1
+
+[View4]
+Module=C:\FontesD7\SACI\Lagoa\uLivroOcorrencia.pas
+CursorX=98
+CursorY=117
+TopLine=107
+LeftCol=1
+
+[View5]
+Module=C:\FontesD7\SACI\Projeto\MxSobre.pas
+CursorX=1
+CursorY=1
 TopLine=1
+LeftCol=1
+
+[View6]
+Module=C:\FontesD7\SACI\Projeto\MxSelConta.pas
+CursorX=69
+CursorY=195
+TopLine=188
 LeftCol=1
 
 [PackageWindow0]
@@ -190,6 +260,22 @@ TBDockHeight=303
 LRDockWidth=155
 Dockable=1
 
+[Components]
+Left=240
+Top=237
+Width=183
+Height=233
+Create=1
+Visible=0
+State=0
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=175
+ClientHeight=209
+TBDockHeight=233
+LRDockWidth=183
+Dockable=1
+
 [AlignmentPalette]
 Create=1
 Visible=0
@@ -220,8 +306,8 @@ LRDockWidth=190
 Dockable=1
 SplitPos=104
 ArrangeBy=Name
-SelectedItem=Glyph
-ExpandedItems=
+SelectedItem=Name
+ExpandedItems=Anchors
 HiddenCategories=
 
 [ObjectTree]
@@ -260,13 +346,13 @@ Dockable=1
 Create=1
 Visible=0
 State=0
-Left=-6
-Top=-500
-Width=443
+Left=12
+Top=0
+Width=1354
 Height=85
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=443
+ClientWidth=1354
 ClientHeight=85
 TBDockHeight=85
 LRDockWidth=443
@@ -276,5 +362,5 @@ Dockable=1
 DockHostCount=0
 
 [ActiveProject]
-ActiveProject=5
+ActiveProject=7
 
