@@ -1,0 +1,21 @@
+Provider=SQLOLEDB.1;Password=agfm1901;Persist Security Info=True;User ID=lagoa;Initial Catalog=buildsis_lagoa;Data Source=70.38.11.27;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=FONTESD7-VM;Use Encryption for Data=False;Tag with column collation when possible=False
+
+Data Source = 70.38.11.27
+Usuario = lagoa
+Senha = agfm1901
+Banco = buildsis_lagoa
+
+
+CREATE TABLE OCORRENCIA 
+(
+ID int IDENTITY (1,1) PRIMARY KEY,
+Porteiro varchar(50),
+Data Datetime,
+DataOcorrencia Datetime,
+Ocorrencia text
+)
+*/
+
+--DROP TABLE OCORRENCIA 
+
+SELECT * FROM OCORRENCIA 
