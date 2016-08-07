@@ -36,6 +36,8 @@ type
     procedure DBGridOcorrenciaDrawColumnCell(Sender: TObject;
       const Rect: TRect; DataCol: Integer; Column: TColumn;
       State: TGridDrawState);
+    procedure DBGridOcorrenciaDrawDataCell(Sender: TObject;
+      const Rect: TRect; Field: TField; State: TGridDrawState);
   private
     procedure CarregaOcorrencia;
     procedure ConsultaOcorrencia(aData: TDateTime);
@@ -132,16 +134,9 @@ procedure TfrmLivro.DBGridOcorrenciaDrawColumnCell(Sender: TObject;
 begin
    if DBGridOcorrencia.DataSource.DataSet.FieldByName('IMPORTANTE').Value = 'S'   then
   begin
-    //DBGridOcorrencia.Canvas.Font.Color   := clred;
-    //DBGridOcorrencia.Canvas.Font.Style   := [];
-
-    DBGridOcorrencia.Canvas.Brush.Color := clRed;
-
+    DBGridOcorrencia.Canvas.Font.Color   := clred;
     DBGridOcorrencia.Canvas.FillRect(Rect);
     DBGridOcorrencia.DefaultDrawColumnCell(Rect, DataCol, Column, State);
-
-
-
   end
   else
   begin
@@ -150,12 +145,13 @@ begin
     //DBGridOcorrencia.Canvas.FillRect(Rect);
     //DBGridOcorrencia.DefaultDrawColumnCell(Rect, DataCol, Column, State);
   end;
+end;
 
-  //if gdSelected in State then
+procedure TfrmLivro.DBGridOcorrenciaDrawDataCell(Sender: TObject;
+  const Rect: TRect; Field: TField; State: TGridDrawState);
+begin
+   //if gdSelected in State then
     //DBGridOcorrencia.Canvas.Brush.Color := clRed;
-
-  //DBGridOcorrencia.DefaultDrawColumnCell(Rect, DataCol, Column, State);
-
 end;
 
 end.

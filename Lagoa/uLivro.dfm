@@ -53,6 +53,7 @@ object frmLivro: TfrmLivro
       TitleFont.Height = -11
       TitleFont.Name = 'MS Sans Serif'
       TitleFont.Style = []
+      OnDrawDataCell = DBGridOcorrenciaDrawDataCell
       OnDrawColumnCell = DBGridOcorrenciaDrawColumnCell
     end
     object mmMensagem: TMemo
