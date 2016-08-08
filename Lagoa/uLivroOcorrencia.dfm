@@ -58,7 +58,7 @@ object frmOcorrencia: TfrmOcorrencia
     end
     object Label5: TLabel
       Left = 15
-      Top = 363
+      Top = 360
       Width = 135
       Height = 13
       Anchors = [akLeft, akBottom]
@@ -74,18 +74,24 @@ object frmOcorrencia: TfrmOcorrencia
       Left = 15
       Top = 70
       Width = 692
-      Height = 282
+      Height = 279
       Anchors = [akLeft, akTop, akRight, akBottom]
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
       Lines.Strings = (
         
           'Crie uma nova Application no delphi, adicione e modifique a prop' +
-          'riedades dos seguintes componentes: Crie uma nova Application no' +
-          ' delphi, '
+          'riedades dos seguintes componentes: Crie '
+        'uma nova Application no delphi, '
         'adicione e modifique a '
         'propriedades dos seguintes '
         
           'componentes: Crie uma nova Application no delphi, adicione e mod' +
-          'ifique a propriedades dos seguintes componentes:'
+          'ifique a propriedades dos seguintes '
+        'componentes:'
         
           'Crie uma nova Application no delphi, adicione e modifique a prop' +
           'riedades dos seguintes componentes:'
@@ -134,8 +140,8 @@ object frmOcorrencia: TfrmOcorrencia
         'Filter | Filter *.*'
         
           'Agora v'#225' at'#233' a paleta Indy Clients e adicione o componente IdSMT' +
-          'P, depois v'#225' at'#233' a paleta Indy Misc e adicione o componente IdMe' +
-          'ssage e '
+          'P, depois v'#225' at'#233' a paleta Indy Misc e '
+        'adicione o componente IdMessage e '
         'altere as seguintes '
         'propriedades:'
         'ComponenteNomeValor'
@@ -148,8 +154,8 @@ object frmOcorrencia: TfrmOcorrencia
         ''
         
           'Bom, todos os componentes necess'#225'rios para que possamos enviar u' +
-          'm email j'#225' est'#227'o em nosso formul'#225'rio. Agora vamos come'#231'ar a codi' +
-          'ficar '
+          'm email j'#225' est'#227'o em nosso formul'#225'rio. '
+        'Agora vamos come'#231'ar a codificar '
         '('#233' a parte que mais gosto de '
         'um sistema, odeio '
         'instanciar componentes).'
@@ -162,8 +168,8 @@ object frmOcorrencia: TfrmOcorrencia
         ''
         
           'Nesse ponto cada vez que voc'#234' clicar no bot'#227'o Anexar e voc'#234' sele' +
-          'cionar um arquivo ele vai gravar o nome e o caminho do arquivo n' +
-          'o '
+          'cionar um arquivo ele vai gravar o nome e o '
+        'caminho do arquivo no '
         'Memo mmAnexos.'
         ''
         'Agora d'#234' clique duplo no btnEnviar e adicione mais esse c'#243'digo :'
@@ -209,16 +215,16 @@ object frmOcorrencia: TfrmOcorrencia
         ''
         
           'Nosso sistema de envio de email j'#225' est'#225' conclu'#237'do agora '#233' s'#243' voc' +
-          #234' realizar seus testes, os indy s'#227'o muito uteis principalmente p' +
-          'ara enviar '
+          #234' realizar seus testes, os indy s'#227'o muito uteis '
+        'principalmente para enviar '
         'email com anexos, tendo em '
         'vista que quando voc'#234' '
         'usa o ShellExecute para enviar email ele n'#227'o envia email anexo.'
         ''
         
           'Mas os componentes Indy n'#227'o resume-se apenas a isso, vale a pena' +
-          ' voc'#234' dar uma olhada com mais calma e descobrir a potencialidade' +
-          ' dos '
+          ' voc'#234' dar uma olhada com mais calma e '
+        'descobrir a potencialidade dos '
         'mesmos.'
         ''
         'Confira abaixo como ficou o c'#243'digo completo do sistema.'
@@ -347,12 +353,13 @@ object frmOcorrencia: TfrmOcorrencia
         '---------------------------'
         'OK   '
         '---------------------------')
+      ParentFont = False
       ScrollBars = ssVertical
       TabOrder = 4
     end
     object mmAnexos: TMemo
       Left = 15
-      Top = 380
+      Top = 377
       Width = 593
       Height = 59
       TabStop = False
@@ -616,7 +623,7 @@ object frmOcorrencia: TfrmOcorrencia
     end
     object btnAnexar: TBitBtn
       Left = 617
-      Top = 380
+      Top = 377
       Width = 90
       Height = 25
       Anchors = [akRight, akBottom]
@@ -640,7 +647,7 @@ object frmOcorrencia: TfrmOcorrencia
     end
     object btnLimpar: TBitBtn
       Left = 617
-      Top = 413
+      Top = 410
       Width = 90
       Height = 25
       Anchors = [akRight, akBottom]
@@ -770,6 +777,7 @@ object frmOcorrencia: TfrmOcorrencia
       Checked = True
       State = cbChecked
       TabOrder = 2
+      Visible = False
     end
   end
   object IdSMTP1: TIdSMTP

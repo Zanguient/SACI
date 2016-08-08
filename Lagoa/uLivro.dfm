@@ -44,12 +44,12 @@ object frmLivro: TfrmLivro
     object DBGridOcorrencia: TDBGrid
       Left = 15
       Top = 75
-      Width = 233
+      Width = 221
       Height = 490
       Anchors = [akLeft, akTop, akBottom]
       Ctl3D = True
       DataSource = dsOcorrencia
-      Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit]
+      Options = [dgTitles, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit]
       ParentCtl3D = False
       TabOrder = 1
       TitleFont.Charset = DEFAULT_CHARSET
@@ -60,19 +60,27 @@ object frmLivro: TfrmLivro
       OnDrawColumnCell = DBGridOcorrenciaDrawColumnCell
     end
     object mmMensagem: TMemo
-      Left = 260
+      Left = 255
       Top = 75
-      Width = 687
+      Width = 692
       Height = 490
       Anchors = [akLeft, akTop, akRight, akBottom]
       Color = clMenu
+      Ctl3D = True
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentCtl3D = False
+      ParentFont = False
       ReadOnly = True
       TabOrder = 2
     end
     object cbxPorteiro: TComboBox
       Left = 15
       Top = 30
-      Width = 233
+      Width = 221
       Height = 21
       Style = csDropDownList
       ItemHeight = 13
@@ -93,13 +101,13 @@ object frmLivro: TfrmLivro
       TabOrder = 3
       object Label4: TLabel
         Left = 15
-        Top = 5
-        Width = 52
-        Height = 13
+        Top = 3
+        Width = 62
+        Height = 16
         Caption = 'Aten'#231#227'o:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clRed
-        Font.Height = -11
+        Font.Height = -13
         Font.Name = 'MS Sans Serif'
         Font.Style = [fsBold]
         ParentFont = False
@@ -107,14 +115,14 @@ object frmLivro: TfrmLivro
       object Label5: TLabel
         Left = 15
         Top = 20
-        Width = 393
-        Height = 13
+        Width = 501
+        Height = 16
         Caption = 
           'Ocorr'#234'ncias destacadas em vermelho s'#227'o importantes, portanto, pr' +
           'iorise sua leitura.'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clRed
-        Font.Height = -11
+        Font.Height = -13
         Font.Name = 'MS Sans Serif'
         Font.Style = []
         ParentFont = False
@@ -210,7 +218,7 @@ object frmLivro: TfrmLivro
     CursorType = ctStatic
     Parameters = <>
     SQL.Strings = (
-      'SELECT * FROM OCORRENCIA ORDER BY DATAOCORRENCIA')
+      'SELECT * FROM OCORRENCIA ORDER BY DATAOCORRENCIA DESC')
     Left = 465
     Top = 505
     object ADOOcorrenciaID: TAutoIncField
@@ -226,7 +234,7 @@ object frmLivro: TfrmLivro
       Size = 50
     end
     object ADOOcorrenciaDataOcorrencia: TDateTimeField
-      DisplayLabel = 'Data Hora'
+      DisplayLabel = 'Data/Hora'
       DisplayWidth = 20
       FieldName = 'DataOcorrencia'
     end

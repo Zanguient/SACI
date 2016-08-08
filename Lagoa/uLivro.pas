@@ -97,7 +97,7 @@ begin
   mmMensagem.Clear;
   ADOOcorrencia.Close;
   ADOOcorrencia.SQL.Text :=  'SELECT * FROM OCORRENCIA ' +
-                             ' WHERE DATAOCORRENCIA >= ''' + MesDia(aData - 1) + ''' AND DATAOCORRENCIA <= '''+ MesDia(aData + 1)+ ''' ORDER BY DATAOCORRENCIA';
+                             ' WHERE DATAOCORRENCIA >= ''' + MesDia(aData - 1) + ''' AND DATAOCORRENCIA <= '''+ MesDia(aData + 1)+ ''' ORDER BY DATAOCORRENCIA DESC';
   ADOOcorrencia.Open;
 end;
 
@@ -141,20 +141,25 @@ procedure TfrmLivro.DBGridOcorrenciaDrawColumnCell(Sender: TObject;
   const Rect: TRect; DataCol: Integer; Column: TColumn;
   State: TGridDrawState);
 begin
-   if DBGridOcorrencia.DataSource.DataSet.FieldByName('IMPORTANTE').Value = 'S'   then
+  if DBGridOcorrencia.DataSource.DataSet.FieldByName('IMPORTANTE').Value = 'S'   then
   begin
     DBGridOcorrencia.Canvas.Font.Color := clWhite;
     DBGridOcorrencia.Canvas.Brush.Color := clRed;
-    DBGridOcorrencia.Canvas.FillRect(Rect);
-    DBGridOcorrencia.DefaultDrawColumnCell(Rect, DataCol, Column, State);
   end
   else
   begin
     DBGridOcorrencia.Canvas.Font.Color := clNavy;
     DBGridOcorrencia.Canvas.Brush.Color := clSkyBlue;
-    DBGridOcorrencia.Canvas.FillRect(Rect);
-    DBGridOcorrencia.DefaultDrawColumnCell(Rect, DataCol, Column, State);
   end;
+
+  if gdSelected in State then
+  begin
+    DBGridOcorrencia.Canvas.Font.Color := clCream;
+    DBGridOcorrencia.Canvas.Brush.Color := clNavy;
+  end;   
+
+  DBGridOcorrencia.Canvas.FillRect(Rect);
+  DBGridOcorrencia.DefaultDrawColumnCell(Rect, DataCol, Column, State);
 end;
 
 procedure TfrmLivro.FormKeyDown(Sender: TObject; var Key: Word;

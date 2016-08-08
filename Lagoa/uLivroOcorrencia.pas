@@ -6,7 +6,7 @@ uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, IdBaseComponent, IdComponent, IdTCPConnection, IdTCPClient,
   IdMessageClient, IdSMTP, StdCtrls, ExtCtrls, IdMessage, ShellAPI, Buttons,
-  Mask, DB, ADODB;
+  Mask, DB, ADODB, StrUtils;
 
 type
   TfrmOcorrencia = class(TForm)
@@ -73,6 +73,8 @@ procedure TfrmOcorrencia.EnviaEmail;
 var
   i: integer;
   msgOcorrencia: string;
+const
+  cImportante = ' (IMPORTANTE)';
 begin
   IdSMTP1.Port               := 25;
   IdSMTP1.Host               := 'aspmx.l.google.com'; //aspmx.l.google.com ou smtp.gmail.com
@@ -89,7 +91,7 @@ begin
   //O assunto da mensagem
   IdMessage1.Subject :='Livro de ocorrência';
   //conteudo da mensagem
-  msgOcorrencia := 'Porteiro: ' + edtPorteiro.Text + #13 +
+  msgOcorrencia := 'Porteiro: ' + edtPorteiro.Text + IfThen(cbxImportante.checked, cImportante, '') + #13 +
                    'Data: ' + medtData.Text + #13 +
                    'Hora: ' + medtHora.Text + #13 + #13 +
                    mmMensagem.Text;
@@ -176,7 +178,7 @@ begin
   mmAnexos.Clear;
   medtData.Text := DateToStr(now);
   edtPorteiro.Text := sPorteiro;
-  medtHora.SetFocus;
+  medtData.SetFocus;
 end;
 
 procedure TfrmOcorrencia.btnSairClick(Sender: TObject);
