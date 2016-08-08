@@ -3,6 +3,7 @@ object frmOcorrencia: TfrmOcorrencia
   Top = 161
   Width = 840
   Height = 492
+  BorderIcons = [biSystemMenu]
   Caption = 'Livro de ocorr'#234'ncia'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -34,14 +35,6 @@ object frmOcorrencia: TfrmOcorrencia
       Height = 13
       Caption = 'Ocorr'#234'ncia'
     end
-    object Label2: TLabel
-      Left = 15
-      Top = 363
-      Width = 35
-      Height = 13
-      Anchors = [akLeft, akBottom]
-      Caption = 'Anexos'
-    end
     object Label3: TLabel
       Left = 15
       Top = 15
@@ -64,14 +57,14 @@ object frmOcorrencia: TfrmOcorrencia
       Caption = 'Hora'
     end
     object Label5: TLabel
-      Left = 55
+      Left = 15
       Top = 363
-      Width = 97
+      Width = 135
       Height = 13
       Anchors = [akLeft, akBottom]
-      Caption = '(N'#227'o anexar v'#237'deos)'
+      Caption = 'Anexos (N'#227'o anexar v'#237'deos)'
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clRed
+      Font.Color = clBlack
       Font.Height = -11
       Font.Name = 'MS Sans Serif'
       Font.Style = []

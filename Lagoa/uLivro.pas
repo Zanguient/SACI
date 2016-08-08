@@ -29,6 +29,7 @@ type
     Panel1: TPanel;
     Label4: TLabel;
     Label5: TLabel;
+    ADOOcorrenciaPorteiro: TStringField;
     procedure btnNovoClick(Sender: TObject);
     procedure dsOcorrenciaDataChange(Sender: TObject; Field: TField);
     procedure FormShow(Sender: TObject);
@@ -36,8 +37,8 @@ type
     procedure DBGridOcorrenciaDrawColumnCell(Sender: TObject;
       const Rect: TRect; DataCol: Integer; Column: TColumn;
       State: TGridDrawState);
-    procedure DBGridOcorrenciaDrawDataCell(Sender: TObject;
-      const Rect: TRect; Field: TField; State: TGridDrawState);
+    procedure FormKeyDown(Sender: TObject; var Key: Word;
+      Shift: TShiftState);
   private
     procedure CarregaOcorrencia;
     procedure ConsultaOcorrencia(aData: TDateTime);
@@ -71,16 +72,24 @@ begin
   frmOcorrencia.Free;
 
   ConsultaOcorrencia(dtpData.Date);
+  DBGridOcorrencia.SetFocus;
 end;
 
 procedure TfrmLivro.CarregaOcorrencia;
 begin
-  mmMensagem.Text := ADOOcorrencia.FieldByName('OCORRENCIA').AsString;
+  mmMensagem.Lines.Clear;
+  if ADOOcorrencia.FieldByName('OCORRENCIA').AsString <> '' then
+  begin
+    mmMensagem.Lines.Add('Porteiro: ' + ADOOcorrencia.FieldByName('PORTEIRO').AsString);
+    mmMensagem.Lines.Add('Data/Hora: ' + ADOOcorrencia.FieldByName('DataOcorrencia').AsString);
+    mmMensagem.Lines.Add('');
+    mmMensagem.Lines.Add(ADOOcorrencia.FieldByName('OCORRENCIA').AsString);
 
-  if ADOOcorrencia.FieldByName('IMPORTANTE').AsString = 'S' then
-    mmMensagem.Font.Color := clRed
-  else
-    mmMensagem.Font.Color := clBlack;
+    if ADOOcorrencia.FieldByName('IMPORTANTE').AsString = 'S' then
+      mmMensagem.Font.Color := clRed
+    else
+      mmMensagem.Font.Color := clBlack;
+  end;
 end;
 
 procedure TfrmLivro.ConsultaOcorrencia(aData: TDateTime);
@@ -88,7 +97,7 @@ begin
   mmMensagem.Clear;
   ADOOcorrencia.Close;
   ADOOcorrencia.SQL.Text :=  'SELECT * FROM OCORRENCIA ' +
-                             ' WHERE DATAOCORRENCIA > ''' + MesDia(aData - 1) + ''' AND DATAOCORRENCIA <= '''+ MesDia(aData + 1)+ ''' ORDER BY DATAOCORRENCIA';
+                             ' WHERE DATAOCORRENCIA >= ''' + MesDia(aData - 1) + ''' AND DATAOCORRENCIA <= '''+ MesDia(aData + 1)+ ''' ORDER BY DATAOCORRENCIA';
   ADOOcorrencia.Open;
 end;
 
@@ -134,24 +143,28 @@ procedure TfrmLivro.DBGridOcorrenciaDrawColumnCell(Sender: TObject;
 begin
    if DBGridOcorrencia.DataSource.DataSet.FieldByName('IMPORTANTE').Value = 'S'   then
   begin
-    DBGridOcorrencia.Canvas.Font.Color   := clred;
+    DBGridOcorrencia.Canvas.Font.Color := clWhite;
+    DBGridOcorrencia.Canvas.Brush.Color := clRed;
     DBGridOcorrencia.Canvas.FillRect(Rect);
     DBGridOcorrencia.DefaultDrawColumnCell(Rect, DataCol, Column, State);
   end
   else
   begin
-    //DBGridOcorrencia.Canvas.Font.Color   := clBlack;
-    //DBGridOcorrencia.Canvas.Font.Style   := [];
-    //DBGridOcorrencia.Canvas.FillRect(Rect);
-    //DBGridOcorrencia.DefaultDrawColumnCell(Rect, DataCol, Column, State);
+    DBGridOcorrencia.Canvas.Font.Color := clNavy;
+    DBGridOcorrencia.Canvas.Brush.Color := clSkyBlue;
+    DBGridOcorrencia.Canvas.FillRect(Rect);
+    DBGridOcorrencia.DefaultDrawColumnCell(Rect, DataCol, Column, State);
   end;
 end;
 
-procedure TfrmLivro.DBGridOcorrenciaDrawDataCell(Sender: TObject;
-  const Rect: TRect; Field: TField; State: TGridDrawState);
+procedure TfrmLivro.FormKeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
 begin
-   //if gdSelected in State then
-    //DBGridOcorrencia.Canvas.Brush.Color := clRed;
+  if key = VK_F2 then
+    btnNovoClick(btnNovo);
+
+  if key = VK_F5 then
+    ConsultaOcorrencia(dtpData.Date);
 end;
 
 end.

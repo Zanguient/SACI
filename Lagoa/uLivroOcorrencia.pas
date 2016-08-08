@@ -17,7 +17,6 @@ type
     mmMensagem: TMemo;
     Label1: TLabel;
     odAnexos: TOpenDialog;
-    Label2: TLabel;
     mmAnexos: TMemo;
     btnAnexar: TBitBtn;
     btnLimpar: TBitBtn;

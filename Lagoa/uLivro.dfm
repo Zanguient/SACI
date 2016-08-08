@@ -10,8 +10,10 @@ object frmLivro: TfrmLivro
   Font.Height = -11
   Font.Name = 'MS Sans Serif'
   Font.Style = []
+  KeyPreview = True
   OldCreateOrder = False
   Position = poScreenCenter
+  OnKeyDown = FormKeyDown
   OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
@@ -42,34 +44,35 @@ object frmLivro: TfrmLivro
     object DBGridOcorrencia: TDBGrid
       Left = 15
       Top = 75
-      Width = 209
+      Width = 233
       Height = 490
       Anchors = [akLeft, akTop, akBottom]
+      Ctl3D = True
       DataSource = dsOcorrencia
-      Options = [dgTitles, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit]
+      Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit]
+      ParentCtl3D = False
       TabOrder = 1
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
       TitleFont.Height = -11
       TitleFont.Name = 'MS Sans Serif'
       TitleFont.Style = []
-      OnDrawDataCell = DBGridOcorrenciaDrawDataCell
       OnDrawColumnCell = DBGridOcorrenciaDrawColumnCell
     end
     object mmMensagem: TMemo
-      Left = 230
+      Left = 260
       Top = 75
-      Width = 717
+      Width = 687
       Height = 490
       Anchors = [akLeft, akTop, akRight, akBottom]
+      Color = clMenu
       ReadOnly = True
-      ScrollBars = ssVertical
       TabOrder = 2
     end
     object cbxPorteiro: TComboBox
       Left = 15
       Top = 30
-      Width = 163
+      Width = 233
       Height = 21
       Style = csDropDownList
       ItemHeight = 13
@@ -212,13 +215,19 @@ object frmLivro: TfrmLivro
     Top = 505
     object ADOOcorrenciaID: TAutoIncField
       DisplayLabel = 'C'#243'digo'
-      DisplayWidth = 8
+      DisplayWidth = 7
       FieldName = 'ID'
       ReadOnly = True
+      Visible = False
+    end
+    object ADOOcorrenciaPorteiro: TStringField
+      DisplayWidth = 12
+      FieldName = 'Porteiro'
+      Size = 50
     end
     object ADOOcorrenciaDataOcorrencia: TDateTimeField
-      DisplayLabel = 'Data'
-      DisplayWidth = 22
+      DisplayLabel = 'Data Hora'
+      DisplayWidth = 20
       FieldName = 'DataOcorrencia'
     end
     object ADOOcorrenciaOcorrencia: TMemoField
