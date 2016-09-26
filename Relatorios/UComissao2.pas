@@ -59,6 +59,21 @@ type
     SZRLabel22: TSZRLabel;
     SZRLabel5: TSZRLabel;
     SZRDBText4: TSZRDBText;
+    SZRLabel6: TSZRLabel;
+    SZRLabel7: TSZRLabel;
+    lbl5Parcelas: TSZRLabel;
+    SZRLabel24: TSZRLabel;
+    lbl6Parcelas: TSZRLabel;
+    SZRLabel26: TSZRLabel;
+    lbl7Parcelas: TSZRLabel;
+    SZRLabel28: TSZRLabel;
+    lbl8Parcelas: TSZRLabel;
+    SZRLabel31: TSZRLabel;
+    lbl9Parcelas: TSZRLabel;
+    SZRLabel33: TSZRLabel;
+    lbl10Parcelas: TSZRLabel;
+    SZRLabel23: TSZRLabel;
+    QrParcelas: TTitulo_receber;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure ZRBand1BeforePrint(Sender: TObject; var DoPrint: Boolean);
     procedure ZRBand5BeforePrint(Sender: TObject; var DoPrint: Boolean);
@@ -72,6 +87,7 @@ type
     Entidade: TTitulo_receber;
     Total, TotalCom: Double;
     vVista, vPrazo, vCartao: Double;
+    bTotalParcela: boolean;
   end;
 
 var
@@ -104,6 +120,34 @@ begin
   SZRLabel20.Caption:=Format('%.2f',[vVista]);
   SZRLabel21.Caption:=Format('%.2f',[vPrazo]);
   SZRLabel22.Caption:=Format('%.2f',[vCartao]);
+
+
+  if bTotalParcela then
+  begin
+    QrParcelas.First;
+    if QrParcelas.FieldByName('TRC_SEQUENCIA').AsString = '05' then
+      lbl5Parcelas.Caption := Format('%.2f',[QrParcelas.FieldByName('TOTAL').AsFloat]);
+
+    QrParcelas.Next;
+    if QrParcelas.FieldByName('TRC_SEQUENCIA').AsString = '06' then
+      lbl6Parcelas.Caption := Format('%.2f',[QrParcelas.FieldByName('TOTAL').AsFloat]);
+
+    QrParcelas.Next;
+    if QrParcelas.FieldByName('TRC_SEQUENCIA').AsString = '07' then
+      lbl7Parcelas.Caption := Format('%.2f',[QrParcelas.FieldByName('TOTAL').AsFloat]);
+
+    QrParcelas.Next;
+    if QrParcelas.FieldByName('TRC_SEQUENCIA').AsString = '08' then
+      lbl8Parcelas.Caption := Format('%.2f',[QrParcelas.FieldByName('TOTAL').AsFloat]);
+
+    QrParcelas.Next;
+    if QrParcelas.FieldByName('TRC_SEQUENCIA').AsString = '09' then
+      lbl9Parcelas.Caption := Format('%.2f',[QrParcelas.FieldByName('TOTAL').AsFloat]);
+
+    QrParcelas.Next;
+    if QrParcelas.FieldByName('TRC_SEQUENCIA').AsString = '10' then
+      lbl10Parcelas.Caption := Format('%.2f',[QrParcelas.FieldByName('TOTAL').AsFloat]);
+  end;
 end;
 
 procedure Trpt_Comissao2.zrb_detalheBeforePrint(Sender: TObject;

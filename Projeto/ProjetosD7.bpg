@@ -10,7 +10,7 @@ DCC = $(ROOT)\bin\dcc32.exe $**
 BRCC = $(ROOT)\bin\brcc32.exe $**
 #------------------------------------------------------------------------------
 PROJECTS = Softech.bpl ProtecSenha.exe PComunicacao.exe DownloadSACI.exe \
-  Chave.dll PSACI.exe LivroOcorrencia.exe
+  Chave.dll PSACI.exe PortariaOnline.exe
 #------------------------------------------------------------------------------
 default: $(PROJECTS)
 #------------------------------------------------------------------------------
@@ -33,7 +33,7 @@ Chave.dll: ..\AtualizaBase\Chave\Chave.dpr
 PSACI.exe: PSACI.dpr
   $(DCC)
 
-LivroOcorrencia.exe: ..\Lagoa\LivroOcorrencia.dpr
+PortariaOnline.exe: ..\Lagoa\Projeto\PortariaOnline.dpr
   $(DCC)
 
 

@@ -64,6 +64,7 @@ type
     ckbSuperSintetico: TCheckBox;
     ckbCodigoFOR: TCheckBox;
     edtCodigoFOR: TEdit;
+    ckbTotalParcela: TCheckBox;
     procedure bitConfirmaClick(Sender: TObject);
     procedure bitFecharClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -541,6 +542,18 @@ begin
       if chk_sintetico.Checked then
         zrb_detalhe.Height:=0;
 
+
+      if ckbTotalParcela.Checked then
+      begin
+        bTotalParcela := true;
+        ZRBand5.Height := 9
+      end
+      else
+      begin
+        bTotalParcela := false;
+        ZRBand5.Height := 4;
+      end;
+
       Total:=0;
 
       if self.ckbCodigoVEN.Checked then
@@ -566,7 +579,35 @@ begin
           '   AND T1.CNC_CODIGO=T3.CNC_CODIGO '+
           '   AND T2.PDV_CODIGO=T1.PDV_CODIGO)'+
           ' ORDER BY T1.TRC_PAGAMENTO, T1.TRC_CODIGO ';
-        Entidade.Open;
+        Entidade.Open;    
+
+
+        if ckbTotalParcela.Checked then
+        begin
+          QrParcelas.SQL.Text := 'SELECT T1.TRC_SEQUENCIA, SUM(T1.TRC_VALOR_PAGO) AS TOTAL '+
+            ' FROM TITULO_A_RECEBER T1, PEDIDO_DE_VENDA T4 '+
+            ' WHERE T1.CNC_CODIGO='+IntToStr(dblCodigoCNC.KeyValue)+
+            ' AND T1.TRC_SITUACAO=2 '+
+            DataINI+DataFIM+
+            ' AND T1.PDV_CODIGO=T4.PDV_CODIGO '+
+            ' AND T1.CNC_CODIGO=T4.CNC_CODIGO '+
+            ' AND EXISTS (SELECT T2.PDV_CODIGO '+
+            '   FROM ITEM_DE_PEDIDO_DE_VENDA T2, PEDIDO_DE_VENDA T3 '+
+            '   WHERE T3.PDV_CODIGO<>-10 '+
+            '   AND T3.PDV_SITUACAO=4 '+
+            '   AND T2.CNC_CODIGO='+IntToStr(dblCodigoCNC.KeyValue)+
+                CdFUN+CdAGF+sSomenteLinha+sSomenteCatalogo+
+            '   AND T3.PDV_CODIGO=T2.PDV_CODIGO '+
+            '   AND T2.CNC_CODIGO=T3.CNC_CODIGO '+
+            '   AND T1.CNC_CODIGO=T3.CNC_CODIGO '+
+            '   AND T2.PDV_CODIGO=T1.PDV_CODIGO)'+
+            ' GROUP BY T1.TRC_SEQUENCIA '+
+            ' HAVING T1.TRC_SEQUENCIA IN (''05'', ''06'', ''07'', ''08'', ''09'', ''10'') '+
+            ' ORDER BY T1.TRC_SEQUENCIA ';
+          QrParcelas.Open;
+        end;
+
+
         if Entidade.IsEmpty then
           Raise Exception.Create('Consulta Vazia!');
         Vendedor1.Close;
