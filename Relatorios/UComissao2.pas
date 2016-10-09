@@ -73,7 +73,12 @@ type
     SZRLabel33: TSZRLabel;
     lbl10Parcelas: TSZRLabel;
     SZRLabel23: TSZRLabel;
-    QrParcelas: TTitulo_receber;
+    QrParcelas5: TTitulo_receber;
+    QrParcelas6: TTitulo_receber;
+    QrParcelas7: TTitulo_receber;
+    QrParcelas8: TTitulo_receber;
+    QrParcelas9: TTitulo_receber;
+    QrParcelas10: TTitulo_receber;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure ZRBand1BeforePrint(Sender: TObject; var DoPrint: Boolean);
     procedure ZRBand5BeforePrint(Sender: TObject; var DoPrint: Boolean);
@@ -113,7 +118,16 @@ end;
 
 procedure Trpt_Comissao2.ZRBand5BeforePrint(Sender: TObject;
   var DoPrint: Boolean);
+var
+  count5, count6,count7, count8,count9, count10: double;
 begin
+  count5  := 0;
+  count6  := 0;
+  count7  := 0;
+  count8  := 0;
+  count9  := 0;
+  count10 := 0;
+
   ZRLabel26.Caption:=Format('%.2f',[Total]);
   SZRLabel1.Caption:=Format('%.2f',[TotalCom]);
   //
@@ -124,7 +138,7 @@ begin
 
   if bTotalParcela then
   begin
-    QrParcelas.First;
+    {QrParcelas.First;
     if QrParcelas.FieldByName('TRC_SEQUENCIA').AsString = '05' then
       lbl5Parcelas.Caption := Format('%.2f',[QrParcelas.FieldByName('TOTAL').AsFloat]);
 
@@ -146,7 +160,67 @@ begin
 
     QrParcelas.Next;
     if QrParcelas.FieldByName('TRC_SEQUENCIA').AsString = '10' then
-      lbl10Parcelas.Caption := Format('%.2f',[QrParcelas.FieldByName('TOTAL').AsFloat]);
+      lbl10Parcelas.Caption := Format('%.2f',[QrParcelas.FieldByName('TOTAL').AsFloat]);}
+
+    //5 Parcelas
+    QrParcelas5.First;
+    while not QrParcelas5.Eof do
+    begin
+      count5 := count5 + QrParcelas5.FieldByName('TOTAL').AsFloat;
+      QrParcelas5.Next;
+    end;
+    lbl5Parcelas.Caption := Format('%.2f',[count5]);
+
+
+    //6 Parcelas
+    QrParcelas6.First;
+    while not QrParcelas6.Eof do
+    begin
+      count6 := count6 + QrParcelas6.FieldByName('TOTAL').AsFloat;
+      QrParcelas6.Next;
+    end;
+    lbl6Parcelas.Caption := Format('%.2f',[count6]);
+
+
+    //7 Parcelas
+    QrParcelas7.First;
+    while not QrParcelas7.Eof do
+    begin
+      count7 := count7 + QrParcelas7.FieldByName('TOTAL').AsFloat;
+      QrParcelas7.Next;
+    end;
+    lbl7Parcelas.Caption := Format('%.2f',[count7]);
+
+
+    //8 Parcelas
+    QrParcelas8.First;
+    while not QrParcelas8.Eof do
+    begin
+      count8 := count8 + QrParcelas8.FieldByName('TOTAL').AsFloat;
+      QrParcelas8.Next;
+    end;
+    lbl8Parcelas.Caption := Format('%.2f',[count8]);
+
+
+    //9 Parcelas
+    QrParcelas9.First;
+    while not QrParcelas9.Eof do
+    begin
+      count9 := count9 + QrParcelas9.FieldByName('TOTAL').AsFloat;
+      QrParcelas9.Next;
+    end;
+    lbl9Parcelas.Caption := Format('%.2f',[count9]);
+
+
+    //10 Parcelas
+    QrParcelas10.First;
+    while not QrParcelas10.Eof do
+    begin
+      count10 := count10 + QrParcelas10.FieldByName('TOTAL').AsFloat;
+      QrParcelas10.Next;
+    end;
+    lbl10Parcelas.Caption := Format('%.2f',[count10]);
+
   end;
 end;
 
