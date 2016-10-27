@@ -6,7 +6,7 @@ uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, IdBaseComponent, IdComponent, IdTCPConnection, IdTCPClient,
   IdMessageClient, IdSMTP, StdCtrls, ExtCtrls, IdMessage, ShellAPI, Buttons,
-  Mask, DB, ADODB, StrUtils;
+  Mask, DB, ADODB, StrUtils, uVariaveis;
 
 type
   TfrmOcorrencia = class(TForm)
@@ -52,6 +52,8 @@ var
   frmOcorrencia: TfrmOcorrencia;
 
 implementation
+
+uses uMenu;
 
 
 {$R *.dfm}
@@ -177,7 +179,7 @@ begin
   mmMensagem.Clear;
   mmAnexos.Clear;
   medtData.Text := DateToStr(now);
-  edtPorteiro.Text := sPorteiro;
+  edtPorteiro.Text := NomeUsuarioLogado;
   medtData.SetFocus;
 end;
 

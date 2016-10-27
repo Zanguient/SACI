@@ -24,12 +24,11 @@ type
     ADOOcorrenciaDataOcorrencia: TDateTimeField;
     ADOOcorrenciaOcorrencia: TMemoField;
     ADOOcorrenciaIMPORTANTE: TStringField;
-    Label3: TLabel;
-    cbxPorteiro: TComboBox;
     Panel1: TPanel;
     Label4: TLabel;
     Label5: TLabel;
     ADOOcorrenciaPorteiro: TStringField;
+    btnSair: TBitBtn;
     procedure btnNovoClick(Sender: TObject);
     procedure dsOcorrenciaDataChange(Sender: TObject; Field: TField);
     procedure FormShow(Sender: TObject);
@@ -39,6 +38,8 @@ type
       State: TGridDrawState);
     procedure FormKeyDown(Sender: TObject; var Key: Word;
       Shift: TShiftState);
+    procedure btnSairClick(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     procedure CarregaOcorrencia;
     procedure ConsultaOcorrencia(aData: TDateTime);
@@ -60,14 +61,7 @@ uses uLivroOcorrencia;
 
 procedure TfrmLivro.btnNovoClick(Sender: TObject);
 begin
-  if cbxPorteiro.Text = '' then
-  begin
-    cbxPorteiro.SetFocus;
-    raise Exception.Create('Informe o nome do porteiro!');
-  end;
-
   Application.CreateForm(TfrmOcorrencia, frmOcorrencia);
-  frmOcorrencia.sPorteiro := cbxPorteiro.Text;
   frmOcorrencia.ShowModal;
   frmOcorrencia.Free;
 
@@ -107,14 +101,8 @@ begin
 end;
 
 procedure TfrmLivro.FormShow(Sender: TObject);
-var
-  ArquivoPorteiro: string;
 begin
   ConnectionLagoa.Connected := True;
-  ArquivoPorteiro := 'C:\Lagoa\Porteiros.txt';
-  if FileExists(ArquivoPorteiro) then
-    cbxPorteiro.Items.LoadFromFile(ArquivoPorteiro);
-
   dtpData.Date := Now;
   ConsultaOcorrencia(dtpData.Date);
 end;
@@ -170,6 +158,19 @@ begin
 
   if key = VK_F5 then
     ConsultaOcorrencia(dtpData.Date);
+
+  if key = VK_ESCAPE then
+    Close;
+end;
+
+procedure TfrmLivro.btnSairClick(Sender: TObject);
+begin
+  Close;
+end;
+
+procedure TfrmLivro.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  Action := cafree;
 end;
 
 end.

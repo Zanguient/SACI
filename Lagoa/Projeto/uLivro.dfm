@@ -1,8 +1,9 @@
 object frmLivro: TfrmLivro
-  Left = 222
-  Top = 58
-  Width = 1084
-  Height = 653
+  Left = 285
+  Top = 106
+  Width = 826
+  Height = 577
+  BorderIcons = [biSystemMenu]
   Caption = 'Livro'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -10,9 +11,12 @@ object frmLivro: TfrmLivro
   Font.Height = -11
   Font.Name = 'MS Sans Serif'
   Font.Style = []
+  FormStyle = fsMDIChild
   KeyPreview = True
   OldCreateOrder = False
   Position = poScreenCenter
+  Visible = True
+  OnClose = FormClose
   OnKeyDown = FormKeyDown
   OnShow = FormShow
   PixelsPerInch = 96
@@ -20,38 +24,31 @@ object frmLivro: TfrmLivro
   object Panel2: TPanel
     Left = 0
     Top = 0
-    Width = 966
-    Height = 626
+    Width = 708
+    Height = 550
     Align = alClient
     TabOrder = 0
     DesignSize = (
-      966
-      626)
+      708
+      550)
     object Label2: TLabel
       Left = 15
-      Top = 60
+      Top = 15
       Width = 57
       Height = 13
       Caption = 'Ocorr'#234'ncias'
     end
-    object Label3: TLabel
-      Left = 15
-      Top = 15
-      Width = 36
-      Height = 13
-      Caption = 'Porteiro'
-    end
     object DBGridOcorrencia: TDBGrid
       Left = 15
-      Top = 75
+      Top = 30
       Width = 221
-      Height = 490
+      Height = 450
       Anchors = [akLeft, akTop, akBottom]
       Ctl3D = True
       DataSource = dsOcorrencia
       Options = [dgTitles, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit]
       ParentCtl3D = False
-      TabOrder = 1
+      TabOrder = 0
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
       TitleFont.Height = -11
@@ -61,11 +58,10 @@ object frmLivro: TfrmLivro
     end
     object mmMensagem: TMemo
       Left = 255
-      Top = 75
-      Width = 692
-      Height = 490
+      Top = 30
+      Width = 434
+      Height = 450
       Anchors = [akLeft, akTop, akRight, akBottom]
-      Color = clMenu
       Ctl3D = True
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -75,30 +71,16 @@ object frmLivro: TfrmLivro
       ParentCtl3D = False
       ParentFont = False
       ReadOnly = True
-      TabOrder = 2
-    end
-    object cbxPorteiro: TComboBox
-      Left = 15
-      Top = 30
-      Width = 221
-      Height = 21
-      Style = csDropDownList
-      ItemHeight = 13
-      TabOrder = 0
-      Items.Strings = (
-        'FL'#193'VIO'
-        'GUGU'
-        'JOAQUIM'
-        'RAFAEL')
+      TabOrder = 1
     end
     object Panel1: TPanel
       Left = 1
-      Top = 573
-      Width = 964
+      Top = 497
+      Width = 706
       Height = 52
       Align = alBottom
       BevelOuter = bvNone
-      TabOrder = 3
+      TabOrder = 2
       object Label4: TLabel
         Left = 15
         Top = 3
@@ -130,12 +112,15 @@ object frmLivro: TfrmLivro
     end
   end
   object Panel3: TPanel
-    Left = 966
+    Left = 708
     Top = 0
     Width = 110
-    Height = 626
+    Height = 550
     Align = alRight
     TabOrder = 1
+    DesignSize = (
+      110
+      550)
     object Label1: TLabel
       Left = 10
       Top = 15
@@ -198,6 +183,30 @@ object frmLivro: TfrmLivro
         5555555555555555555555555555555555555555555555555555}
       NumGlyphs = 2
     end
+    object btnSair: TBitBtn
+      Left = 10
+      Top = 130
+      Width = 90
+      Height = 25
+      Anchors = [akTop, akRight]
+      Caption = 'Sai&r'
+      TabOrder = 3
+      OnClick = btnSairClick
+      Glyph.Data = {
+        76010000424D7601000000000000760000002800000020000000100000000100
+        04000000000000010000120B0000120B00001000000000000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00330000000000
+        03333377777777777F333301BBBBBBBB033333773F3333337F3333011BBBBBBB
+        0333337F73F333337F33330111BBBBBB0333337F373F33337F333301110BBBBB
+        0333337F337F33337F333301110BBBBB0333337F337F33337F333301110BBBBB
+        0333337F337F33337F333301110BBBBB0333337F337F33337F333301110BBBBB
+        0333337F337F33337F333301110BBBBB0333337F337FF3337F33330111B0BBBB
+        0333337F337733337F333301110BBBBB0333337F337F33337F333301110BBBBB
+        0333337F3F7F33337F333301E10BBBBB0333337F7F7F33337F333301EE0BBBBB
+        0333337F777FFFFF7F3333000000000003333377777777777333}
+      NumGlyphs = 2
+    end
   end
   object ConnectionLagoa: TADOConnection
     Connected = True
@@ -209,8 +218,8 @@ object frmLivro: TfrmLivro
       'Tag with column collation when possible=False'
     LoginPrompt = False
     Provider = 'SQLOLEDB.1'
-    Left = 435
-    Top = 505
+    Left = 270
+    Top = 85
   end
   object ADOOcorrencia: TADOQuery
     Active = True
@@ -219,8 +228,8 @@ object frmLivro: TfrmLivro
     Parameters = <>
     SQL.Strings = (
       'SELECT * FROM OCORRENCIA ORDER BY DATAOCORRENCIA DESC')
-    Left = 465
-    Top = 505
+    Left = 300
+    Top = 85
     object ADOOcorrenciaID: TAutoIncField
       DisplayLabel = 'C'#243'digo'
       DisplayWidth = 7
@@ -252,7 +261,7 @@ object frmLivro: TfrmLivro
   object dsOcorrencia: TDataSource
     DataSet = ADOOcorrencia
     OnDataChange = dsOcorrenciaDataChange
-    Left = 495
-    Top = 505
+    Left = 330
+    Top = 85
   end
 end
