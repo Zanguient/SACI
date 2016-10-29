@@ -3582,9 +3582,9 @@ var
 begin
   IE := CreateOleObject('InternetExplorer.Application');
   IE.Visible := True;
-  IE.Navigate('http://www.buildsistemas.com.br');
+  IE.Navigate('http://www.buildsistema.com.br');
 {  WEB_ShowWebBrowser(Application,
-                     'http://www.buildsistemas.com.br',
+                     'http://www.buildsistema.com.br',
                      'Build Sistemas',
                      1000, //Width
                      500, //Height
