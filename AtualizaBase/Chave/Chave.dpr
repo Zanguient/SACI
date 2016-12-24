@@ -28,7 +28,7 @@ uses
   Classes;
 
 const
-  DataLimite = '31/12/2016';
+  DataLimite = '31/05/2017';
 
 //var
   //DataLimite: string;
