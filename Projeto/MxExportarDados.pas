@@ -107,7 +107,7 @@ begin
   +'"" AS LIVRE4,'
   +'COALESCE(T1.PRD_PESO_LIQUIDO,'+QuotedStr('0')+')"PESO",'
   +'"" AS LOCAL,'
-  +'"" AS CF,'
+  +'T1.PRD_NCM AS CF,'
   +'COALESCE(0,'+QuotedStr('0')+')"IPI",' //TODO
   +'"" AS CST,' //TODO
   +'"" AS ST,' //TODO

@@ -10,7 +10,7 @@ DCC = $(ROOT)\bin\dcc32.exe $**
 BRCC = $(ROOT)\bin\brcc32.exe $**
 #------------------------------------------------------------------------------
 PROJECTS = Softech.bpl ProtecSenha.exe PComunicacao.exe DownloadSACI.exe \
-  Chave.dll PSACI.exe PortariaOnline.exe
+  Chave.dll PSACI.exe PortariaOnline.exe ImportaProdutos.exe
 #------------------------------------------------------------------------------
 default: $(PROJECTS)
 #------------------------------------------------------------------------------
@@ -34,6 +34,9 @@ PSACI.exe: PSACI.dpr
   $(DCC)
 
 PortariaOnline.exe: ..\Lagoa\Projeto\PortariaOnline.dpr
+  $(DCC)
+
+ImportaProdutos.exe: ..\AtualizaBase\SmallCommerce\Importar Produtos\ImportaProdutos.dpr
   $(DCC)
 
 

@@ -181,7 +181,7 @@ object fMxExportarDados: TfMxExportarDados
       'SELECT * FROM CENTRO_DE_CUSTO'
       'ORDER BY CNC_RZ_SOCIAL')
     CNCOrigem = 0
-    CentroDeCusto = 1
+    CentroDeCusto = 2
     CodigoCNC = 0
     CodigoUSU = 0
     Mafalda = 0

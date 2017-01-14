@@ -139,9 +139,10 @@ c:\arquivos de programas\borland\delphi7\Projects\Bpl\Pimpfiscb.bpl=Impressora F
 [HistoryLists\hlUnitAliases]
 Count=1
 Item0=WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;
+[HistoryLists\hlSearchPath]
+Count=2
+Item0=$(Delphi)\Lib;$(Delphi)\Bin;$(Delphi)\Imports;$(Delphi)\Projects\Bpl;$(Delphi)\Rave5\Lib;$(Delphi)\Source\ToolsAPI;C:\Arquivos de programas\ComponentAce\ZipForge\Lib\Delphi 7;\FontesD7\SACI\Projeto;\FontesD7\SACI\Relatorios;\FontesD7\SACI\Componentes\Entidades;\FontesD7\SACI\Componentes\SZreport\SOURCE;\FontesD7\SACI\Packs\VCLSkin\Vclskin\source;\FontesD7\SACI\Packs\elasticform;\FontesD7\SACI\Packs\extens30;\FontesD7\SACI\Packs\StringGrid;\FontesD7\SACI\Packs\Label3d;\FontesD7\SACI\Packs\VSS;\FontesD7\SACI\Packs\dcpcrypt2;\FontesD7\SACI\Packs\dcpcrypt2\Hashes;\FontesD7\SACI\Packs\dcpcrypt2\Ciphers;\FontesD7\SACI\Packs\TrayIcon;\FontesD7\SACI\Packs\ACBr\Fontes\ACBrComum;\FontesD7\SACI\Packs\ACBr\Fontes\ACBrDiversos;\FontesD7\SACI\Packs\ACBr\Fontes\ACBrBoleto;\FontesD7\SACI\Packs\ACBr\Fontes\synalist
+Item1=$(Delphi)\Lib;$(Delphi)\Bin;$(Delphi)\Imports;$(Delphi)\Projects\Bpl;$(Delphi)\Rave5\Lib;$(Delphi)\Source\ToolsAPI
 [HistoryLists\hlUnitOutputDirectory]
 Count=1
-Item0=\FontesD7\SACI\Lagoa\Compilados
-[HistoryLists\hlOutputDirectorry]
-Count=1
-Item0=\FontesD7\SACI\Lagoa\Aplicativo
+Item0=\FontesD7\Compilados

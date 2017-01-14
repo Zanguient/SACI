@@ -197,6 +197,7 @@ begin
             //Alterar a descrição em 14/12/2012
             IBQuery1.SQL.Add('DESCRICAO='+QuotedStr(Alltrim(Copy(sLinha, 21,45)))+',');
             IBQuery1.SQL.Add('NOME='+QuotedStr(Alltrim(Copy(sLinha, 67,25)))+',');
+            IBQuery1.SQL.Add('CF='+QuotedStr(Alltrim(Copy(sLinha,312,13)))+',');  
             IBQuery1.SQL.Add('CUSTOCOMPR='+QuotedStr(Strtran(Alltrim(Copy(sLinha,155,10)),',','.'))+'');
             //
 
