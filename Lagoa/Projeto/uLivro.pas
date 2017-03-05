@@ -4,7 +4,8 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, Grids, DBGrids, Buttons, ComCtrls, ExtCtrls, DB, ADODB;
+  Dialogs, StdCtrls, Grids, DBGrids, Buttons, ComCtrls, ExtCtrls, DB, ADODB,
+  Menus, StrUtils;
 
 type
   TfrmLivro = class(TForm)
@@ -29,6 +30,8 @@ type
     Label5: TLabel;
     ADOOcorrenciaPorteiro: TStringField;
     btnSair: TBitBtn;
+    pmOcorrencia: TPopupMenu;
+    EnviarEmailparaoSndico1: TMenuItem;
     procedure btnNovoClick(Sender: TObject);
     procedure dsOcorrenciaDataChange(Sender: TObject; Field: TField);
     procedure FormShow(Sender: TObject);
@@ -40,6 +43,7 @@ type
       Shift: TShiftState);
     procedure btnSairClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure EnviarEmailparaoSndico1Click(Sender: TObject);
   private
     procedure CarregaOcorrencia;
     procedure ConsultaOcorrencia(aData: TDateTime);
@@ -55,7 +59,7 @@ var
 
 implementation
 
-uses uLivroOcorrencia;
+uses uLivroOcorrencia, uMenu;
 
 {$R *.dfm}
 
@@ -171,6 +175,19 @@ end;
 procedure TfrmLivro.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   Action := cafree;
+end;
+
+procedure TfrmLivro.EnviarEmailparaoSndico1Click(Sender: TObject);
+var
+  bImportante: Boolean;
+begin
+  bImportante := ADOOcorrencia.FieldByName('IMPORTANTE').AsString = 'S';
+
+  EnviaEmail(ADOOcorrencia.FieldByName('Porteiro').AsString,
+             FormatDateTime('dd/mm/yyyy',ADOOcorrencia.FieldByName('DataOcorrencia').AsDatetime),
+             FormatDateTime('hh:mm',ADOOcorrencia.FieldByName('DataOcorrencia').AsDatetime),
+             ADOOcorrencia.FieldByName('Ocorrencia').AsString,
+             bImportante, nil);
 end;
 
 end.

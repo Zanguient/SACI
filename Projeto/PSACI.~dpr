@@ -651,8 +651,9 @@ uses
 {$R *.RES}
 {$R ..\Resources\PATUAL.RES} //PAtualizaSACI.exe
 {$R ..\Resources\UPLOAD.RES} //DownloadSACI.exe é renomeado para AtualizaSistema.exe
+{$R ..\Resources\SIACDA.RES} //Dal.dll
 {$R ..\Resources\SIACRP.RES} //SiacReport.dll
-{$R ..\Resources\BACKUP.RES} //Backup.exe
+{$R ..\Resources\BACKUP.RES} //Backup.exe    
 
 Var
   Login: TDigitaSenha;
@@ -689,6 +690,7 @@ Var
     Extrai_AtualizaSistema;
     Extrai_PAtualizaSACI;
     //Extrai_LibWebBrowser;
+    Extrai_Dal;
     Extrai_SiacReport;
     Extrai_Backup;
     {

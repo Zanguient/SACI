@@ -48,6 +48,7 @@ object frmLivro: TfrmLivro
       DataSource = dsOcorrencia
       Options = [dgTitles, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit]
       ParentCtl3D = False
+      PopupMenu = pmOcorrencia
       TabOrder = 0
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
@@ -263,5 +264,13 @@ object frmLivro: TfrmLivro
     OnDataChange = dsOcorrenciaDataChange
     Left = 330
     Top = 85
+  end
+  object pmOcorrencia: TPopupMenu
+    Left = 455
+    Top = 170
+    object EnviarEmailparaoSndico1: TMenuItem
+      Caption = 'Enviar Email para o S'#237'ndico'
+      OnClick = EnviarEmailparaoSndico1Click
+    end
   end
 end

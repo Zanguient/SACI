@@ -12,6 +12,7 @@ procedure Extrai_PAtualizaSACI;
 //procedure Extrai_LibWebBrowser;
 procedure Extrai_SiacReport;
 procedure Extrai_Backup;
+procedure Extrai_Dal;
 
 implementation
 
@@ -82,6 +83,7 @@ begin
   end;
 end;
 
+{
 procedure Extrai_LibWebBrowser;
 var
   sFile: string;
@@ -114,6 +116,7 @@ begin
     Halt;
   end;
 end;
+}
 
 procedure Extrai_SiacReport;
 var
@@ -177,6 +180,39 @@ begin
     Application.MessageBox('Não foi possível extrair Backup.exe'+#13+
                            'Tente reiniciar o computador e execute o programa novamente.',
                            'Erro Backup.exe',MB_OK+MB_ICONERROR);
+    Halt;
+  end;
+end;
+
+procedure Extrai_Dal;
+var
+  sFile: string;
+  Res: TResourceStream;
+
+  function Existe_Arquivo(var sFile: string): Boolean;
+  begin
+    sFile  := ExtractFilePath(Application.ExeName)+'Dal.dll';
+    Result := FileExists(sFile);
+  end;
+
+begin
+  if Existe_Arquivo(sFile) then
+    DeleteFile(sFile);
+
+  if not Existe_Arquivo(sFile) then
+  begin
+    Res := TResourceStream.Create(HInstance,'SIACDA','EXEFILE');
+    try
+      Res.SaveToFile(sFile);
+    finally
+      Res.Free;
+    end;
+  end;
+  if not Existe_Arquivo(sFile) then
+  begin
+    Application.MessageBox('Não foi possível extrair Dal.dll'+#13+
+                           'Tente reiniciar o computador e execute o programa novamente.',
+                           'Erro SiacReport.dll',MB_OK+MB_ICONERROR);
     Halt;
   end;
 end;

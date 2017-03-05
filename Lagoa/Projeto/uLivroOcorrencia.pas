@@ -40,7 +40,6 @@ type
     procedure btnSairClick(Sender: TObject);
     procedure FormKeyPress(Sender: TObject; var Key: Char);
   private
-    procedure EnviaEmail;
     function VerificaData(Data:String):Boolean;
     { Private declarations }
   public
@@ -69,46 +68,6 @@ procedure TfrmOcorrencia.btnAnexarClick(Sender: TObject);
 begin
   if odAnexos.Execute Then
     mmAnexos.Lines.Add(odAnexos.FileName);
-end;
-
-procedure TfrmOcorrencia.EnviaEmail;
-var
-  i: integer;
-  msgOcorrencia: string;
-const
-  cImportante = ' (IMPORTANTE)';
-begin
-  IdSMTP1.Port               := 25;
-  IdSMTP1.Host               := 'aspmx.l.google.com'; //aspmx.l.google.com ou smtp.gmail.com
-  IdSMTP1.Username           := 'admlagoajoqueiville@gmail.com';
-  IdSMTP1.Password           := '17072007';
-  IdSMTP1.AuthenticationType := atLogin; //atNone;
-
-  //Prioridade alta
-  IdMessage1.Priority := mpLow;
-  //'Email_originário_da_mensagem';
-  IdMessage1.From.Address := 'admlagoajoqueiville@gmail.com';
-  //'Email_do_destinatario_da_mensagem';
-  IdMessage1.Recipients.EMailAddresses := 'anndersonn.gonncalves@gmail.com'; //'seu_mail_aqui';
-  //O assunto da mensagem
-  IdMessage1.Subject :='Livro de ocorrência';
-  //conteudo da mensagem
-  msgOcorrencia := 'Porteiro: ' + edtPorteiro.Text + IfThen(cbxImportante.checked, cImportante, '') + #13 +
-                   'Data: ' + medtData.Text + #13 +
-                   'Hora: ' + medtHora.Text + #13 + #13 +
-                   mmMensagem.Text;
-  IdMessage1.Body.Add(msgOcorrencia);
-
-  //Tratando os arquivos anexos
-  for i := 0 to mmAnexos.Lines.Count-1 do
-    TIdAttachment.create(Idmessage1.MessageParts, TFileName(mmAnexos.Lines.Strings[i]));
-
-  try
-    IdSMTP1.Connect;
-    IdSMTP1.Send(IdMessage1);
-  finally
-    IdSMTP1.Disconnect;
-  end;
 end;
 
 procedure TfrmOcorrencia.btnSalvarClick(Sender: TObject);
@@ -152,13 +111,13 @@ begin
       if cbxImportante.Checked then
         InsertOcorrencia.Parameters.ParamByName('IMPORTANTE').Value   := 'S'
       else
-        InsertOcorrencia.Parameters.ParamByName('IMPORTANTE').Value   := 'N';
-
+        InsertOcorrencia.Parameters.ParamByName('IMPORTANTE').Value   := 'N';              
 
       InsertOcorrencia.ExecSQL;
 
       if cbxEmail.Checked then
-        EnviaEmail;
+        EnviaEmail(edtPorteiro.Text, medtData.Text, medtHora.Text, mmMensagem.Text, cbxImportante.checked,  nil);
+
     finally
       Screen.Cursor := crDefault;
       ConnectionLagoa.Connected := False;
@@ -210,4 +169,3 @@ begin
 end;
 
 end.
-
