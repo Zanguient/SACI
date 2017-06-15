@@ -9,8 +9,8 @@ MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
 DCC = $(ROOT)\bin\dcc32.exe $**
 BRCC = $(ROOT)\bin\brcc32.exe $**
 #------------------------------------------------------------------------------
-PROJECTS = Softech.bpl ProtecSenha.exe PComunicacao.exe DownloadSACI.exe \
-  Chave.dll PSACI.exe PortariaOnline.exe ImportaProdutos.exe
+PROJECTS = Softech.bpl PortariaOnline.exe PComunicacao.exe DownloadSACI.exe \
+  Chave.dll PSACI.exe
 #------------------------------------------------------------------------------
 default: $(PROJECTS)
 #------------------------------------------------------------------------------
@@ -18,7 +18,7 @@ default: $(PROJECTS)
 Softech.bpl: ..\Componentes\Entidades\Softech.dpk
   $(DCC)
 
-ProtecSenha.exe: ..\AtualizaBase\ProtecSenha\ProtecSenha.dpr
+PortariaOnline.exe: ..\Lagoa\Projeto\PortariaOnline.dpr
   $(DCC)
 
 PComunicacao.exe: ..\Comunicação\PComunicacao.dpr
@@ -31,12 +31,6 @@ Chave.dll: ..\AtualizaBase\Chave\Chave.dpr
   $(DCC)
 
 PSACI.exe: PSACI.dpr
-  $(DCC)
-
-PortariaOnline.exe: ..\Lagoa\Projeto\PortariaOnline.dpr
-  $(DCC)
-
-ImportaProdutos.exe: ..\AtualizaBase\SmallCommerce\Importar Produtos\ImportaProdutos.dpr
   $(DCC)
 
 

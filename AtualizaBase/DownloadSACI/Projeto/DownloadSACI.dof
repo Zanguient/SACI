@@ -115,7 +115,7 @@ AutoIncBuild=1
 MajorVer=7
 MinorVer=1
 Release=1
-Build=121
+Build=127
 Debug=0
 PreRelease=0
 Special=0
@@ -126,7 +126,7 @@ CodePage=1252
 [Version Info Keys]
 CompanyName=
 FileDescription=
-FileVersion=7.1.1.121
+FileVersion=7.1.1.127
 InternalName=
 LegalCopyright=
 LegalTrademarks=
@@ -135,5 +135,4 @@ ProductName=
 ProductVersion=7.1.1.1
 Comments=
 [Excluded Packages]
-c:\arquivos de programas\borland\delphi7\Projects\Bpl\PZrreg.bpl=Softcom Report!
 c:\arquivos de programas\borland\delphi7\Projects\Bpl\Pimpfiscb.bpl=Impressora Fiscal

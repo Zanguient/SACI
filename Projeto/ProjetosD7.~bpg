@@ -9,16 +9,13 @@ MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
 DCC = $(ROOT)\bin\dcc32.exe $**
 BRCC = $(ROOT)\bin\brcc32.exe $**
 #------------------------------------------------------------------------------
-PROJECTS = Softech.bpl ProtecSenha.exe PComunicacao.exe DownloadSACI.exe \
-  Chave.dll PSACI.exe PortariaOnline.exe
+PROJECTS = Softech.bpl PComunicacao.exe DownloadSACI.exe Chave.dll PSACI.exe \
+  PortariaOnline.exe
 #------------------------------------------------------------------------------
 default: $(PROJECTS)
 #------------------------------------------------------------------------------
 
 Softech.bpl: ..\Componentes\Entidades\Softech.dpk
-  $(DCC)
-
-ProtecSenha.exe: ..\AtualizaBase\ProtecSenha\ProtecSenha.dpr
   $(DCC)
 
 PComunicacao.exe: ..\Comunicação\PComunicacao.dpr

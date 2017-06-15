@@ -83,6 +83,7 @@ begin
   end;
 end;
 
+{
 procedure Extrai_LibWebBrowser;
 var
   sFile: string;
@@ -115,6 +116,7 @@ begin
     Halt;
   end;
 end;
+}
 
 procedure Extrai_SiacReport;
 var

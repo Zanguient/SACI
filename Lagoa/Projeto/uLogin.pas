@@ -37,7 +37,7 @@ implementation
 function TfrmLogin.Logar: boolean;
 begin
   Result := ((edtNomeUsu.Text = 'RAFAEL') or (edtNomeUsu.Text = 'FLAVIO') or
-             (edtNomeUsu.Text = 'GLAUDENCIO') or (edtNomeUsu.Text = 'GUGU') or (edtNomeUsu.Text = 'ADM')) and
+             (edtNomeUsu.Text = 'JANDERSON') or (edtNomeUsu.Text = 'GUGU') or (edtNomeUsu.Text = 'ADM')) and
             ((edtSenha.Text = 'LAGOA') or (edtSenha.Text = 'lagoa'));
 end;
 

@@ -13,6 +13,7 @@ uses
   Dialogs, ActnList, XPStyleActnCtrls, ActnMan, ToolWin, ActnCtrls, StrUtils,
   ActnMenus, ComCtrls, jpeg, ExtCtrls, StdCtrls, uVariaveis, mscorlib_TLB, SiacReport_TLB;
 
+
 type
   TfrmMenu = class(TForm)
     ActionManager1: TActionManager;
@@ -44,7 +45,7 @@ type
 var
   frmMenu: TfrmMenu;
 
-procedure EnviaEmail(aPorteiro, aData, aHora, aMensagem: string; aImportante: boolean; aAnexos: _ArrayList);
+procedure EnviaEmail(aPorteiro, aData, aHora, aMensagem: string; aImportante: boolean; aAnexos: ArrayList);
 
 implementation
 
@@ -87,20 +88,13 @@ begin
   sbMenu.Panels[3].Text := FormatDateTime('"Fortaleza-CE, " dd " de " mmmm " de " yyyy', now);
 end;
 
-procedure EnviaEmail(aPorteiro, aData, aHora, aMensagem: string; aImportante: boolean; aAnexos: _ArrayList);
+procedure EnviaEmail(aPorteiro, aData, aHora, aMensagem: string; aImportante: boolean; aAnexos: ArrayList);
 var
-  //i: integer;
   msgOcorrencia: string;
   stiReport: CoSiacReport_; //TSiacReport;
-
 const
   cImportante = ' (IMPORTANTE)';
 begin
-  {msgOcorrencia := 'Porteiro: ' + edtPorteiro.Text + IfThen(cbxImportante.checked, cImportante, '') + '<br/>' +
-                   'Data: ' + medtData.Text + '<br/>' +
-                   'Hora: ' + medtHora.Text + '<br/><br/>' +
-                   mmMensagem.Text;}
-
   msgOcorrencia := 'Porteiro: ' + aPorteiro + IfThen(aImportante, cImportante, '') + '<br/>' +
                    'Data: ' + aData + '<br/>' +
                    'Hora: ' + aHora + '<br/><br/>' +
@@ -133,7 +127,15 @@ begin
   end;
   }
 
-  stiReport.Create.SendMessage('aspmx.l.google.com', 'admlagoajoqueiville@gmail.com', 'Portaria', '17072007', 'anndersonn.gonncalves@gmail.com', 'Síndico', 'Livro de ocorrência', msgOcorrencia, aAnexos);
+  stiReport.Create.SendMessage('aspmx.l.google.com',
+                               'admlagoajoqueiville@gmail.com',
+                               'Portaria',
+                               '17072007',
+                               'anndersonn.gonncalves@gmail.com',
+                               'Síndico',
+                               'Livro de ocorrência',
+                               msgOcorrencia,
+                               aAnexos);
 end;
 
 end.

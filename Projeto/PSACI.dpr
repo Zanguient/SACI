@@ -1,35 +1,11 @@
 program PSACI;
 
-{
+(*
 GetEmpresaComunicacao(DM.QR_Consultas) = 'AA' ==== Teste
 GetEmpresaComunicacao(DM.QR_Consultas) = 'LO' ==== Luciano Ótica
 GetEmpresaComunicacao(DM.QR_Consultas) = 'AC' ==== Água de Cheiro
 GetEmpresaComunicacao(DM.QR_Consultas) = '01' ==== Água de Cheiro - Quixeramobim
-}
-
-{Quando for implantar a integração com o PAF rodar nas lojas o seguinte sql
-Solicitar também a posição do estoque fiscal dos produtos
-EXECUTE BLOCK
-AS
-BEGIN
-  DELETE FROM ESTOQUE;
-  DELETE FROM CLIFOR WHERE REGISTRO > 1;
-  DELETE FROM GRUPO;
-  DELETE FROM ICM WHERE ST <> '';
-  DELETE FROM VENDEDOR;
-  EXECUTE STATEMENT 'ALTER SEQUENCE G_ESTOQUE RESTART WITH 0';
-  EXECUTE STATEMENT 'ALTER SEQUENCE G_CODIGO RESTART WITH 0';
-  EXECUTE STATEMENT 'ALTER SEQUENCE G_CLIFOR RESTART WITH 1';
-  EXECUTE STATEMENT 'ALTER SEQUENCE G_GRUPO RESTART WITH 0';
-  EXECUTE STATEMENT 'ALTER SEQUENCE G_VENDEDOR RESTART WITH 0';
-  EXECUTE STATEMENT 'ALTER SEQUENCE G_ICM RESTART WITH 91';
-END;
-
-SELECT * FROM ESTOQUE;
-SELECT * FROM CLIFOR;
-SELECT * FROM GRUPO;
-SELECT * FROM ICM WHERE REGISTRO > 24;
-SELECT * FROM VENDEDOR;}
+*)
 
 uses
   ShareMem,
@@ -643,7 +619,6 @@ uses
   UDM_Comunicacao in '..\Comunicação\UDM_Comunicacao.pas' {DMComunicacao: TDataModule},
   u_DefLibWebBrowser in '..\LibWebBrowser\u_DefLibWebBrowser.pas',
   u_Framework in '..\Projeto\u_Framework.pas',
-  //u_Boleto in '..\PBoleto\u_Boleto.pas' {frmBoleto},
   uSQL in 'uSQL.pas' {frmSQL},
   UDMFB in 'UDMFB.pas' {DMFB: TDataModule},
   u_ListaPedidoPAF in 'u_ListaPedidoPAF.pas' {frmListaPedidoPAF};
@@ -658,9 +633,7 @@ uses
 Var
   Login: TDigitaSenha;
   Hand1, Hand2: HWND;
-  //Hand3 : HWND;
   FormSplash: TfmxFormSplash;
-  //sArq: string;
 
   (*ESSE CÓDIGO DEVE SER REMOVIDO DEPOIS QUE FOR ENVIADO ESSA VERSÃO PARA A LUCIANO ÓTICA*)
   procedure CodTemporario;
@@ -689,14 +662,9 @@ Var
   begin
     Extrai_AtualizaSistema;
     Extrai_PAtualizaSACI;
-    //Extrai_LibWebBrowser;
     Extrai_Dal;
     Extrai_SiacReport;
     Extrai_Backup;
-    {
-    if ( NetFramework_v4 ) then
-      Extrai_WebServer;
-    }
   end;
 
 Begin
@@ -709,7 +677,7 @@ Begin
 
   if TemProtecao then
   begin
-    f_SkinGerenciador := false; (*Será parametrizado*)
+    f_SkinGerenciador := False; (*Será parametrizado*)
     f_InformacoesProduto;
 
     DataLimite := GetDataLimite;
@@ -831,12 +799,6 @@ Begin
         end;
         FormSplash.free;
       end;
-
-      {TODO
-      sArq := ExtractFilePath(Application.ExeName)+'WebServer\CassiniDev.exe';
-      if ( NetFramework_v4 ) and ( FileExists(PChar(sArq)) ) then
-        WinExec(PChar(sArq), SW_SHOWNORMAL);
-      }
 
       Application.Run;
     end;
