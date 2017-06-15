@@ -3,6 +3,7 @@
 //Data Source=70.38.11.27;
 //User ID=lagoa
 //Password=agfm1901
+//Banco: build_sis
 
 unit uMenu;
 
@@ -32,9 +33,11 @@ type
     ActionMainMenuBar1: TActionMainMenuBar;
     sbMenu: TStatusBar;
     Image1: TImage;
+    PR_Reserva: TAction;
     procedure PR_LivroOcorrenciaExecute(Sender: TObject);
     procedure AR_MudarUsuarioExecute(Sender: TObject);
     procedure FormActivate(Sender: TObject);
+    procedure PR_ReservaExecute(Sender: TObject);
   private
     { Private declarations }
     procedure ShowTela(Tela: TForm);
@@ -127,6 +130,7 @@ begin
   end;
   }
 
+  //Do email da portario GMAIL
   stiReport.Create.SendMessage('aspmx.l.google.com',
                                'admlagoajoqueiville@gmail.com',
                                'Portaria',
@@ -136,6 +140,33 @@ begin
                                'Livro de ocorrência',
                                msgOcorrencia,
                                aAnexos);
+
+  //Do email Outlook para GMAIL
+  {stiReport.Create.SendMessage('smtp.live.com',
+                               'anndersonn.gonncalves@outlook.com',
+                               'Portaria',
+                               '@gfm1901',
+                               'anndersonn.gonncalves@gmail.com',
+                               'Síndico',
+                               'Livro de ocorrência',
+                               msgOcorrencia,
+                               aAnexos);
+
+  //Do email Outlook para Outlook
+  stiReport.Create.SendMessage('smtp.live.com',
+                               'anndersonn.gonncalves@outlook.com',
+                               'Portaria',
+                               '@gfm1901',
+                               'anndersonn.gonncalves@outlook.com',
+                               'Síndico',
+                               'Livro de ocorrência',
+                               msgOcorrencia,
+                               aAnexos);}
+end;
+
+procedure TfrmMenu.PR_ReservaExecute(Sender: TObject);
+begin
+  //TODO:
 end;
 
 end.

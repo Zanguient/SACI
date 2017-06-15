@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, Buttons, StdCtrls, ExtCtrls, uVariaveis, jpeg;
+  Dialogs, Buttons, StdCtrls, ExtCtrls, uVariaveis, jpeg, funcoes;
 
 type
   TfrmLogin = class(TForm)
@@ -20,6 +20,7 @@ type
     procedure btnSairClick(Sender: TObject);
     procedure btnConfirmarClick(Sender: TObject);
     procedure FormKeyPress(Sender: TObject; var Key: Char);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -61,6 +62,15 @@ procedure TfrmLogin.FormKeyPress(Sender: TObject; var Key: Char);
 begin
   if key = #13 then
     btnConfirmar.Click;    
+end;
+
+procedure TfrmLogin.FormShow(Sender: TObject);
+begin
+  if ComputadorDoProgramador then
+  begin
+    edtNomeUsu.Text := 'ADM';
+    edtSenha.Text := 'lagoa';
+  end;
 end;
 
 end.
