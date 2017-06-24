@@ -9,6 +9,10 @@ Uses
 
 var
   NomeUsuarioLogado: string;
+  StringConexao: string;
+  EnderecoCondominio: string;
+  NomeCondominio: string;
+
 
 implementation
 

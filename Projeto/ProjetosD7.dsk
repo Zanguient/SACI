@@ -1,31 +1,65 @@
 [Closed Files]
-File_0=SourceModule,'C:\FontesD7\SACI\Lagoa\Projeto\uLogin.pas',0,1,1,73,3,1,0
-File_1=SourceModule,'C:\FontesD7\SACI\Projeto\Funcoes.pas',0,1,1,89,3,0,0
-File_2=SourceModule,'C:\Arquivos de programas\Borland\Delphi7\Imports\SiacReport_TLB.pas',0,1,84,84,84,0,0
+File_0=SourceModule,'C:\Arquivos de programas\Borland\Delphi7\Imports\SiacReport_TLB.pas',0,1,1,89,11,0,0
+File_1=SourceModule,'c:\arquivos de programas\borland\delphi7\source\vcl\Forms.pas',0,1,1,1,6840,0,0
+File_2=SourceModule,'C:\FontesD7\SACI\Projeto\Funcoes.pas',0,1,1,89,3,0,0
 File_3=SourceModule,'C:\FontesD7\SACI\Comunicação\UPrincComunicacao.pas',0,1,1,45,6,1,0
 File_4=SourceModule,'C:\FontesD7\SACI\AtualizaBase\DownloadSACI\Fontes\untDownloadSACI.pas',0,1,1,1,1,1,0
 File_5=SourceModule,'C:\FontesD7\SACI\Projeto\UFormSplash.pas',0,1,1,1,1,1,0
 File_6=SourceModule,'C:\FontesD7\SACI\LibWebBrowser\u_DefLibWebBrowser.pas',0,1,1,1,1,0,0
 File_7=SourceModule,'C:\FontesD7\SACI\Projeto\UDMFB.pas',0,1,1,1,1,1,0
-File_8=SourceModule,'C:\FontesD7\SACI\Comunicação\UDM_Comunicacao.pas',0,1,1,1,1,1,0
-File_9=SourceModule,'c:\arquivos de programas\borland\delphi7\Imports\mscorlib_TLB.pas',0,1,29789,78,29812,0,0
 
 [Modules]
-Module0=C:\FontesD7\SACI\Lagoa\Projeto\uLivroOcorrencia.pas
-Module1=C:\FontesD7\SACI\Lagoa\Projeto\uMenu.pas
-Module2=C:\FontesD7\SACI\Projeto\DigSenha.pas
-Module3=C:\FontesD7\SACI\Projeto\UPrinc2.pas
-Module4=C:\FontesD7\SACI\Projeto\PSACI.dpr
-Count=5
+Module0=C:\FontesD7\SACI\Lagoa\Projeto\uMenu.pas
+Module1=C:\FontesD7\SACI\Lagoa\Projeto\uReserva.pas
+Module2=C:\FontesD7\SACI\Lagoa\Projeto\uLivro.pas
+Module3=C:\FontesD7\SACI\Lagoa\Projeto\uLogin.pas
+Module4=C:\FontesD7\SACI\Lagoa\Projeto\PortariaOnline.dpr
+Module5=C:\FontesD7\SACI\Projeto\UPrinc2.pas
+Module6=C:\FontesD7\SACI\Lagoa\Projeto\uLivroOcorrencia.pas
+Module7=C:\FontesD7\SACI\Projeto\CdCliente.pas
+Module8=C:\FontesD7\SACI\Projeto\DigSenha.pas
+Module9=C:\FontesD7\SACI\Lagoa\Projeto\uVariaveis.pas
+Module10=C:\FontesD7\SACI\Projeto\PSACI.dpr
+Count=11
 EditWindowCount=1
 PackageWindowCount=2
+
+[C:\FontesD7\SACI\Lagoa\Projeto\uMenu.pas]
+ModuleType=SourceModule
+FormState=1
+FormOnTop=0
+
+[C:\FontesD7\SACI\Lagoa\Projeto\uReserva.pas]
+ModuleType=SourceModule
+FormState=1
+FormOnTop=0
+
+[C:\FontesD7\SACI\Lagoa\Projeto\uLivro.pas]
+ModuleType=SourceModule
+FormState=1
+FormOnTop=0
+
+[C:\FontesD7\SACI\Lagoa\Projeto\uLogin.pas]
+ModuleType=SourceModule
+FormState=1
+FormOnTop=0
+
+[C:\FontesD7\SACI\Lagoa\Projeto\PortariaOnline.dpr]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[C:\FontesD7\SACI\Projeto\UPrinc2.pas]
+ModuleType=SourceModule
+FormState=1
+FormOnTop=0
 
 [C:\FontesD7\SACI\Lagoa\Projeto\uLivroOcorrencia.pas]
 ModuleType=SourceModule
 FormState=1
 FormOnTop=0
 
-[C:\FontesD7\SACI\Lagoa\Projeto\uMenu.pas]
+[C:\FontesD7\SACI\Projeto\CdCliente.pas]
 ModuleType=SourceModule
 FormState=1
 FormOnTop=0
@@ -35,9 +69,9 @@ ModuleType=SourceModule
 FormState=1
 FormOnTop=0
 
-[C:\FontesD7\SACI\Projeto\UPrinc2.pas]
+[C:\FontesD7\SACI\Lagoa\Projeto\uVariaveis.pas]
 ModuleType=SourceModule
-FormState=1
+FormState=0
 FormOnTop=0
 
 [C:\FontesD7\SACI\Projeto\PSACI.dpr]
@@ -57,10 +91,6 @@ FormOnTop=1
 FormState=0
 FormOnTop=0
 
-[C:\FontesD7\SACI\Lagoa\Projeto\PortariaOnline.dpr]
-FormState=0
-FormOnTop=0
-
 [C:\FontesD7\SACI\Comunicação\PComunicacao.dpr]
 FormState=0
 FormOnTop=0
@@ -73,14 +103,24 @@ FormOnTop=0
 FormState=0
 FormOnTop=0
 
+[C:\FontesD7\SACI\Projeto\UDM.pas]
+FormState=0
+FormOnTop=0
+
 [EditWindow0]
-ViewCount=5
-CurrentView=3
+ViewCount=11
+CurrentView=4
 View0=0
 View1=1
 View2=2
 View3=3
 View4=4
+View5=5
+View6=6
+View7=7
+View8=8
+View9=9
+View10=10
 CodeExplorer=CodeExplorer@EditWindow0
 MessageView=MessageView@EditWindow0
 Create=1
@@ -104,7 +144,7 @@ RightPanelClients=ProjectManager
 RightPanelData=000004000000000000000000000000000000000000000000000100000000000000001200000050726F6A6563744D616E61676572466F726DFFFFFFFF
 BottomPanelSize=0
 BottomPanelClients=MessageView@EditWindow0
-BottomPanelData=00000400010000000B0000004D657373616765566965775605000000000000025500000000000000010000000000000000000000000100000000560500000B0000004D65737361676556696577FFFFFFFF
+BottomPanelData=00000400010000000B0000004D65737361676556696577000000000000000000000000000000000001000000000000000000000000FFFFFFFF
 
 [View0]
 Module=C:\FontesD7\SACI\Projeto\PSACI.dpr
@@ -114,31 +154,73 @@ TopLine=1
 LeftCol=1
 
 [View1]
-Module=C:\FontesD7\SACI\Projeto\UPrinc2.pas
-CursorX=96
-CursorY=2440
-TopLine=2432
-LeftCol=1
-
-[View2]
 Module=C:\FontesD7\SACI\Projeto\DigSenha.pas
-CursorX=61
-CursorY=911
+CursorX=58
+CursorY=903
 TopLine=902
 LeftCol=1
 
+[View2]
+Module=C:\FontesD7\SACI\Projeto\UPrinc2.pas
+CursorX=34
+CursorY=3849
+TopLine=3840
+LeftCol=1
+
 [View3]
-Module=C:\FontesD7\SACI\Lagoa\Projeto\uLivroOcorrencia.pas
-CursorX=50
-CursorY=11
-TopLine=1
+Module=C:\FontesD7\SACI\Lagoa\Projeto\PortariaOnline.dpr
+CursorX=63
+CursorY=48
+TopLine=36
 LeftCol=1
 
 [View4]
 Module=C:\FontesD7\SACI\Lagoa\Projeto\uMenu.pas
-CursorX=64
-CursorY=13
-TopLine=4
+CursorX=88
+CursorY=139
+TopLine=132
+LeftCol=1
+
+[View5]
+Module=C:\FontesD7\SACI\Lagoa\Projeto\uReserva.pas
+CursorX=62
+CursorY=80
+TopLine=71
+LeftCol=1
+
+[View6]
+Module=C:\FontesD7\SACI\Lagoa\Projeto\uLogin.pas
+CursorX=52
+CursorY=76
+TopLine=60
+LeftCol=1
+
+[View7]
+Module=C:\FontesD7\SACI\Lagoa\Projeto\uLivro.pas
+CursorX=55
+CursorY=102
+TopLine=91
+LeftCol=1
+
+[View8]
+Module=C:\FontesD7\SACI\Lagoa\Projeto\uVariaveis.pas
+CursorX=20
+CursorY=11
+TopLine=1
+LeftCol=1
+
+[View9]
+Module=C:\FontesD7\SACI\Lagoa\Projeto\uLivroOcorrencia.pas
+CursorX=13
+CursorY=167
+TopLine=161
+LeftCol=1
+
+[View10]
+Module=C:\FontesD7\SACI\Projeto\CdCliente.pas
+CursorX=1
+CursorY=1
+TopLine=1
 LeftCol=1
 
 [PackageWindow0]
@@ -205,8 +287,8 @@ Left=0
 Top=0
 Width=1366
 Height=105
-MaxLeft=-4
-MaxTop=-4
+MaxLeft=-1
+MaxTop=-1
 MaxWidth=1374
 MaxHeight=105
 ClientWidth=1366
@@ -258,7 +340,7 @@ LRDockWidth=190
 Dockable=1
 SplitPos=104
 ArrangeBy=Name
-SelectedItem=
+SelectedItem=Caption
 ExpandedItems=
 HiddenCategories=
 

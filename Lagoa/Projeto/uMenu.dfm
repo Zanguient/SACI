@@ -1,6 +1,6 @@
 object frmMenu: TfrmMenu
-  Left = 234
-  Top = 103
+  Left = 307
+  Top = 102
   Width = 929
   Height = 480
   Caption = 'Portaria Online'
@@ -221,6 +221,9 @@ object frmMenu: TfrmMenu
                 ImageIndex = 34
               end
               item
+                Caption = '-'
+              end
+              item
                 Action = AR_Sair
                 ImageIndex = 8
               end>
@@ -229,10 +232,16 @@ object frmMenu: TfrmMenu
           item
             Items = <
               item
-                Action = PR_LivroOcorrencia
+                Action = PR_Morador
+              end
+              item
+                Caption = '-'
               end
               item
                 Action = PR_Reserva
+              end
+              item
+                Action = PR_LivroOcorrencia
               end>
             Caption = '&Portaria'
           end>
@@ -298,15 +307,20 @@ object frmMenu: TfrmMenu
       Caption = 'Calc&uladora'
       ImageIndex = 12
     end
-    object PR_LivroOcorrencia: TAction
+    object PR_Morador: TAction
       Category = 'Portaria'
-      Caption = '&Livro de Ocorr'#234'ncia'
-      OnExecute = PR_LivroOcorrenciaExecute
+      Caption = '&Moradores'
+      OnExecute = PR_MoradorExecute
     end
     object PR_Reserva: TAction
       Category = 'Portaria'
       Caption = '&Reservas'
       OnExecute = PR_ReservaExecute
+    end
+    object PR_LivroOcorrencia: TAction
+      Category = 'Portaria'
+      Caption = '&Livro de Ocorr'#234'ncia'
+      OnExecute = PR_LivroOcorrenciaExecute
     end
   end
 end

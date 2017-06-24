@@ -3,7 +3,7 @@
 //Data Source=70.38.11.27;
 //User ID=lagoa
 //Password=agfm1901
-//Banco: build_sis
+//Banco: buildsis_lagoa
 
 unit uMenu;
 
@@ -34,10 +34,12 @@ type
     sbMenu: TStatusBar;
     Image1: TImage;
     PR_Reserva: TAction;
+    PR_Morador: TAction;
     procedure PR_LivroOcorrenciaExecute(Sender: TObject);
     procedure AR_MudarUsuarioExecute(Sender: TObject);
     procedure FormActivate(Sender: TObject);
     procedure PR_ReservaExecute(Sender: TObject);
+    procedure PR_MoradorExecute(Sender: TObject);
   private
     { Private declarations }
     procedure ShowTela(Tela: TForm);
@@ -52,7 +54,7 @@ procedure EnviaEmail(aPorteiro, aData, aHora, aMensagem: string; aImportante: bo
 
 implementation
 
-uses uLivro, uLogin;
+uses uLivro, uLogin, uReserva;
 
 {$R *.dfm}
 
@@ -166,7 +168,14 @@ end;
 
 procedure TfrmMenu.PR_ReservaExecute(Sender: TObject);
 begin
-  //TODO:
+  Application.CreateForm(TfrmReserva, frmReserva);
+  ShowTela(frmReserva);
+end;
+
+procedure TfrmMenu.PR_MoradorExecute(Sender: TObject);
+begin
+  //todo:
+  showmessage('Em desenvolvimento!');
 end;
 
 end.

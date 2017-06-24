@@ -39,6 +39,7 @@ type
     procedure FormShow(Sender: TObject);
     procedure btnSairClick(Sender: TObject);
     procedure FormKeyPress(Sender: TObject; var Key: Char);
+    procedure FormCreate(Sender: TObject);
   private
     function VerificaData(Data:String):Boolean;
     { Private declarations }
@@ -111,7 +112,7 @@ begin
       if cbxImportante.Checked then
         InsertOcorrencia.Parameters.ParamByName('IMPORTANTE').Value   := 'S'
       else
-        InsertOcorrencia.Parameters.ParamByName('IMPORTANTE').Value   := 'N';              
+        InsertOcorrencia.Parameters.ParamByName('IMPORTANTE').Value   := 'N';
 
       InsertOcorrencia.ExecSQL;
 
@@ -166,6 +167,11 @@ begin
 
   if key =#27 then
     close;
+end;
+
+procedure TfrmOcorrencia.FormCreate(Sender: TObject);
+begin
+  ConnectionLagoa.ConnectionString := StringConexao;
 end;
 
 end.

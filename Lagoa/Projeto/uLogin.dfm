@@ -15,6 +15,7 @@ object frmLogin: TfrmLogin
   KeyPreview = True
   OldCreateOrder = False
   Position = poScreenCenter
+  OnCreate = FormCreate
   OnKeyPress = FormKeyPress
   OnShow = FormShow
   PixelsPerInch = 96
@@ -351,5 +352,18 @@ object frmLogin: TfrmLogin
         FDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFD}
       NumGlyphs = 2
     end
+  end
+  object ConnectionLagoa: TADOConnection
+    LoginPrompt = False
+    Provider = 'SQLOLEDB.1'
+    Left = 25
+    Top = 15
+  end
+  object adoUsuario: TADOQuery
+    Connection = ConnectionLagoa
+    CursorType = ctStatic
+    Parameters = <>
+    Left = 55
+    Top = 15
   end
 end

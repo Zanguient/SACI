@@ -5,7 +5,7 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, StdCtrls, Grids, DBGrids, Buttons, ComCtrls, ExtCtrls, DB, ADODB,
-  Menus, StrUtils;
+  Menus, StrUtils,uVariaveis;
 
 type
   TfrmLivro = class(TForm)
@@ -44,6 +44,7 @@ type
     procedure btnSairClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure EnviarEmailparaoSndico1Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     procedure CarregaOcorrencia;
     procedure ConsultaOcorrencia(aData: TDateTime);
@@ -91,7 +92,11 @@ begin
 end;
 
 procedure TfrmLivro.ConsultaOcorrencia(aData: TDateTime);
+var
+  filtro: string;
 begin
+//  if NomeUsuarioLogado = 'ADM' then
+//    filtro := ''
   mmMensagem.Clear;
   ADOOcorrencia.Close;
   ADOOcorrencia.SQL.Text :=  'SELECT * FROM OCORRENCIA ' +
@@ -174,6 +179,7 @@ end;
 
 procedure TfrmLivro.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
+  ConnectionLagoa.Connected := False;
   Action := cafree;
 end;
 
@@ -188,6 +194,12 @@ begin
              FormatDateTime('hh:mm',ADOOcorrencia.FieldByName('DataOcorrencia').AsDatetime),
              ADOOcorrencia.FieldByName('Ocorrencia').AsString,
              bImportante, nil);
+end;
+
+procedure TfrmLivro.FormCreate(Sender: TObject);
+begin
+  ConnectionLagoa.ConnectionString := StringConexao;
+  ConnectionLagoa.Connected := True;
 end;
 
 end.
