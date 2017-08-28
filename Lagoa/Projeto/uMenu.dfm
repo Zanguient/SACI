@@ -1,6 +1,6 @@
 object frmMenu: TfrmMenu
-  Left = 307
-  Top = 102
+  Left = 250
+  Top = 153
   Width = 929
   Height = 480
   Caption = 'Portaria Online'
@@ -19,9 +19,9 @@ object frmMenu: TfrmMenu
   TextHeight = 13
   object Image1: TImage
     Left = 0
-    Top = 24
+    Top = 96
     Width = 921
-    Height = 407
+    Height = 335
     Align = alClient
     Center = True
     Picture.Data = {
@@ -205,6 +205,75 @@ object frmMenu: TfrmMenu
       end>
     SizeGrip = False
     UseSystemFont = False
+  end
+  object ToolBar1: TToolBar
+    Left = 0
+    Top = 24
+    Width = 921
+    Height = 72
+    ButtonHeight = 70
+    ButtonWidth = 71
+    Caption = 'tbMain'
+    Color = clBtnFace
+    Flat = True
+    ParentColor = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 2
+    Visible = False
+    object tbMoradores: TToolButton
+      Tag = 10
+      Left = 0
+      Top = 0
+      Cursor = crHandPoint
+      Action = PR_Morador
+      ParentShowHint = False
+      ShowHint = True
+    end
+    object ToolButton3: TToolButton
+      Left = 71
+      Top = 0
+      Width = 8
+      Caption = 'ToolButton3'
+      ImageIndex = 1
+      Style = tbsSeparator
+    end
+    object tbReserva: TToolButton
+      Tag = 3480
+      Left = 79
+      Top = 0
+      Cursor = crHandPoint
+      Action = PR_Reserva
+      ParentShowHint = False
+      ShowHint = True
+    end
+    object tbLivroDeOcorrencia: TToolButton
+      Tag = 7290
+      Left = 150
+      Top = 0
+      Cursor = crHandPoint
+      Action = PR_LivroOcorrencia
+      ParentShowHint = False
+      ShowHint = True
+    end
+    object ToolButton1: TToolButton
+      Left = 221
+      Top = 0
+      Width = 8
+      Caption = 'ToolButton1'
+      ImageIndex = 0
+      Style = tbsSeparator
+    end
+    object tbTermo: TToolButton
+      Left = 229
+      Top = 0
+      Cursor = crHandPoint
+      Hint = 'Termo de uso do sal'#227'o de festas'
+      ImageIndex = 0
+      ParentShowHint = False
+      ShowHint = True
+      OnClick = tbTermoClick
+    end
   end
   object ActionManager1: TActionManager
     ActionBars = <

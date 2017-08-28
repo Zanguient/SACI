@@ -1,6 +1,6 @@
 object frmOcorrencia: TfrmOcorrencia
   Left = 301
-  Top = 161
+  Top = 162
   Width = 840
   Height = 492
   BorderIcons = [biSystemMenu]

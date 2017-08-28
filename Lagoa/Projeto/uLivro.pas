@@ -92,8 +92,8 @@ begin
 end;
 
 procedure TfrmLivro.ConsultaOcorrencia(aData: TDateTime);
-var
-  filtro: string;
+//var
+  //filtro: string;
 begin
 //  if NomeUsuarioLogado = 'ADM' then
 //    filtro := ''

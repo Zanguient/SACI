@@ -35,11 +35,19 @@ type
     Image1: TImage;
     PR_Reserva: TAction;
     PR_Morador: TAction;
+    ToolBar1: TToolBar;
+    tbMoradores: TToolButton;
+    tbReserva: TToolButton;
+    tbLivroDeOcorrencia: TToolButton;
+    ToolButton1: TToolButton;
+    tbTermo: TToolButton;
+    ToolButton3: TToolButton;
     procedure PR_LivroOcorrenciaExecute(Sender: TObject);
     procedure AR_MudarUsuarioExecute(Sender: TObject);
     procedure FormActivate(Sender: TObject);
     procedure PR_ReservaExecute(Sender: TObject);
     procedure PR_MoradorExecute(Sender: TObject);
+    procedure tbTermoClick(Sender: TObject);
   private
     { Private declarations }
     procedure ShowTela(Tela: TForm);
@@ -132,16 +140,30 @@ begin
   end;
   }
 
+  //Do email da portario: outlook para gmail e outlook
+  stiReport.Create.SendMessage('smtp.live.com',
+                               'portarialagoajoqueiville@outlook.com',
+                               'Portaria',
+                               'P17072007',
+                               'anndersonn.gonncalves@gmail.com',
+                               'Síndico',
+                               'anndersonn.gonncalves@outlook.com',
+                               'Livro de ocorrência',
+                               msgOcorrencia,
+                               aAnexos);
+
   //Do email da portario GMAIL
-  stiReport.Create.SendMessage('aspmx.l.google.com',
+  {stiReport.Create.SendMessage('aspmx.l.google.com',
                                'admlagoajoqueiville@gmail.com',
                                'Portaria',
                                '17072007',
                                'anndersonn.gonncalves@gmail.com',
                                'Síndico',
+                               'anndersonn.gonncalves@outlook.com',
                                'Livro de ocorrência',
                                msgOcorrencia,
-                               aAnexos);
+                               aAnexos);}
+
 
   //Do email Outlook para GMAIL
   {stiReport.Create.SendMessage('smtp.live.com',
@@ -150,17 +172,19 @@ begin
                                '@gfm1901',
                                'anndersonn.gonncalves@gmail.com',
                                'Síndico',
+                               'anndersonn.gonncalves@gmail.com',
                                'Livro de ocorrência',
                                msgOcorrencia,
-                               aAnexos);
+                               aAnexos);             }
 
   //Do email Outlook para Outlook
-  stiReport.Create.SendMessage('smtp.live.com',
+  {stiReport.Create.SendMessage('smtp.live.com',
                                'anndersonn.gonncalves@outlook.com',
                                'Portaria',
                                '@gfm1901',
                                'anndersonn.gonncalves@outlook.com',
                                'Síndico',
+                               'anndersonn.gonncalves@outlook.com',
                                'Livro de ocorrência',
                                msgOcorrencia,
                                aAnexos);}
@@ -176,6 +200,35 @@ procedure TfrmMenu.PR_MoradorExecute(Sender: TObject);
 begin
   //todo:
   showmessage('Em desenvolvimento!');
+end;
+
+procedure TfrmMenu.tbTermoClick(Sender: TObject);
+var
+  stiReport: CoSiacReport_;
+  SQL: string;
+  rptArquivoLogoLagoa: string;
+begin
+  if fileexists('logo-lagoa.bmp') then
+    rptArquivoLogoLagoa := 'logo-lagoa.bmp'
+  else if fileexists('logo-lagoa.jpg') then
+    rptArquivoLogoLagoa := 'logo-lagoa.jpg'
+  else if fileexists('logo-lagoa.png') then
+    rptArquivoLogoLagoa := 'logo-lagoa.png'
+  else
+    rptArquivoLogoLagoa := '';
+
+  SQL := 'SELECT * FROM EVENTOS WHERE ID = 1';
+  stiReport.Create.ReportLagoaTermoReserva(false,
+                                           false,
+                                           SQL,
+                                           EnderecoCondominio,
+                                           '',//Termo de reserva do Deck
+                                           '',//Empresa
+                                           NomeCondominio,//DM.Configuracao1.LojaNome
+                                           'TERMO DE RESPONSABILIDADE',
+                                           '',//NOME DO USUARIO
+                                           '',//Filtros
+                                           rptArquivoLogoLagoa);
 end;
 
 end.

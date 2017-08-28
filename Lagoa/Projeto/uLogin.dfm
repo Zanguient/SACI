@@ -1,6 +1,6 @@
 object frmLogin: TfrmLogin
   Left = 473
-  Top = 226
+  Top = 227
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'Login'

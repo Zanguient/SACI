@@ -1,6 +1,6 @@
 object frmLivro: TfrmLivro
   Left = 285
-  Top = 106
+  Top = 67
   Width = 826
   Height = 577
   BorderIcons = [biSystemMenu]
