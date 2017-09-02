@@ -784,7 +784,7 @@ object frmOcorrencia: TfrmOcorrencia
     end
     object btnSair: TBitBtn
       Left = 10
-      Top = 50
+      Top = 45
       Width = 90
       Height = 25
       Anchors = [akTop, akRight]

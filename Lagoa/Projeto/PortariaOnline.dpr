@@ -21,7 +21,8 @@ uses
   uLogin in 'uLogin.pas' {frmLogin},
   uVariaveis in 'uVariaveis.pas',
   u_Resources in '..\..\Projeto\u_Resources.pas',
-  uReserva in 'uReserva.pas' {frmReserva};
+  uReserva in 'uReserva.pas' {frmReserva},
+  uReservaCadastro in 'uReservaCadastro.pas' {frmReservaCadastro};
 
 {$R *.res}
 {$R ..\Resources\SIACDA.RES} //Dal.dll
