@@ -4,26 +4,40 @@ File_1=SourceModule,'c:\arquivos de programas\borland\delphi7\source\rtl\Sys\sys
 File_2=SourceModule,'C:\FontesD7\SACI\Projeto\CdCliente.pas',0,1,1,62,26,1,0
 File_3=SourceModule,'C:\FontesD7\SACI\Comunicação\UComunicacao.pas',0,1,3461,47,3473,0,0
 File_4=SourceModule,'C:\Arquivos de programas\Borland\Delphi7\Imports\SiacReport_TLB.pas',0,1,671,73,672,0,0
-File_5=SourceModule,'C:\FontesD7\SACI\Lagoa\Projeto\uLogin.pas',0,1,60,73,61,1,0
-File_6=SourceModule,'C:\FontesD7\SACI\Comunicação\CdEnviaComunicacao.pas',0,1,106,99,110,1,0
-File_7=SourceModule,'C:\FontesD7\SACI\Comunicação\UPrincComunicacao.pas',0,1,28,86,33,1,0
+File_5=SourceModule,'C:\FontesD7\SACI\Comunicação\CdEnviaComunicacao.pas',0,1,106,99,110,1,0
+File_6=SourceModule,'C:\FontesD7\SACI\Comunicação\UPrincComunicacao.pas',0,1,28,86,33,1,0
 
 [Modules]
-Module0=C:\FontesD7\SACI\Lagoa\Projeto\uReservaCadastro.pas
-Module1=C:\FontesD7\SACI\Lagoa\Projeto\uLivroOcorrencia.pas
-Module2=C:\FontesD7\SACI\Lagoa\Projeto\uReserva.pas
-Module3=C:\FontesD7\SACI\Lagoa\Projeto\uLivro.pas
-Module4=c:\arquivos de programas\borland\delphi7\source\rtl\common\StrUtils.pas
-Module5=C:\FontesD7\SACI\Projeto\DigSenha.pas
-Module6=C:\FontesD7\SACI\Projeto\UPrinc2.pas
-Module7=C:\FontesD7\SACI\Lagoa\Projeto\uMenu.pas
-Module8=C:\FontesD7\SACI\Lagoa\Projeto\uVariaveis.pas
-Module9=C:\FontesD7\SACI\Projeto\PSACI.dpr
-Count=10
+Module0=C:\FontesD7\SACI\AtualizaBase\AtualizaSACI\UAtualizaLBM.pas
+Module1=C:\FontesD7\SACI\Protecao\u_Protecao.pas
+Module2=C:\FontesD7\SACI\Lagoa\Projeto\uLivro.pas
+Module3=C:\FontesD7\SACI\Lagoa\Projeto\uLivroOcorrencia.pas
+Module4=C:\FontesD7\SACI\AtualizaBase\Chave\Chave.dpr
+Module5=C:\FontesD7\SACI\Projeto\UPrinc2.pas
+Module6=C:\FontesD7\SACI\Lagoa\Projeto\uReservaCadastro.pas
+Module7=C:\FontesD7\SACI\Lagoa\Projeto\uReserva.pas
+Module8=C:\FontesD7\SACI\Projeto\DigSenha.pas
+Module9=C:\FontesD7\SACI\Lagoa\Projeto\uLogin.pas
+Module10=C:\FontesD7\SACI\Lagoa\Projeto\uMenu.pas
+Module11=C:\FontesD7\SACI\Lagoa\Projeto\uVariaveis.pas
+Module12=c:\arquivos de programas\borland\delphi7\source\rtl\common\StrUtils.pas
+Module13=C:\FontesD7\SACI\Lagoa\Projeto\PortariaOnline.dpr
+Module14=C:\FontesD7\SACI\Projeto\PSACI.dpr
+Count=15
 EditWindowCount=1
-PackageWindowCount=2
+PackageWindowCount=1
 
-[C:\FontesD7\SACI\Lagoa\Projeto\uReservaCadastro.pas]
+[C:\FontesD7\SACI\AtualizaBase\AtualizaSACI\UAtualizaLBM.pas]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[C:\FontesD7\SACI\Protecao\u_Protecao.pas]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[C:\FontesD7\SACI\Lagoa\Projeto\uLivro.pas]
 ModuleType=SourceModule
 FormState=1
 FormOnTop=0
@@ -33,19 +47,24 @@ ModuleType=SourceModule
 FormState=1
 FormOnTop=0
 
+[C:\FontesD7\SACI\AtualizaBase\Chave\Chave.dpr]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[C:\FontesD7\SACI\Projeto\UPrinc2.pas]
+ModuleType=SourceModule
+FormState=1
+FormOnTop=0
+
+[C:\FontesD7\SACI\Lagoa\Projeto\uReservaCadastro.pas]
+ModuleType=SourceModule
+FormState=1
+FormOnTop=0
+
 [C:\FontesD7\SACI\Lagoa\Projeto\uReserva.pas]
 ModuleType=SourceModule
 FormState=1
-FormOnTop=0
-
-[C:\FontesD7\SACI\Lagoa\Projeto\uLivro.pas]
-ModuleType=SourceModule
-FormState=1
-FormOnTop=0
-
-[c:\arquivos de programas\borland\delphi7\source\rtl\common\StrUtils.pas]
-ModuleType=SourceModule
-FormState=0
 FormOnTop=0
 
 [C:\FontesD7\SACI\Projeto\DigSenha.pas]
@@ -53,7 +72,7 @@ ModuleType=SourceModule
 FormState=1
 FormOnTop=0
 
-[C:\FontesD7\SACI\Projeto\UPrinc2.pas]
+[C:\FontesD7\SACI\Lagoa\Projeto\uLogin.pas]
 ModuleType=SourceModule
 FormState=1
 FormOnTop=0
@@ -68,24 +87,26 @@ ModuleType=SourceModule
 FormState=0
 FormOnTop=0
 
-[C:\FontesD7\SACI\Projeto\PSACI.dpr]
+[c:\arquivos de programas\borland\delphi7\source\rtl\common\StrUtils.pas]
 ModuleType=SourceModule
 FormState=0
 FormOnTop=0
 
 [C:\FontesD7\SACI\Lagoa\Projeto\PortariaOnline.dpr]
+ModuleType=SourceModule
 FormState=0
 FormOnTop=0
 
-[c:\arquivos de programas\borland\delphi7\Lib\dclusr.dpk]
+[C:\FontesD7\SACI\Projeto\PSACI.dpr]
+ModuleType=SourceModule
 FormState=0
-FormOnTop=1
-
-[C:\FontesD7\SACI\Componentes\Entidades\Softech.dpk]
-FormState=0
-FormOnTop=1
+FormOnTop=0
 
 [C:\FontesD7\SACI\Projeto\ProjetosD7.bpg]
+FormState=0
+FormOnTop=0
+
+[C:\FontesD7\SACI\Componentes\Entidades\Softech.dpk]
 FormState=0
 FormOnTop=0
 
@@ -97,12 +118,8 @@ FormOnTop=0
 FormState=0
 FormOnTop=0
 
-[C:\FontesD7\SACI\AtualizaBase\Chave\Chave.dpr]
-FormState=0
-FormOnTop=0
-
 [EditWindow0]
-ViewCount=10
+ViewCount=15
 CurrentView=7
 View0=0
 View1=1
@@ -114,6 +131,11 @@ View6=6
 View7=7
 View8=8
 View9=9
+View10=10
+View11=11
+View12=12
+View13=13
+View14=14
 CodeExplorer=CodeExplorer@EditWindow0
 MessageView=MessageView@EditWindow0
 Create=1
@@ -137,72 +159,107 @@ RightPanelClients=ProjectManager
 RightPanelData=000004000000000000000000000000000000000000000000000100000000000000001200000050726F6A6563744D616E61676572466F726DFFFFFFFF
 BottomPanelSize=0
 BottomPanelClients=MessageView@EditWindow0
-BottomPanelData=00000400010000000B0000004D657373616765566965775605000000000000025500000000000000010000000000000000000000000100000000560500000B0000004D65737361676556696577FFFFFFFF
+BottomPanelData=00000400010000000B0000004D65737361676556696577000000000000000000000000000000000001000000000000000000000000FFFFFFFF
 
 [View0]
 Module=C:\FontesD7\SACI\Projeto\PSACI.dpr
-CursorX=94
-CursorY=10
-TopLine=1
+CursorX=7
+CursorY=710
+TopLine=693
 LeftCol=1
 
 [View1]
+Module=C:\FontesD7\SACI\Lagoa\Projeto\PortariaOnline.dpr
+CursorX=11
+CursorY=16
+TopLine=36
+LeftCol=1
+
+[View2]
+Module=C:\FontesD7\SACI\Lagoa\Projeto\uLogin.pas
+CursorX=8
+CursorY=77
+TopLine=64
+LeftCol=1
+
+[View3]
 Module=C:\FontesD7\SACI\Projeto\DigSenha.pas
 CursorX=45
 CursorY=919
 TopLine=902
 LeftCol=1
 
-[View2]
+[View4]
 Module=C:\FontesD7\SACI\Projeto\UPrinc2.pas
 CursorX=62
 CursorY=3854
 TopLine=3840
 LeftCol=1
 
-[View3]
+[View5]
 Module=C:\FontesD7\SACI\Lagoa\Projeto\uMenu.pas
-CursorX=51
-CursorY=164
-TopLine=153
+CursorX=29
+CursorY=10
+TopLine=1
 LeftCol=1
 
-[View4]
+[View6]
+Module=C:\FontesD7\SACI\Protecao\u_Protecao.pas
+CursorX=25
+CursorY=507
+TopLine=497
+LeftCol=1
+
+[View7]
+Module=C:\FontesD7\SACI\AtualizaBase\AtualizaSACI\UAtualizaLBM.pas
+CursorX=28
+CursorY=665
+TopLine=673
+LeftCol=1
+
+[View8]
 Module=C:\FontesD7\SACI\Lagoa\Projeto\uLivro.pas
 CursorX=29
 CursorY=74
 TopLine=67
 LeftCol=1
 
-[View5]
+[View9]
 Module=C:\FontesD7\SACI\Lagoa\Projeto\uLivroOcorrencia.pas
-CursorX=1
-CursorY=148
-TopLine=146
+CursorX=82
+CursorY=123
+TopLine=116
 LeftCol=1
 
-[View6]
+[View10]
+Module=C:\FontesD7\SACI\AtualizaBase\Chave\Chave.dpr
+CursorX=43
+CursorY=3
+TopLine=1
+LeftCol=1
+
+[View11]
 Module=C:\FontesD7\SACI\Lagoa\Projeto\uReserva.pas
 CursorX=1
 CursorY=163
 TopLine=149
 LeftCol=1
 
-[View7]
+[View12]
 Module=C:\FontesD7\SACI\Lagoa\Projeto\uReservaCadastro.pas
-CursorX=1
-CursorY=47
-TopLine=41
+CursorX=39
+CursorY=45
+TopLine=1
 LeftCol=1
 
-[View8]
+[View13]
 Module=c:\arquivos de programas\borland\delphi7\source\rtl\common\StrUtils.pas
 CursorX=18
 CursorY=86
 TopLine=74
 LeftCol=1
 
-[View9]
+[View14]
 Module=C:\FontesD7\SACI\Lagoa\Projeto\uVariaveis.pas
 CursorX=73
 CursorY=2
@@ -211,29 +268,7 @@ LeftCol=1
 
 [PackageWindow0]
 Create=1
-Visible=1
-State=0
-Left=453
-Top=259
-Width=368
-Height=244
-MaxLeft=-1
-MaxTop=-1
-ClientWidth=360
-ClientHeight=220
-TBDockHeight=244
-LRDockWidth=368
-Dockable=1
-StatusBar=0
-TextLabels=1
-Toolbar=1
-SectionWidth0=150
-SectionWidth1=210
-Module=c:\arquivos de programas\borland\delphi7\Lib\dclusr.dpk
-
-[PackageWindow1]
-Create=1
-Visible=1
+Visible=0
 State=0
 Left=252
 Top=241
@@ -273,8 +308,8 @@ Left=0
 Top=0
 Width=1366
 Height=105
-MaxLeft=-4
-MaxTop=-4
+MaxLeft=-1
+MaxTop=-1
 MaxWidth=1374
 MaxHeight=105
 ClientWidth=1366
@@ -294,22 +329,6 @@ ClientWidth=196
 ClientHeight=608
 TBDockHeight=303
 LRDockWidth=196
-Dockable=1
-
-[Components]
-Left=240
-Top=237
-Width=183
-Height=233
-Create=1
-Visible=0
-State=0
-MaxLeft=-1
-MaxTop=-1
-ClientWidth=175
-ClientHeight=209
-TBDockHeight=233
-LRDockWidth=183
 Dockable=1
 
 [AlignmentPalette]
@@ -342,8 +361,8 @@ LRDockWidth=190
 Dockable=1
 SplitPos=104
 ArrangeBy=Name
-SelectedItem=TabOrder
-ExpandedItems=Anchors
+SelectedItem=Caption
+ExpandedItems=
 HiddenCategories=
 
 [ObjectTree]
@@ -398,5 +417,5 @@ Dockable=1
 DockHostCount=0
 
 [ActiveProject]
-ActiveProject=2
+ActiveProject=5
 
