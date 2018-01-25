@@ -190,6 +190,7 @@ type
     edtCOO: TEdit;
     cbxCCF: TCheckBox;
     edtCCF: TEdit;
+    ckbTotalParcela: TCheckBox;
     procedure ckbCodigoCLIClick(Sender: TObject);
     procedure ckbCodigoPRDClick(Sender: TObject);
     procedure ckbCodigoVENClick(Sender: TObject);
@@ -1813,6 +1814,19 @@ begin
     Begin
       tag := 0;
 
+
+      if ckbTotalParcela.Checked then
+      begin
+        bTotalParcela := true;
+        zrbTotalGeral.Height := 10;
+      end
+      else
+      begin
+        bTotalParcela := false;
+        zrbTotalGeral.Height := 2;
+      end;
+
+
       if DM.Configuracao1.Empresa = empHOPE then
         zrlDescReimpressao.Enabled := True;
 
@@ -2072,6 +2086,158 @@ begin
       if (report.Height > DM.Configuracao1.MaxLinhasImp) and
          (DM.Configuracao1.MaxLinhasImp <> 65) then
         report.Height := DM.Configuracao1.MaxLinhasImp;
+
+
+
+
+
+
+      {TODO
+      if ckbTotalParcela.Checked then
+        begin
+          QrParcelas5.SQL.Text := 'SELECT '+
+                                  ' COUNT(T1.TRC_CODIGO) AS TRC_SEQUENCIA, '+
+                                  ' SUM(COALESCE(T1.TRC_VALOR_PAGO,0)) AS TOTAL '+
+            ' FROM TITULO_A_RECEBER T1, PEDIDO_DE_VENDA T4 '+
+            ' WHERE T1.CNC_CODIGO='+IntToStr(dblCodigoCNC.KeyValue)+
+            ' AND T1.TRC_SITUACAO=2 '+
+            DataINI+DataFIM+
+            ' AND T1.PDV_CODIGO=T4.PDV_CODIGO '+
+            ' AND T1.CNC_CODIGO=T4.CNC_CODIGO '+
+            ' AND EXISTS (SELECT T2.PDV_CODIGO '+
+            '   FROM ITEM_DE_PEDIDO_DE_VENDA T2, PEDIDO_DE_VENDA T3 '+
+            '   WHERE T3.PDV_CODIGO<>-10 '+
+            '   AND T3.PDV_SITUACAO=4 '+
+            '   AND T2.CNC_CODIGO='+IntToStr(dblCodigoCNC.KeyValue)+
+                CdFUN+CdAGF+sSomenteLinha+sSomenteCatalogo+
+            '   AND T3.PDV_CODIGO=T2.PDV_CODIGO '+
+            '   AND T2.CNC_CODIGO=T3.CNC_CODIGO '+
+            '   AND T1.CNC_CODIGO=T3.CNC_CODIGO '+
+            '   AND T2.PDV_CODIGO=T1.PDV_CODIGO)'+
+            ' GROUP BY T4.PDV_CODIGO '+
+            ' HAVING COUNT(T1.TRC_CODIGO) = ''5'' ';
+          QrParcelas5.Open;
+
+          QrParcelas6.SQL.Text := 'SELECT '+
+                                  ' COUNT(T1.TRC_CODIGO) AS TRC_SEQUENCIA, '+
+                                  ' SUM(COALESCE(T1.TRC_VALOR_PAGO,0)) AS TOTAL '+
+            ' FROM TITULO_A_RECEBER T1, PEDIDO_DE_VENDA T4 '+
+            ' WHERE T1.CNC_CODIGO='+IntToStr(dblCodigoCNC.KeyValue)+
+            ' AND T1.TRC_SITUACAO=2 '+
+            DataINI+DataFIM+
+            ' AND T1.PDV_CODIGO=T4.PDV_CODIGO '+
+            ' AND T1.CNC_CODIGO=T4.CNC_CODIGO '+
+            ' AND EXISTS (SELECT T2.PDV_CODIGO '+
+            '   FROM ITEM_DE_PEDIDO_DE_VENDA T2, PEDIDO_DE_VENDA T3 '+
+            '   WHERE T3.PDV_CODIGO<>-10 '+
+            '   AND T3.PDV_SITUACAO=4 '+
+            '   AND T2.CNC_CODIGO='+IntToStr(dblCodigoCNC.KeyValue)+
+                CdFUN+CdAGF+sSomenteLinha+sSomenteCatalogo+
+            '   AND T3.PDV_CODIGO=T2.PDV_CODIGO '+
+            '   AND T2.CNC_CODIGO=T3.CNC_CODIGO '+
+            '   AND T1.CNC_CODIGO=T3.CNC_CODIGO '+
+            '   AND T2.PDV_CODIGO=T1.PDV_CODIGO)'+
+            ' GROUP BY T4.PDV_CODIGO '+
+            ' HAVING COUNT(T1.TRC_CODIGO) = ''6'' ';
+          QrParcelas6.Open;
+
+          QrParcelas7.SQL.Text := 'SELECT '+
+                                  ' COUNT(T1.TRC_CODIGO) AS TRC_SEQUENCIA, '+
+                                  ' SUM(COALESCE(T1.TRC_VALOR_PAGO,0)) AS TOTAL '+
+            ' FROM TITULO_A_RECEBER T1, PEDIDO_DE_VENDA T4 '+
+            ' WHERE T1.CNC_CODIGO='+IntToStr(dblCodigoCNC.KeyValue)+
+            ' AND T1.TRC_SITUACAO=2 '+
+            DataINI+DataFIM+
+            ' AND T1.PDV_CODIGO=T4.PDV_CODIGO '+
+            ' AND T1.CNC_CODIGO=T4.CNC_CODIGO '+
+            ' AND EXISTS (SELECT T2.PDV_CODIGO '+
+            '   FROM ITEM_DE_PEDIDO_DE_VENDA T2, PEDIDO_DE_VENDA T3 '+
+            '   WHERE T3.PDV_CODIGO<>-10 '+
+            '   AND T3.PDV_SITUACAO=4 '+
+            '   AND T2.CNC_CODIGO='+IntToStr(dblCodigoCNC.KeyValue)+
+                CdFUN+CdAGF+sSomenteLinha+sSomenteCatalogo+
+            '   AND T3.PDV_CODIGO=T2.PDV_CODIGO '+
+            '   AND T2.CNC_CODIGO=T3.CNC_CODIGO '+
+            '   AND T1.CNC_CODIGO=T3.CNC_CODIGO '+
+            '   AND T2.PDV_CODIGO=T1.PDV_CODIGO)'+
+            ' GROUP BY T4.PDV_CODIGO '+
+            ' HAVING COUNT(T1.TRC_CODIGO) = ''7'' ';
+          QrParcelas7.Open;
+
+          QrParcelas8.SQL.Text := 'SELECT '+
+                                  ' COUNT(T1.TRC_CODIGO) AS TRC_SEQUENCIA, '+
+                                  ' SUM(COALESCE(T1.TRC_VALOR_PAGO,0)) AS TOTAL '+
+            ' FROM TITULO_A_RECEBER T1, PEDIDO_DE_VENDA T4 '+
+            ' WHERE T1.CNC_CODIGO='+IntToStr(dblCodigoCNC.KeyValue)+
+            ' AND T1.TRC_SITUACAO=2 '+
+            DataINI+DataFIM+
+            ' AND T1.PDV_CODIGO=T4.PDV_CODIGO '+
+            ' AND T1.CNC_CODIGO=T4.CNC_CODIGO '+
+            ' AND EXISTS (SELECT T2.PDV_CODIGO '+
+            '   FROM ITEM_DE_PEDIDO_DE_VENDA T2, PEDIDO_DE_VENDA T3 '+
+            '   WHERE T3.PDV_CODIGO<>-10 '+
+            '   AND T3.PDV_SITUACAO=4 '+
+            '   AND T2.CNC_CODIGO='+IntToStr(dblCodigoCNC.KeyValue)+
+                CdFUN+CdAGF+sSomenteLinha+sSomenteCatalogo+
+            '   AND T3.PDV_CODIGO=T2.PDV_CODIGO '+
+            '   AND T2.CNC_CODIGO=T3.CNC_CODIGO '+
+            '   AND T1.CNC_CODIGO=T3.CNC_CODIGO '+
+            '   AND T2.PDV_CODIGO=T1.PDV_CODIGO)'+
+            ' GROUP BY T4.PDV_CODIGO '+
+            ' HAVING COUNT(T1.TRC_CODIGO) = ''8'' ';
+          QrParcelas8.Open;
+
+          QrParcelas9.SQL.Text := 'SELECT '+
+                                  ' COUNT(T1.TRC_CODIGO) AS TRC_SEQUENCIA, '+
+                                  ' SUM(COALESCE(T1.TRC_VALOR_PAGO,0)) AS TOTAL '+
+            ' FROM TITULO_A_RECEBER T1, PEDIDO_DE_VENDA T4 '+
+            ' WHERE T1.CNC_CODIGO='+IntToStr(dblCodigoCNC.KeyValue)+
+            ' AND T1.TRC_SITUACAO=2 '+
+            DataINI+DataFIM+
+            ' AND T1.PDV_CODIGO=T4.PDV_CODIGO '+
+            ' AND T1.CNC_CODIGO=T4.CNC_CODIGO '+
+            ' AND EXISTS (SELECT T2.PDV_CODIGO '+
+            '   FROM ITEM_DE_PEDIDO_DE_VENDA T2, PEDIDO_DE_VENDA T3 '+
+            '   WHERE T3.PDV_CODIGO<>-10 '+
+            '   AND T3.PDV_SITUACAO=4 '+
+            '   AND T2.CNC_CODIGO='+IntToStr(dblCodigoCNC.KeyValue)+
+                CdFUN+CdAGF+sSomenteLinha+sSomenteCatalogo+
+            '   AND T3.PDV_CODIGO=T2.PDV_CODIGO '+
+            '   AND T2.CNC_CODIGO=T3.CNC_CODIGO '+
+            '   AND T1.CNC_CODIGO=T3.CNC_CODIGO '+
+            '   AND T2.PDV_CODIGO=T1.PDV_CODIGO)'+
+            ' GROUP BY T4.PDV_CODIGO '+
+            ' HAVING COUNT(T1.TRC_CODIGO) = ''9'' ';
+          QrParcelas9.Open;
+
+          QrParcelas10.SQL.Text := 'SELECT '+
+                                  ' COUNT(T1.TRC_CODIGO) AS TRC_SEQUENCIA, '+
+                                  ' SUM(COALESCE(T1.TRC_VALOR_PAGO,0)) AS TOTAL '+
+            ' FROM TITULO_A_RECEBER T1, PEDIDO_DE_VENDA T4 '+
+            ' WHERE T1.CNC_CODIGO='+IntToStr(dblCodigoCNC.KeyValue)+
+            ' AND T1.TRC_SITUACAO=2 '+
+            DataINI+DataFIM+
+            ' AND T1.PDV_CODIGO=T4.PDV_CODIGO '+
+            ' AND T1.CNC_CODIGO=T4.CNC_CODIGO '+
+            ' AND EXISTS (SELECT T2.PDV_CODIGO '+
+            '   FROM ITEM_DE_PEDIDO_DE_VENDA T2, PEDIDO_DE_VENDA T3 '+
+            '   WHERE T3.PDV_CODIGO<>-10 '+
+            '   AND T3.PDV_SITUACAO=4 '+
+            '   AND T2.CNC_CODIGO='+IntToStr(dblCodigoCNC.KeyValue)+
+                CdFUN+CdAGF+sSomenteLinha+sSomenteCatalogo+
+            '   AND T3.PDV_CODIGO=T2.PDV_CODIGO '+
+            '   AND T2.CNC_CODIGO=T3.CNC_CODIGO '+
+            '   AND T1.CNC_CODIGO=T3.CNC_CODIGO '+
+            '   AND T2.PDV_CODIGO=T1.PDV_CODIGO)'+
+            ' GROUP BY T4.PDV_CODIGO '+
+            ' HAVING COUNT(T1.TRC_CODIGO) = ''10'' ';
+          QrParcelas10.Open;
+        end;
+        }
+
+
+
+
       report.preview;
       Close;
     end;
