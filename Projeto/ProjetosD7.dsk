@@ -10,29 +10,23 @@ File_7=SourceModule,'C:\FontesD7\SACI\Lagoa\Projeto\uLivro.pas',0,1,1,166,103,1,
 File_8=SourceModule,'C:\FontesD7\SACI\Lagoa\Projeto\uLivroOcorrencia.pas',0,1,98,82,123,1,0
 
 [Modules]
-Module0=C:\FontesD7\SACI\AtualizaBase\Chave\Chave.dpr
+Module0=C:\FontesD7\SACI\Relatorios\UVendasCliente.pas
 Module1=C:\FontesD7\SACI\Projeto\MxSVendasCliente.pas
-Module2=C:\FontesD7\SACI\Relatorios\UVendasCliente.pas
-Module3=C:\FontesD7\SACI\Projeto\URelDataVend.pas
-Module4=C:\FontesD7\SACI\Relatorios\UComissao2.pas
-Module5=C:\FontesD7\SACI\Projeto\UPrinc2.pas
-Module6=C:\FontesD7\SACI\Relatorios\UComissao.pas
-Module7=C:\FontesD7\SACI\Projeto\PSACI.dpr
-Count=8
+Module2=C:\FontesD7\SACI\Projeto\URelDataVend.pas
+Module3=C:\FontesD7\SACI\Relatorios\UComissao.pas
+Module4=C:\FontesD7\SACI\Projeto\UPrinc2.pas
+Module5=C:\FontesD7\SACI\Relatorios\UComissao2.pas
+Module6=C:\FontesD7\SACI\Projeto\PSACI.dpr
+Count=7
 EditWindowCount=1
 PackageWindowCount=1
 
-[C:\FontesD7\SACI\AtualizaBase\Chave\Chave.dpr]
-ModuleType=SourceModule
-FormState=0
-FormOnTop=0
-
-[C:\FontesD7\SACI\Projeto\MxSVendasCliente.pas]
+[C:\FontesD7\SACI\Relatorios\UVendasCliente.pas]
 ModuleType=SourceModule
 FormState=1
 FormOnTop=0
 
-[C:\FontesD7\SACI\Relatorios\UVendasCliente.pas]
+[C:\FontesD7\SACI\Projeto\MxSVendasCliente.pas]
 ModuleType=SourceModule
 FormState=1
 FormOnTop=0
@@ -42,7 +36,7 @@ ModuleType=SourceModule
 FormState=1
 FormOnTop=0
 
-[C:\FontesD7\SACI\Relatorios\UComissao2.pas]
+[C:\FontesD7\SACI\Relatorios\UComissao.pas]
 ModuleType=SourceModule
 FormState=1
 FormOnTop=0
@@ -52,13 +46,17 @@ ModuleType=SourceModule
 FormState=1
 FormOnTop=0
 
-[C:\FontesD7\SACI\Relatorios\UComissao.pas]
+[C:\FontesD7\SACI\Relatorios\UComissao2.pas]
 ModuleType=SourceModule
 FormState=1
 FormOnTop=0
 
 [C:\FontesD7\SACI\Projeto\PSACI.dpr]
 ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[C:\FontesD7\SACI\AtualizaBase\Chave\Chave.dpr]
 FormState=0
 FormOnTop=0
 
@@ -87,7 +85,7 @@ FormState=0
 FormOnTop=0
 
 [EditWindow0]
-ViewCount=8
+ViewCount=7
 CurrentView=4
 View0=0
 View1=1
@@ -96,7 +94,6 @@ View3=3
 View4=4
 View5=5
 View6=6
-View7=7
 CodeExplorer=CodeExplorer@EditWindow0
 MessageView=MessageView@EditWindow0
 Create=1
@@ -118,9 +115,9 @@ LeftPanelData=00000400010000000C000000436F64654578706C6F726572000000000000000000
 RightPanelSize=196
 RightPanelClients=ProjectManager
 RightPanelData=000004000000000000000000000000000000000000000000000100000000000000001200000050726F6A6563744D616E61676572466F726DFFFFFFFF
-BottomPanelSize=85
+BottomPanelSize=0
 BottomPanelClients=MessageView@EditWindow0
-BottomPanelData=00000400000000005605000000000000025500000000000000010000000000000000000000000100000000560500000B0000004D65737361676556696577FFFFFFFF
+BottomPanelData=00000400010000000B0000004D657373616765566965775605000000000000025500000000000000010000000000000000000000000100000000560500000B0000004D65737361676556696577FFFFFFFF
 
 [View0]
 Module=C:\FontesD7\SACI\Projeto\PSACI.dpr
@@ -145,33 +142,26 @@ LeftCol=1
 
 [View3]
 Module=C:\FontesD7\SACI\Projeto\MxSVendasCliente.pas
-CursorX=66
-CursorY=1823
-TopLine=1804
+CursorX=18
+CursorY=2207
+TopLine=2179
 LeftCol=1
 
 [View4]
-Module=C:\FontesD7\SACI\AtualizaBase\Chave\Chave.dpr
-CursorX=89
-CursorY=30
-TopLine=22
+Module=C:\FontesD7\SACI\Relatorios\UVendasCliente.pas
+CursorX=87
+CursorY=496
+TopLine=488
 LeftCol=1
 
 [View5]
-Module=C:\FontesD7\SACI\Relatorios\UVendasCliente.pas
-CursorX=1
-CursorY=433
-TopLine=419
-LeftCol=1
-
-[View6]
 Module=C:\FontesD7\SACI\Projeto\URelDataVend.pas
 CursorX=25
 CursorY=546
 TopLine=532
 LeftCol=1
 
-[View7]
+[View6]
 Module=C:\FontesD7\SACI\Relatorios\UComissao2.pas
 CursorX=19
 CursorY=139
@@ -234,11 +224,11 @@ State=0
 Left=0
 Top=12
 Width=196
-Height=520
+Height=608
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=196
-ClientHeight=520
+ClientHeight=608
 TBDockHeight=303
 LRDockWidth=196
 Dockable=1
@@ -311,7 +301,7 @@ Dockable=1
 
 [MessageView@EditWindow0]
 Create=1
-Visible=1
+Visible=0
 State=0
 Left=12
 Top=0

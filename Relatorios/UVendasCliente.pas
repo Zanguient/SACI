@@ -357,6 +357,9 @@ type
     QrParcelas3: TTitulo_receber;
     QrParcelas4: TTitulo_receber;
     SZRLabel25: TSZRLabel;
+    SZRLabel27: TSZRLabel;
+    lblAVista: TSZRLabel;
+    QrAvista: TTitulo_receber;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure zrbTotalGeralBeforePrint(Sender: TObject; var DoPrint: Boolean);
     procedure zrb_detalheBeforePrint(Sender: TObject; var DoPrint: Boolean);
@@ -401,8 +404,9 @@ end;
 procedure Trpt_VendasCliente.zrbTotalGeralBeforePrint(Sender: TObject;
   var DoPrint: Boolean);
 var
-  count1, count2, count3, count4, count5, count6, count7, count8, count9, count10: double;
+  countAVista, count1, count2, count3, count4, count5, count6, count7, count8, count9, count10: double;
 begin
+  countAVista := 0;
   count1  := 0;
   count2  := 0;
   count3  := 0;
@@ -432,7 +436,16 @@ begin
 
   if bTotalParcela then
   begin
-  {
+    //A Vista
+    QrAVista.First;
+    while not QrAVista.Eof do
+    begin
+      countAVista := countAVista + QrAVista.FieldByName('TOTAL').AsFloat;
+      QrAVista.Next;
+    end;
+    lblAVista.Caption := Format('%.2f',[countAVista]);
+
+
     //1 Parcela
     QrParcela1.First;
     while not QrParcela1.Eof do
@@ -477,7 +490,6 @@ begin
       QrParcelas5.Next;
     end;
     lbl5Parcelas.Caption := Format('%.2f',[count5]);
-
 
     //6 Parcelas
     QrParcelas6.First;
@@ -527,7 +539,7 @@ begin
       QrParcelas10.Next;
     end;
     lbl10Parcelas.Caption := Format('%.2f',[count10]);
-  }
+
   end;
 end;
 
